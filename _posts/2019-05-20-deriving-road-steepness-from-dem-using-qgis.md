@@ -78,13 +78,15 @@ The data I obtained from qProf had these fields:
 - ``cds3d``: 3D (with elevation) distance along the profile
 - ``dirslop``: Directional slope along the profile (from Antananarivo to Toamasina) in degrees. Positive values indicate ascents and negative values indicate descents.
 
-To get the graph at the beginning of this post, I simply plotted the Z coordinate (``z``) and the directional slope (``dirslop``) along the horizontal distance (``cds2d``), to get the elevation and directional slope graphs respectively. I put a live version of the graph with the 4 major roads of Madagascar [on this page](https://privatemajory.github.io/rnprof).
+The CSV file can be downloaded from [this link](https://raw.githubusercontent.com/privatemajory/rnprof/master/data/profile_n2.csv).
+
+To get the graph at the beginning of this post, I simply plotted the Z coordinate (``z``) and the directional slope (``dirslop``) along the horizontal distance (``cds2d``), to get the elevation and directional slope graphs respectively. I put a live version of the graph with the 4 major roads of Madagascar on [this page](https://privatemajory.github.io/rnprof).
 
 ### Going a little further
 
 Using the same base but with a slightly different workflow, I could estimate the average street steepness in the major urban areas of Madagascar:
 
 <br />
-<p align="center"><img src="/images/mdg_urban_road_slope_2.png" alt="Madagascar average road slop in urban areas" height="600px" /><br /><br />
+<p align="center"><img src="/images/mdg_urban_road_slope_2.png" alt="Madagascar average road slope in major urban areas" height="620px" /><br /><br />
 Average road slope in major urban areas of Madagascar.</p>
 <br />
