@@ -17,8 +17,7 @@ title: privatemajory » a blog
 author: Andriatsiferana Manda
 email: andriatsiferana@protonmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Go through my stuff!
-  Me, the author, am a geographer, so most of the posts will be geography-centric: maps, geodata, data visualization... I am also a passionate musician, artist, and christian. Views are my own.
+  I am an enthusiast geographer. I use this page to share some of my stuff. What you can find there: maps, geodata, data visualization... I am also a passionate musician, artist, and christian.
 baseurl: # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: privatemajory
