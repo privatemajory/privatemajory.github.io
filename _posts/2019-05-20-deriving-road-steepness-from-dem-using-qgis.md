@@ -82,7 +82,7 @@ To get the graph at the beginning of this post, I simply plotted the Z coordinat
 
 ### Going a little further
 
-Using the same base but with a slightly different workflow, I could generate the average street steepness in the major urban areas of Madagascar:
+Using the same base but with a slightly different workflow, I could estimate the average street steepness in the major urban areas of Madagascar:
 
 <br />
 <p align="center"><img src="/images/mdg_urban_road_slope_2.png" alt="Madagascar average road slop in urban areas" height="600px" /><br /><br />
