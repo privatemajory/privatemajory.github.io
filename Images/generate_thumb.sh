@@ -1,2 +1,2 @@
 #!/bin/sh
-mogrify -path thumb -thumbnail x400 *.png
+mogrify -path thumb -thumbnail x200 *.png
