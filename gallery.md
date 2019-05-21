@@ -29,6 +29,3 @@ permalink: /gallery/
       <img alt="Urban road slope map of Madagascar" src="/Images/thumb/2019-05-21_qgis_mdg_urban_road_slope.png"/>
     </a>
 </div>
-<script>
-  $("#imggallery").justifiedGallery();
-</script>
