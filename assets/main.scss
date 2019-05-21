@@ -1,0 +1,14 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+#imggallery a {
+    text-decoration: none;
+  }
+  
+  #imggallery img {
+    max-height: 200px;
+    margin: 2px 0;
+  }
