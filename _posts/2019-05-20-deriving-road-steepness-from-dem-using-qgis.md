@@ -56,7 +56,7 @@ A this point, if it is not the case yet, my profile line (the one I generated fr
 
 My next step is to generate a profile data from these in qProf, which can be called through the Plugins menu in QGIS's main menu. When the plugin is called, a new qProf panel appears in QGIS's user interface.
 
-Under Topography» tab, within «DEM input» this is what I did:
+Under «Topography» tab, within «DEM input» this is what I did:
 - under «Input DEMs» I selected my DEM
 - under «Input line» I checked «Line layer» and chose my previously resampled road layer. For the «Line densify distance» I entered my sampling value, 1000 meters.
 - I clicked on «Read source data». At this point, qProf warns if the profile exceeds the 10 000 data points limit. This depends on the length of the line and the data points distance. For the sampling value I have chosen, I got 349 data points.
