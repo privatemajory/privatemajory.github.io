@@ -3,8 +3,10 @@
 
   {%- include head.html -%}
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Cousine|Nunito|Oswald&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="/css/justifiedGallery.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Cousine|Nunito|Oswald&display=swap" rel="stylesheet">
+    <link href="/css/justifiedGallery.min.css" rel="stylesheet">
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/jquery.justifiedGallery.min.js"></script>
   </head>
 
   <body>
@@ -22,7 +24,12 @@
   </body>
   
 <script>
-  $("#imggallery").justifiedGallery();
+  $("#imggallery").justifiedGallery({
+    rowHeight: 160,
+    lastRow: 'justify',
+    margins: 6,
+    randomize: true,
+    rtl: true
+  });
 </script>
-<script src="/js/jquery.justifiedGallery.min.js"></script>
 </html>
