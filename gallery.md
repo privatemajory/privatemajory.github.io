@@ -23,6 +23,8 @@ images:
     caption: Madagascar Urban Road Slope
   - image: 2019-05-21_qgis_nosy-be.png
     caption: Nosy Be
+  - image: 2019-06-29_b3d_nyc.png
+    caption: New York City
 ---
 <div id="imggallery" class="justified-gallery">
 {%- for entry in page.images -%}
