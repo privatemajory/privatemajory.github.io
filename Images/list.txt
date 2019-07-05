@@ -9,3 +9,4 @@
 2019-05-21_qgis_mdg_urban_road_slope.png
 2019-05-21_qgis_nosy-be.png
 2019-06-29_b3d_nyc.png
+2019-07-05_qgis_united_kingdoms_of_madagascar.png
