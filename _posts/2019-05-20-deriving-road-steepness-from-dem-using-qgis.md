@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Deriving road steepness from a digital elevation model using QGIS"
-date:   2019-05-20 10:02:00 +0300
+title: "Deriving road steepness from a digital elevation model using QGIS"
+date: 2019-05-20 10:02:00 +0300
 categories: gis
 ---
 Road slopes are an important factor to consider when estimating trip costs and durations. GPS applications sometimes show altitude graphs along itinerary, and consider elevation in trip calculations. Android application [OSMAnd](https://osmand.net/) is one example. In this post I will share one method I have used to fetch road slope data from a digital elevation model (DEM). From the data I could make a slope-along-road graph such as on OSMAnd.
@@ -40,9 +40,9 @@ Fixing a doubled road section.</p>
 
 So now I have a line layer with a single feature of the RN 2 from Antananarivo to Toamasina. The next thing to do is choosing a sampling value for the profile. My distance is about 350 km so having a point every 100 m would be too much if I want to visualize it in a 16 cm wide graph (3500 data points!). For the final graph above, I used a sampling of 1 km (about 350 data points) and it looked good enough for a document size graph, without loosing too much detail.
 
-To resample the profile line, I generated points at equal distance of 1 km, then made a new line out of these points. For this, I used the **Points along geometry** processing tool in QGIS, setting the «distance» parameter at 1 km.
+To resample the profile line, I generated points at equal distance of 1 km, then made a new line out of these points. For this, I used the **Points along geometry** processing tool in QGIS, setting the "distance" parameter at 1 km.
 
-To convert the points to a line, I used the **Points to path** processing tool, and used the distance column (created by the previous tool) for the «order field» parameter.
+To convert the points to a line, I used the **Points to path** processing tool, and used the distance column (created by the previous tool) for the "order field" parameter.
 
 <br />
 <p class="centeredcontent"><img src="/img/points_to_path.png" alt="Points to path processing tool" style="width: 90%; max-width: 480px" /><br /><br />
@@ -56,12 +56,12 @@ A this point, if it is not the case yet, my profile line (the one I generated fr
 
 My next step is to generate a profile data from these in qProf, which can be called through the Plugins menu in QGIS's main menu. When the plugin is called, a new qProf panel appears in QGIS's user interface.
 
-Under «Topography» tab, within «DEM input» this is what I did:
-- under «Input DEMs» I selected my DEM
-- under «Input line» I checked «Line layer» and chose my previously resampled road layer. For the «Line densify distance» I entered my sampling value, 1000 meters.
-- I clicked on «Read source data». At this point, qProf warns if the profile exceeds the 10 000 data points limit. This depends on the length of the line and the data points distance. For the sampling value I have chosen, I got 349 data points.
+Under "Topography" tab, within "DEM input" this is what I did:
+- under "Input DEMs" I selected my DEM
+- under "Input line" I checked "Line layer" and chose my previously resampled road layer. For the "Line densify distance" I entered my sampling value, 1000 meters.
+- I clicked on "Read source data". At this point, qProf warns if the profile exceeds the 10 000 data points limit. This depends on the length of the line and the data points distance. For the sampling value I have chosen, I got 349 data points.
 
-Under «Export» tab and within «Topographic profile data», I exported the data as a CSV text for further editing and visualization in D3.js.
+Under "Export" tab and within "Topographic profile data", I exported the data as a CSV text for further editing and visualization in D3.js.
 
 <br />
 <p class="centeredcontent"><img src="/img/qprof_interface.png" alt="Generating and exporting the profile data using qProf" style="width: 90%; max-width: 400px" /><br /><br />

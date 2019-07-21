@@ -23,10 +23,12 @@ images:
     caption: Madagascar Urban Road Slope
   - image: 2019-05-21_qgis_nosy-be.png
     caption: Nosy Be
-  - image: 2019-06-29_b3d_nyc.png
-    caption: New York City
+  # - image: 2019-06-29_b3d_nyc.png
+  #   caption: New York City
   - image: 2019-07-05_qgis_united_kingdoms_of_madagascar.png
-    caption: United Kingdoms of Madagascar (Fictional)
+    caption: United Kingdoms of Madagascar
+  - image: 2019-07-13_b3d_manhattan.png
+    caption: Financial District of Manhattan
 ---
 <div id="imggallery" class="justified-gallery">
 {%- for entry in page.images -%}
