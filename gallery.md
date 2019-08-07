@@ -13,8 +13,8 @@ images:
     caption: Tsiroanomandidy
   - image: 2019-05-21_inkscape_ihorombe_relief_map.png
     caption: Ihorombe
-  # - image: 2019-05-21_inkscape_mdg_relief_map.png
-  #   caption: Madagascar Relief Map
+  - image: 2019-05-21_inkscape_mdg_relief_map.png
+    caption: Madagascar Relief Map
   - image: 2019-05-21_qgis_cape_verde.png
     caption: Cape Verde
   - image: 2019-05-21_qgis_galapagos_tanaka.png
@@ -23,12 +23,14 @@ images:
     caption: Madagascar Urban Road Slope
   - image: 2019-05-21_qgis_nosy-be.png
     caption: Nosy Be
-  # - image: 2019-06-29_b3d_nyc.png
-  #   caption: New York City
+  - image: 2019-06-29_b3d_nyc.png
+    caption: Financial District of Manhattan 3D
   - image: 2019-07-05_qgis_united_kingdoms_of_madagascar.png
     caption: United Kingdoms of Madagascar
   - image: 2019-07-13_b3d_manhattan.png
     caption: Financial District of Manhattan
+  - image: 2019-08-07_qgis_tampere.png
+    caption: Downtown Tampere
 ---
 <div id="imggallery" class="justified-gallery">
 {%- for entry in page.images -%}
