@@ -50,6 +50,12 @@ $on-laptop:        800px !default;
   "minima/syntax-highlighting"
 ;
 
+body {
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
 nav .page-link, .page-link:visited {
   font-family: 'Nanum Gothic', NanumGothic, sans-serif;
   font-size: 14px;
