@@ -13,8 +13,8 @@ images:
     caption: Tsiroanomandidy
   - image: 2019-05-21_inkscape_ihorombe_relief_map.png
     caption: Ihorombe
-  - image: 2019-05-21_inkscape_mdg_relief_map.png
-    caption: Madagascar Relief Map
+  # - image: 2019-05-21_inkscape_mdg_relief_map.png
+  #   caption: Madagascar Relief Map
   - image: 2019-05-21_qgis_cape_verde.png
     caption: Cape Verde
   - image: 2019-05-21_qgis_galapagos_tanaka.png
@@ -31,6 +31,8 @@ images:
     caption: Financial District of Manhattan
   - image: 2019-08-07_qgis_tampere.png
     caption: Downtown Tampere
+  - image: 2019-08-08_b3d_tampere_landscape.png
+    caption: Downtown Tampere, landscape view
 ---
 <div id="imggallery" class="justified-gallery">
 {%- for entry in page.images -%}

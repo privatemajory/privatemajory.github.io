@@ -12,3 +12,4 @@
 2019-07-05_qgis_united_kingdoms_of_madagascar.png
 2019-07-13_b3d_manhattan.png
 2019-08-07_qgis_tampere.png
+2019-08-08_b3d_tampere_landscape.png
