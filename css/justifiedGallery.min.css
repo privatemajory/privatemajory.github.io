@@ -67,6 +67,7 @@
   filter: "alpha(opacity=100)";
   opacity: 1;
   background: none;
+  border: 1px solid #e8e8e8;
 }
 .justified-gallery > .entry-visible > img,
 .justified-gallery > .entry-visible > a > img {
