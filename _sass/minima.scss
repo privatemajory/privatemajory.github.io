@@ -2,7 +2,7 @@
 
 // Define defaults for each variable.
 
-$base-font-family: 'Nanum Myeongjo', NanumMyeongjo, serif;
+$base-font-family: 'Scope One', serif;
 $base-font-size:   14px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
@@ -57,23 +57,23 @@ body {
 }
 
 nav .page-link, .page-link:visited {
-  font-family: 'Nanum Gothic', NanumGothic, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   text-transform: uppercase;
 }
 
 .site-title, .site-title:visited {
-  font-family: 'Nanum Myeongjo', NanumMyeongjo, serif;
+  font-family: 'Scope One', serif;
   font-size: 17px;
   font-weight: normal;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Nanum Gothic', NanumGothic, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 code {
-  font-family: 'Nanum Gothic Coding', NanumGothicCoding, monospace;
+  font-family: 'Nanum Gothic Coding', monospace;
 }
 
 p {
