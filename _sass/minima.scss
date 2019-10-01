@@ -2,29 +2,30 @@
 
 // Define defaults for each variable.
 
-$base-font-family: 'Scope One', serif;
-$base-font-size:   14px !default;
+$base-font-family: 'Maven Pro',
+serif;
+$base-font-size: 14px !default;
 $base-font-weight: 400 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
+$small-font-size: $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
-$spacing-unit:     30px !default;
+$spacing-unit: 30px !default;
 
-$text-color:       #111 !default;
+$text-color: #111 !default;
 $background-color: #fdfdfd !default;
-$brand-color:      #2a7ae2 !default;
+$brand-color: #2a7ae2 !default;
 
-$grey-color:       #828282 !default;
+$grey-color: #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+$grey-color-dark: darken($grey-color, 25%) !default;
 
 $table-text-align: left !default;
 
 // Width of the content area
-$content-width:    800px !default;
+$content-width: 800px !default;
 
-$on-palm:          600px !default;
-$on-laptop:        800px !default;
+$on-palm: 600px !default;
+$on-laptop: 800px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -44,31 +45,36 @@ $on-laptop:        800px !default;
 }
 
 // Import partials.
-@import
-  "minima/base",
-  "minima/layout",
-  "minima/syntax-highlighting"
+@import "minima/base",
+"minima/layout",
+"minima/syntax-highlighting"
 ;
 
 body {
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
 }
 
-nav .page-link, .page-link:visited {
+nav .page-link,
+.page-link:visited {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   text-transform: uppercase;
 }
 
-.site-title, .site-title:visited {
-  font-family: 'Scope One', serif;
-  font-size: 17px;
+.site-title,
+.site-title:visited {
+  font-family: 'Maven Pro', serif;
+  font-size: 18px;
   font-weight: normal;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -82,4 +88,32 @@ p {
 
 .centeredcontent {
   text-align: center;
+}
+
+.pageButton {
+  background-color: #1d8dca;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  padding: 6px 12px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #154682;
+  margin-right: 6px;
+}
+
+.pageButton:hover {
+  background-color: #0b5f9b;
+  text-decoration: none;
+}
+
+.pageButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.buttonText {
+  text-decoration: none;
+  color: #ffffff;
 }
