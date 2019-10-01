@@ -41,8 +41,8 @@ images:
 ---
 <div id="imggallery" class="justified-gallery">
 {%- for entry in page.images -%}
-  <a href="/Images/{{ entry.image }}">
-    <img alt="{{ entry.caption }}" src="/Images/thumb/{{ entry.image }}">
+  <a href="/gallery_content/{{ entry.image }}">
+    <img alt="{{ entry.caption }}" src="/gallery_content/thumb/{{ entry.image }}">
   </a>
 {%- endfor -%}
 </div>
