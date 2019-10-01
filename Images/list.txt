@@ -13,3 +13,5 @@
 2019-07-13_b3d_manhattan.png
 2019-08-07_qgis_tampere.png
 2019-08-08_b3d_tampere_landscape.png
+2019-10-01_mdg_river_basins.png
+2019-10-01_qgis_mdg_hrsl.png

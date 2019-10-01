@@ -33,6 +33,11 @@ images:
     caption: Downtown Tampere
   - image: 2019-08-08_b3d_tampere_landscape.png
     caption: Downtown Tampere, landscape view
+  - image: 2019-10-01_mdg_river_basins.png
+    caption: Madagascar river basins
+  - image: 2019-10-01_qgis_mdg_hrsl.png
+    caption: Madagascar settlement map
+
 ---
 <div id="imggallery" class="justified-gallery">
 {%- for entry in page.images -%}
