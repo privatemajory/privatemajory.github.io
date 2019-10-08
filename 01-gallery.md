@@ -37,6 +37,8 @@ images:
     caption: Madagascar river basins
   - image: 2019-10-01_qgis_mdg_hrsl.png
     caption: Madagascar settlement map
+  - image: 2019-10-08_qgis_antananarivo_shortest_route_1.png
+    caption: Shortest route to Mahamasina
 
 ---
 <div id="imggallery" class="justified-gallery">
