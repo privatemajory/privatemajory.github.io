@@ -39,8 +39,9 @@ images:
     caption: Madagascar settlement map
   - image: 2019-10-08_qgis_antananarivo_shortest_route_1.png
     caption: Shortest route to Mahamasina
-
+    
 ---
+
 <div id="imggallery" class="justified-gallery">
 {%- for entry in page.images -%}
   <a href="/gallery_content/{{ entry.image }}">

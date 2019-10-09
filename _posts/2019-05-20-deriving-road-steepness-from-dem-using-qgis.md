@@ -4,6 +4,7 @@ title: "Deriving road steepness from a digital elevation model using QGIS"
 date: 2019-05-20 10:02:00 +0300
 categories: gis
 ---
+
 Road slopes are an important factor to consider when estimating trip costs and durations. GPS applications sometimes show altitude graphs along itinerary, and consider elevation in trip calculations. Android application [OSMAnd](https://osmand.net/) is one example. In this post I will share one method I have used to fetch road slope data from a digital elevation model (DEM). From the data I could make a slope-along-road graph such as on OSMAnd.
 
 What is needed:
