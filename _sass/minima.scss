@@ -62,7 +62,6 @@ nav .page-link,
 .page-link:visited {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 13px;
-  text-transform: uppercase;
   letter-spacing: 0;
   color: $text-color;
   font-weight: normal;
@@ -101,12 +100,12 @@ p {
   color: #ffffff;
   font-family: 'Libre Franklin';
   font-size: 13px;
-  padding: 6px 12px;
+  padding: 4px 8px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #154682;
   margin: 2px;
   border: 1px solid transparent;
-  border-radius: 20px;
+  border-radius: 4px;
 }
 
 .pageButton:hover {
@@ -141,10 +140,15 @@ form.contact-form textarea[type="text"] {
   padding: 0.5em;
   font-family: 'Cousine', monospace;
   font-weight: lighter;
+  font-size: 1em;
   border-style: solid;
   border-color: $grey-color-light;
   outline-color: #2e83e6;
   border-width: 1px;
   border-radius: 3px;
   transition: box-shadow .2s ease;
+}
+
+.flink u {
+  color: $grey-color;
 }
