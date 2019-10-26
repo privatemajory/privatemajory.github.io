@@ -14,13 +14,13 @@ images:
   - image: 2019-05-21_inkscape_ihorombe_relief_map.png
     caption: Ihorombe
   - image: 2019-05-21_inkscape_mdg_relief_map.png
-    caption: Madagascar Relief Map
+    caption: Madagascar relief map
   - image: 2019-05-21_qgis_cape_verde.png
     caption: Cape Verde
   - image: 2019-05-21_qgis_galapagos_tanaka.png
-    caption: Galapagos Tanaka Contours
+    caption: Galapagos Tanaka contours
   - image: 2019-05-21_qgis_mdg_urban_road_slope.png
-    caption: Madagascar Urban Road Slope
+    caption: Madagascar urban road rlope
   - image: 2019-05-21_qgis_nosy-be.png
     caption: Nosy Be
   - image: 2019-06-29_b3d_nyc.png
@@ -39,6 +39,8 @@ images:
     caption: Madagascar settlement map
   - image: 2019-10-08_qgis_antananarivo_shortest_route_1.png
     caption: Shortest route to Mahamasina
+  - image: 2019-10-26_b3d_fianarantsoa_part_1.png
+    caption: 3D map of Fianarantsoa
     
 ---
 
