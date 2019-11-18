@@ -15,6 +15,10 @@ files:
     title: 2009 Population by Fokontany in Madagascar
     format: Shapefile
     size: 20264
+  - path: /downloads/datasets/mg_profilsrnmajeures_v1.zip
+    title: Slope along major roads in Madagascar
+    format: CSV
+    size: 703
 ---
 <table>
 {%- for file in page.files -%}
