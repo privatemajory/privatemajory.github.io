@@ -41,6 +41,8 @@ images:
     caption: Shortest route to Mahamasina
   - image: 2019-10-26_b3d_fianarantsoa_part_1.png
     caption: 3D map of Fianarantsoa
+  - image: 2020-04-14_b3d_lalangina_relief.png
+    caption: Map of Lalangina
     
 ---
 
