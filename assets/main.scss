@@ -11,3 +11,52 @@
     border-top: none;
     min-height: 0px;
 }
+
+.post-title {
+  font-size: 29.25px;
+  letter-spacing: -1px;
+  line-height: 1; }
+  @media screen and (max-width: 700px) {
+    .post-title {
+      font-size: 29.25px; } }
+
+.post-content {
+  margin-bottom: 30px; }
+  .post-content h2 {
+    font-size: 22.75px; }
+    @media screen and (max-width: 700px) {
+      .post-content h2 {
+        font-size:21.125px; } }
+  .post-content h3 {
+    font-size: 17.875px; }
+    @media screen and (max-width: 700px) {
+      .post-content h3 {
+        font-size:16.25px; } }
+  .post-content h4 {
+    font-size: 14.625px; }
+    @media screen and (max-width: 700px) {
+      .post-content h4 {
+        font-size: 13.875px; } }
+
+table {
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: left;
+  color: #3f3f3f;
+  border-collapse: collapse;
+  border: 1px solid #e8e8e8; }
+  table tr:nth-child(even) {
+    background-color: #f7f7f7; }
+  table th, table td {
+    padding: 5px 7.5px; }
+  table th {
+    background-color: #f0f0f0;
+    border: 1px solid #dedede;
+    border-bottom-color: #c9c9c9;
+    text-transform: uppercase; }
+  table td {
+    border: 1px solid #e8e8e8; }
+
+img {
+  margin-bottom: 30px;
+}

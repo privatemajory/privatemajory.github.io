@@ -20,7 +20,7 @@ Elevation and slope along the RN 2. A graph created with the wonderful <a href="
 <br />
 
 
-### Preparing the data
+## Preparing the data
 
 My elevation data is a Shuttle Radar Topographic Mission (SRTM) DEM with 30 metres spatial resolution. Multiple tiles have been merged to cover the whole RN 2.
 
@@ -37,7 +37,7 @@ Fixing a doubled road section.</p>
 <br />
 
 
-### Resampling
+## Resampling
 
 So now I have a line layer with a single feature of the RN 2 from Antananarivo to Toamasina. The next thing to do is choosing a sampling value for the profile. My distance is about 350 km so having a point every 100 m would be too much if I want to visualize it in a 16 cm wide graph (3500 data points!). For the final graph above, I used a sampling of 1 km (about 350 data points) and it looked good enough for a document size graph, without loosing too much detail.
 
@@ -51,7 +51,7 @@ The <em>Points to path</em> processing tool in QGIS.</p>
 <br />
 
 
-### Generating the data
+## Generating the data
 
 A this point, if it is not the case yet, my profile line (the one I generated from points) and my DEM should be in a projected coordinate system. This is to avoid unit problems in our data. I used the Tananarive (Paris) / Laborde Grid approximation (EPSG 29702), a commonly used projection for Madagascar.
 
@@ -83,7 +83,7 @@ The CSV file can be downloaded from [this link](https://raw.githubusercontent.co
 
 To get the graph at the beginning of this post, I simply plotted the Z coordinate (``z``) and the directional slope (``dirslop``) along the horizontal distance (``cds2d``), to get the elevation and directional slope graphs respectively. I put a live version of the graph with the 4 major roads of Madagascar on [this page](https://privatemajory.github.io/rnprof).
 
-### Going a little further
+## Going a little further
 
 Using the same base but with a slightly different workflow, I could estimate the average street steepness in the major urban areas of Madagascar:
 
