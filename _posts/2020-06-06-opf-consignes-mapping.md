@@ -21,7 +21,7 @@ Au cours de la cartographie, il est commode de basculer fréquemment entre diver
 
 L'ajout des bâtiments prend la majeure partie du temps dans une tache de cartographie. En dehors des agglomérations, ça prend beaucoup de temps d'identifier chaque petit bâtiment éparpillé. Dans les agglomérations où le bâti est dense, il faut beaucoup d'effort pour identifier et dessiner chacun des bâtiments collés entre eux.
 
-Diverses techniques pour dessiner correctement les bâtiments sont développées ici: https://wiki.openstreetmap.org/wiki/Roof_modelling.
+Diverses techniques pour dessiner correctement les bâtiments sont développées [ici](https://wiki.openstreetmap.org/wiki/Roof_modelling).
 
 Dans les régions Sava et Vatovavy Fitovinany, la plupart des bâtiments ont des formes rectangulaires ou en "L". Ces formes de bâtiments peuvent être rapidement ajoutées à l'aide des outils *building tools* et extrusion de JOSM. 
 
@@ -159,7 +159,7 @@ Si le cours d'eau est assez développé et on a dessiné l'étendue de l'eau ave
 
 <img src="/img/ford_mapping.png" style="zoom:67%;" />
 
- ### Un pont
+### Un pont
 
 Un pont est une structure de traversée permettant au véhicule ou au piéton de traverser au dessus du niveau de l’eau. La section de route qui passe par le pont est cartographiée avec les attributs supplémentaires `bridge=yes` et `layer=1` pour indiquer un passage via un pont au dessus du niveau du sol (le fond le la rivière). Optionnellement, le pont en tant que structure peut être cartographié avec un polygone portant l'attribut `man_made=bridge`.
 
