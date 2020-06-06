@@ -135,15 +135,15 @@ Les surfaces d'eau naturelle peuvent être une rivière, un étang, un lac, un l
 
 Les zones humides sont des zones naturellement inondées ou avec un sol gorgé d'eau, entre autres, les marécages, les mangroves et les marais.
 
-| Zone humide | Attributs                                  | Description                                                  |
-| ----------- | ------------------------------------------ | ------------------------------------------------------------ |
-| Marécage    | `natural=wetland` + `wetland=swamp`    | Une zone humide à arbres ou arbustes                         |
-| Mangrove    | `natural=wetland` + `wetland=mangrove` | Une zone humide à forêt de palétuviers sur la zone intertidale de la côte |
-| Marais      | `natural=wetland` + `wetland=marsh`    | Une zone humide à végétation aquatique ou herbacée           |
+| Type     | Attributs                              | Description                                                  |
+| -------- | -------------------------------------- | ------------------------------------------------------------ |
+| Marécage | `natural=wetland` + `wetland=swamp`    | Une zone humide à arbres ou arbustes                         |
+| Mangrove | `natural=wetland` + `wetland=mangrove` | Une zone humide à forêt de palétuviers sur la zone intertidale de la côte |
+| Marais   | `natural=wetland` + `wetland=marsh`    | Une zone humide à végétation aquatique ou herbacée           |
 
 <img src="/img/wetlands.png" style="zoom:67%;" />
 
-Presque partout à Madagascar, des zones humides sont converties en rizières. Les rizières se démarquent sur l'imagerie par des traits de parcelles.
+Presque partout à Madagascar, des zones humides sont converties en rizières. Les rizières se démarquent sur l'imagerie par des traits de parcelles. Les zones de rizières sont cartographiées avec un polygone (ou multipolygone) ayant comme attributs `landuse=farmland` et `crop=rice`.
 
 ## Cartographier l'intersection route - cours d'eau
 
