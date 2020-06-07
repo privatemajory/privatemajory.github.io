@@ -163,7 +163,7 @@ Si le cours d'eau est assez développé et on a dessiné l'étendue de l'eau ave
 
 ### Un pont
 
-Un pont est une structure de traversée permettant au véhicule ou au piéton de traverser au-dessus du niveau de l’eau. La section de route qui passe par le pont est cartographiée avec les attributs supplémentaires `bridge=yes` et `layer=1` pour indiquer un passage via un pont au-dessus du niveau du sol (le fond le la rivière). Optionnellement, le pont en tant que structure peut être cartographié avec un polygone portant l'attribut `man_made=bridge`.
+Un pont est une structure de traversée permettant au véhicule ou au piéton de traverser au-dessus du niveau de l’eau. La section de route qui passe par le pont est cartographiée avec les attributs supplémentaires `bridge=yes` et `layer=1` pour indiquer un passage via un pont au-dessus du niveau du sol (le fond de la rivière). Optionnellement, le pont en tant que structure peut être cartographié avec un polygone portant l'attribut `man_made=bridge`.
 
 Un pont **ne partage pas de nœud** avec la rivière au-dessus de laquelle il passe.
 
