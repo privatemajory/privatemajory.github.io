@@ -99,9 +99,7 @@ Dans la plupart des cas, on aura: des ruisseaux, des fossés, des rivières et p
 
 #### Les ruisseaux  
 
-Attribut: `waterway=stream`
-
-Les ruisseaux sont de petits cours d'eau peu profondes et assez étroites, partant d'une source d'eaux naturelles. On peut probablement sauter par-dessus. Quand il passe par une zone de rizières, un ruisseau peut être artificiellement canalisé et sera ainsi cartographié comme un **fossé**.
+Attribut: `waterway=stream`. Les ruisseaux sont de petits cours d'eau peu profondes et assez étroites, partant d'une source d'eaux naturelles. On peut probablement sauter par-dessus. Quand il passe par une zone de rizières, un ruisseau peut être artificiellement canalisé et sera ainsi cartographié comme un **fossé**.
 
 <img src="/img/stream.png" style="zoom: 67%;" />
 
