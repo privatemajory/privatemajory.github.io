@@ -179,7 +179,7 @@ Le trajet du bac ou du bateau à travers la rivière est cartographié avec une 
 
 <img src="/img/ferry_mapping.png" style="zoom:67%;" />
 
-## A propos de MapWithAI
+## À propos de MapWithAI
 
 L'extension MapWithAI pour JOSM permet d'ajouter des routes et des chemins détectés par intelligence artificielle. Les étapes de manipulation à suivre sont:
 
@@ -193,7 +193,7 @@ L'extension MapWithAI pour JOSM permet d'ajouter des routes et des chemins déte
 
 Il faut surtout vérifier l'intersection avec les cours d'eau car MapWithAI ne détecte pas les ponts. Il mettra probablement un nœud à l'intersection où il pourrait y avoir un pont.
 
-## A propos des multipolygones
+## À propos des multipolygones
 
 Utilisations:
 
