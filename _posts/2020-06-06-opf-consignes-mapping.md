@@ -179,3 +179,39 @@ Le trajet du bac ou du bateau à travers la rivière est cartographié avec une 
 
 <img src="/img/ferry_mapping.png" style="zoom:67%;" />
 
+## A propos de MapWithAI
+
+L'extension MapWithAI pour JOSM permet d'ajouter des routes et des chemins détectés par intelligence artificielle. Les étapes de manipulation à suivre sont:
+
+- Télécharger les données MapWithAI de la zone où les données OSM ont été téléchargées au préalable (ctrl + "R")
+- Avec MapWithAI comme calque active, sélectionner les segments de routes à ajouter, puis ctrl + "A" va les ajouter au calque de données OSM
+- Réctifier et/ou compléter les attributs
+- Ajuster le tracé des chemins au besoin (utiliser l'outil "W" ou déplacer manuellement les nœuds)
+- Vérifier que tous les segments sont connectés: MapWithAI laisse souvent ces très petits écarts entre les segments. Il faut y zoomer très près pour voir. On peut aussi le tester avec la sélection des chemins adjacents (raccourci ctrl + "E"): si ça ne se sélectionne pas, ça n'est pas connecté.
+
+<img src="/img/mapwithai_gap.gif" />
+
+Il faut surtout vérifier l'intersection avec les cours d'eau car MapWithAI ne détecte pas les ponts. Il mettra probablement un nœud à l'intersection où il pourrait y avoir un pont.
+
+## A propos des multipolygones
+
+Utilisations:
+
+- pour cartographier des surfaces ayant un ou plusieurs creux, comme les étendues de rivières ayant des ilots à l'intérieur.
+- pour des éléménts surfaciques (sans creux) très vastes, comme un grand lac ou un corridor forestier: la limite est de 2000 nœeuds par chemin, au-delà il va falloir utiliser un multipolygone à plusieurs chemins comme contours extérieurs. Exemple dans OpenStreetMap: [cette forêt](https://www.openstreetmap.org/relation/7065900).
+- pour cartographier des éléments à contours extérieurs disjoints. Exemple dans OpenStreetMap: [cet hôpital](https://www.openstreetmap.org/relation/11176282).
+
+On a parfois besoin de fusionner un multipolygone avec un polygone ou avec un autre multipolygone. Ce sera par exemple le cas quand un vaste élément surfacique s'étend sur plusieurs taches (carreaux) cartographiques.
+
+<img src="/img/to_merge.png" style="zoom:67%;" />
+
+Quand on fusionne les deux chemins adjacents (dont l'un est une limite extérieure de multipolygone), il y a des conflits à régler. Il va falloir:
+
+- choisir les tags à conserver depuis les deux chemins → Comme le nouveau chemin va être la limite extérieure d'un multipolygone, on ne garde aucun attribut, sinon on finira avec à la fois le chemin extérieur et la relation elle même gardant les mêmes attributs `landuse = farmland` + `crop = rice`, ce qui serait une erreur de cartographie.
+- choisir si le multipolygone auquel appartient un des chemins est à conserver ou non → On conserve le multipolygone pour garder les limites intérieures.
+
+Dans le cas de deux limites extérieures de multipolygones adjacents (qui n'ont ainsi pas d'attributs), il va tout simplement conserver les deux multipolygones pour avoir tous leurs limites intérieures.
+
+<img src="/img/mp_merge.gif" style="zoom:67%;" />
+
+Voir aussi la [page wiki](https://wiki.openstreetmap.org/wiki/FR:Relation:multipolygon) des multipolygones.
