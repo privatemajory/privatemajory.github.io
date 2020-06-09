@@ -187,7 +187,7 @@ L'extension MapWithAI pour JOSM permet d'ajouter des routes et des chemins déte
 - Avec MapWithAI comme calque active, sélectionner les segments de routes à ajouter, puis ctrl + "A" va les ajouter au calque de données OSM
 - Réctifier et/ou compléter les attributs
 - Ajuster le tracé des chemins au besoin (utiliser l'outil "W" ou déplacer manuellement les nœuds)
-- Vérifier que tous les segments sont connectés: MapWithAI laisse souvent ces très petits écarts entre les segments. Il faut y zoomer très près pour voir. On peut aussi le tester avec la sélection des chemins adjacents (raccourci ctrl + "E"): si ça ne se sélectionne pas, ça n'est pas connecté.
+- Vérifier que tous les segments sont connectés: MapWithAI laisse souvent ces très petits écarts entre les segments. Il faut y zoomer très près pour voir. On peut aussi le tester avec la sélection des chemins adjacents (sélectionner un chemin puis ctrl + "E": si le chemin à côté ne se sélectionne pas, ça n'est pas connecté).
 
 <img src="/img/mapwithai_gap.gif" />
 
