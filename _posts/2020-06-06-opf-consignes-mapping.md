@@ -9,6 +9,26 @@ Cet article cerne des consignes et des exemples spécifiques pour aider ceux qui
 
 Les illustrations, s'ils ne sont pas de mon propre travail, sont de Wikimedia Commons.
 
+## Sommaire <!-- omit in toc -->
+
+- [À propos de l’imagerie](#à-propos-de-limagerie)
+- [Cartographier les bâtiments](#cartographier-les-bâtiments)
+  - [Building tools](#building-tools)
+  - [Extrusion](#extrusion)
+- [Cartographier les voies de communication](#cartographier-les-voies-de-communication)
+  - [Dessiner correctement les chemins et les routes](#dessiner-correctement-les-chemins-et-les-routes)
+  - [Hiérarchiser correctement le réseau routier](#hiérarchiser-correctement-le-réseau-routier)
+- [Cartographier les éléments de l'hydrographie](#cartographier-les-éléments-de-lhydrographie)
+  - [Les cours d'eau](#les-cours-deau)
+  - [Les plans d'eau et les zones humides](#les-plans-deau-et-les-zones-humides)
+- [Cartographier l’intersection route — cours d’eau](#cartographier-lintersection-route--cours-deau)
+  - [Un gué](#un-gué)
+  - [Un pont](#un-pont)
+  - [Une traversée par bac ou par bateau](#une-traversée-par-bac-ou-par-bateau)
+- [À propos de MapWithAI](#à-propos-de-mapwithai)
+- [À propos des multipolygones](#à-propos-des-multipolygones)
+- [Notes](#notes)
+
 ## À propos de l’imagerie
 
 Plusieurs imageries sont disponibles pour fond, mais les plus utilisées pour Madagascar sont Bing Aerial Imagery et Maxar (Standard ou Premium) Imagery. Bing est fréquemment utilisée pour sa clarté et le fait qu'elle est l'imagerie par défaut dans l'éditeur OpenStreetMap iD; Maxar est moins claire mais est l'imagerie la plus récente disponible gratuitement.
@@ -97,19 +117,19 @@ Le sens de la ligne doit **suivre le sens de l'écoulement de l'eau**: si on a d
 
 Dans la plupart des cas, on aura: des ruisseaux, des fossés, des rivières et parfois des canaux.
 
-#### Les ruisseaux  
+#### Les ruisseaux <!-- omit in toc -->
 
 Attribut: `waterway=stream`. Les ruisseaux sont de petits cours d'eau peu profonds et assez étroits, partant d'une source d'eau naturelle. On peut probablement sauter par-dessus. Quand il passe par une zone de rizières, un ruisseau peut être artificiellement canalisé et sera ainsi cartographié comme un **fossé**.
 
 <img src="/img/stream.png" style="zoom: 67%;" />
 
-#### Les fossés
+#### Les fossés <!-- omit in toc -->
 
 Attribut: `waterway=ditch`. Un fossé est une petite dépression creusée (naturellement ou artificiellement) qui canalise l'eau, utilisée pour drainer les terres environnantes ou pour évacuer les eaux pluviales. Ces fossés se rencontrent souvent sur les bordures des parcelles de rizières.
 
 <img src="/img/ditch.png" style="zoom:67%;" />
 
-#### Les rivières 
+#### Les rivières <!-- omit in toc -->
 
 Attribut: `waterway=river`. Les rivières sont des cours d'eau plus développés que forment les ruisseaux qui se rejoignent. Une rivière se déverse dans une autre rivière, dans la mer ou dans un plan d'eau endoréique (et jamais dans un ruisseau ou un fossé).
 
@@ -117,7 +137,7 @@ Quand une rivière est assez étroite (moins de 12 mètres de largeur), on la ca
 
 <img src="/img/river_mapping.png" style="zoom:67%;" />
 
-#### Les canaux 
+#### Les canaux <!-- omit in toc -->
 
 Attribut: `waterway=canal`. On parle ici de cours d'eau artificiels assez larges servant de voie de transport (par exemple, le canal des Pangalanes). 
 
@@ -125,13 +145,13 @@ Attribut: `waterway=canal`. On parle ici de cours d'eau artificiels assez larges
 
 Les plans d'eau et les zones humides se cartographient évidemment avec un polygone. Certains mappers peuvent trouver l'extension [FastDraw](https://wiki.openstreetmap.org/wiki/JOSM/Plugins/FastDraw) de JOSM efficace pour dessiner ces éléments.
 
-#### Les plans d'eau
+#### Les plans d'eau <!-- omit in toc -->
 
 Les surfaces d'eau naturelle peuvent être une rivière, un étang, un lac, un lac artificiel... L'étendue d'eau est dessinée avec un polygone avec l'attribut `natural=water`. Le type du plan d'eau, si connu, peut être précisé avec la clé `water=*` dont la valeur est  `river` pour une rivière, `pond` pour un étang, `lake` pour un lac, `reservoir` pour un lac artificiel. Voir [la page wiki de la clé `water=*`](https://wiki.openstreetmap.org/wiki/FR:Key:water)  pour d'autres valeurs.
 
 <img src="/img/water_bodies.png" style="zoom:67%;" />
 
-#### Les zones humides
+#### Les zones humides <!-- omit in toc -->
 
 Les zones humides sont des zones naturellement inondées ou avec un sol gorgé d'eau, entre autres, les marécages, les mangroves et les marais.
 
