@@ -15,7 +15,7 @@ Plusieurs imageries sont disponibles pour fond, mais les plus utilisées pour Ma
 
 <img src="/img/bing_v_maxar.png" style="zoom:67%;" />
 
-La plus grande difficulté dans l'utilisation des imageries est la gestion de leur géoréférencement. Les règles générales d'OpenStreetMap s'appliquent: utiliser des tracés GPS pour bien aligner l'imagerie, aligner avec les données existantes. Il est également fréquent de devoir réaligner certaines imageries quand on change de lieu car celles-ci ne se superposent pas à l'imagerie de référence ou aux données existantes.
+La plus grande difficulté dans l'utilisation des imageries est la gestion de leur géoréférencement. Les règles générales d'OpenStreetMap s'appliquent: utiliser des tracés GPS pour bien aligner l'imagerie, aligner avec les données existantes [^1]. Il est également fréquent de devoir réaligner certaines imageries quand on change de lieu car celles-ci ne se superposent pas à l'imagerie de référence ou aux données existantes.
 
 Au cours de la cartographie, il est pratique de basculer fréquemment entre diverses imageries pour mieux identifier les éléments à cartographier. Par exemple, si les contours d'un bâtiment ne sont pas du tout clairs dans l'imagerie Maxar, essayer de basculer vers Bing ou d'autres imageries. Dans JOSM, le raccourci par défaut pour rapidement basculer entre les imageries est la touche "~". Ce raccourci peut être modifié dans les paramètres.
 
@@ -51,7 +51,7 @@ La donnée des voies de communication est fondamentale dans toute analyse sur l'
 
 ### Dessiner correctement les chemins et les routes
 
-Étant des entités OpenStreetMap linéaires, les routes et les chemins devraient être dessinés suivant leur axe central. Les règles de bonne pratique d’OpenStreetMap s’appliquent: dessiner une route rectiligne avec une ligne droite (sans nœuds intermédiaires), lisser les virages en utilisant un nombre approprié de nœuds pour ne pas avoir des angles prononcés.
+Étant des entités OpenStreetMap linéaires, les routes et les chemins devraient être dessinés suivant leur axe central. Les règles de bonne pratique d’OpenStreetMap s’appliquent: dessiner une route rectiligne avec une ligne droite (sans nœuds intermédiaires), lisser les virages en utilisant un nombre approprié de nœuds pour ne pas avoir des angles prononcés [^2].
 
 <img src="/img/road_nodes.png" style="zoom: 67%;" />
 
@@ -70,7 +70,7 @@ Essayer de:
 
 ### Hiérarchiser correctement le réseau routier
 
-Les voies de communications sont à hiérarchiser suivant leur dimension économique et social.
+Les voies de communications sont à hiérarchiser suivant leur dimension économique et social [^3].
 
 | Catégorie                     | Attribut                 | Dimension économique et sociale                              |
 | ----------------------------- | ------------------------ | ------------------------------------------------------------ |
@@ -113,7 +113,7 @@ Attribut: `waterway=ditch`. Un fossé est une petite dépression creusée (natur
 
 Attribut: `waterway=river`. Les rivières sont des cours d'eau plus développés que forment les ruisseaux qui se rejoignent. Une rivière se déverse dans une autre rivière, dans la mer ou dans un plan d'eau endoréique (et jamais dans un ruisseau ou un fossé).
 
-Quand une rivière est assez étroite (moins de 12 mètres de largeur), on la cartographie avec une ligne passant par ses parties les plus profondes. Quand la rivière est assez large (plus de 12 mètres de largeur), on met en plus de la ligne un polygone (ou un multipolygone s'il y a des îlots) délimitant l'**étendue de l'eau** et portant les attributs `natural=water` et `water=river`.
+Quand une rivière est assez étroite (moins de 12 mètres de largeur), on la cartographie avec une ligne passant par ses parties les plus profondes. Quand la rivière est assez large (plus de 12 mètres de largeur), on met en plus de la ligne un polygone (ou un multipolygone s'il y a des îlots) délimitant l'**étendue de l'eau** et portant les attributs `natural=water` et `water=river` [^4].
 
 <img src="/img/river_mapping.png" style="zoom:67%;" />
 
@@ -155,7 +155,7 @@ Un gué est une traversée de cours d'eau où le véhicule (ou le piéton) doit 
 
 Si le cours d'eau est assez étroit, on met sur **un nœud commun** entre la ligne du cours d'eau et la ligne de la route l'attribut `ford=yes`.
 
-Si le cours d'eau est assez développé et on a dessiné l'étendue de l'eau avec un polygone, l'attribut `ford=yes` sera mis sur la section de route qui traverse le polygone de la rivière et ayant toujours un nœud en commun avec la ligne de cours d'eau au milieu du polygone (la section de ligne `highway=*` + `ford=yes` doit ainsi avoir au moins 3 nœuds).
+Si le cours d'eau est assez développé et on a dessiné l'étendue de l'eau avec un polygone, l'attribut `ford=yes` sera mis sur la section de route qui traverse le polygone de la rivière et ayant toujours un nœud en commun avec la ligne de cours d'eau au milieu du polygone (la section de ligne `highway=*` + `ford=yes` doit ainsi avoir au moins 3 nœuds) [^5].
 
 <img src="/img/ford_mapping.png" style="zoom:67%;" />
 
@@ -173,7 +173,7 @@ Un bac est un type de bateau à fond plat utilisé pour traverser l’eau. Gén�
 
 <img src="/img/boats.png" style="zoom:67%;" />
 
-Le trajet du bac ou du bateau à travers la rivière est cartographié avec une ligne portant l'attribut `route=ferry`. Cette ligne du trajet ne devrait pas partager de nœud avec la ligne de la rivière. Le premier nœud et le dernier nœud du trajet devraient être cartographiés comme des terminaux de ferry (`amenity=ferry_terminal`).
+Le trajet du bac ou du bateau à travers la rivière est cartographié avec une ligne portant l'attribut `route=ferry`. Cette ligne du trajet ne devrait pas partager de nœud avec la ligne de la rivière. Le premier nœud et le dernier nœud du trajet devraient être cartographiés comme des terminaux de ferry (`amenity=ferry_terminal`) [^6].
 
 <img src="/img/ferry_mapping.png" style="zoom:67%;" />
 
@@ -203,7 +203,7 @@ On a parfois besoin de fusionner un multipolygone avec un polygone ou avec un au
 
 <img src="/img/to_merge.png" style="zoom:67%;" />
 
-Quand on fusionne les deux chemins adjacents (dont l'un est une limite extérieure de multipolygone), il y a des conflits à régler. Il va falloir:
+Quand on fusionne les deux chemins adjacents (dont l'un est une limite extérieure de multipolygone), il y a des conflits à régler [^7]. Il va falloir:
 
 - choisir les tags à conserver depuis les deux chemins → Comme le nouveau chemin va être la limite extérieure d'un multipolygone, on ne garde aucun attribut, sinon on finira avec à la fois le chemin extérieur et la relation elle même gardant les mêmes attributs `landuse=farmland` + `crop=rice`, ce qui serait une erreur de cartographie.
 - choisir si le multipolygone auquel appartient un des chemins est à conserver ou non → On conserve le multipolygone pour garder les limites intérieures.
@@ -213,3 +213,13 @@ Dans le cas de deux limites extérieures de multipolygones adjacents (qui n'ont 
 <img src="/img/mp_merge.gif" style="zoom:67%;" />
 
 Voir aussi la [page wiki](https://wiki.openstreetmap.org/wiki/FR:Relation:multipolygon) des multipolygones.
+
+## Notes
+
+[^1]: [FR:Using Imagery](https://wiki.openstreetmap.org/wiki/FR:Using_Imagery)
+[^2]: [FR:Bonnes pratiques/Laissez droites les routes droites](https://wiki.openstreetmap.org/wiki/FR:Bonnes_pratiques#Laissez_droites_les_routes_droites)
+[^3]: [FR:Highway Tag Africa](https://wiki.openstreetmap.org/wiki/FR:Highway_Tag_Africa)
+[^4]: [Rivers/How to map](https://wiki.openstreetmap.org/wiki/Rivers#How_to_map)
+[^5]: [Tag:ford=yes/How to Map](https://wiki.openstreetmap.org/wiki/Tag:ford%3Dyes#How_to_Map)
+[^6]: [FR:Tag:route=ferry#Comment cartographier avec un simple chemin](https://wiki.openstreetmap.org/wiki/FR:Tag:route%3Dferry#Comment_cartographier_avec_un_simple_chemin)
+[^7]: [JOSM Tags Memberships Conflict Dialog](https://josm.openstreetmap.de/wiki/Help/Action/CombineWay#TagsMembershipsConflictDialog)
