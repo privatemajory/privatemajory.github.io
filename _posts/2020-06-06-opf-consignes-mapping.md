@@ -217,9 +217,9 @@ Voir aussi la [page wiki](https://wiki.openstreetmap.org/wiki/FR:Relation:multip
 ## Notes
 
 [^1]: [FR:Using Imagery](https://wiki.openstreetmap.org/wiki/FR:Using_Imagery)
-[^2]: [FR:Bonnes pratiques/Laissez droites les routes droites](https://wiki.openstreetmap.org/wiki/FR:Bonnes_pratiques#Laissez_droites_les_routes_droites)
+[^2]: [FR:Bonnes pratiques → Laissez droites les routes droites](https://wiki.openstreetmap.org/wiki/FR:Bonnes_pratiques#Laissez_droites_les_routes_droites)
 [^3]: [FR:Highway Tag Africa](https://wiki.openstreetmap.org/wiki/FR:Highway_Tag_Africa)
-[^4]: [Rivers/How to map](https://wiki.openstreetmap.org/wiki/Rivers#How_to_map)
-[^5]: [Tag:ford=yes/How to Map](https://wiki.openstreetmap.org/wiki/Tag:ford%3Dyes#How_to_Map)
-[^6]: [FR:Tag:route=ferry#Comment cartographier avec un simple chemin](https://wiki.openstreetmap.org/wiki/FR:Tag:route%3Dferry#Comment_cartographier_avec_un_simple_chemin)
+[^4]: [Rivers → How to map](https://wiki.openstreetmap.org/wiki/Rivers#How_to_map)
+[^5]: [Tag:ford=yes → How to Map](https://wiki.openstreetmap.org/wiki/Tag:ford%3Dyes#How_to_Map)
+[^6]: [FR:Tag:route=ferry → Comment cartographier avec un simple chemin](https://wiki.openstreetmap.org/wiki/FR:Tag:route%3Dferry#Comment_cartographier_avec_un_simple_chemin)
 [^7]: [JOSM Tags Memberships Conflict Dialog](https://josm.openstreetmap.de/wiki/Help/Action/CombineWay#TagsMembershipsConflictDialog)
