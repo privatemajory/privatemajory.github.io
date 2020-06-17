@@ -217,7 +217,7 @@ Utilisations:
 
 - pour cartographier des surfaces ayant un ou plusieurs creux, comme les étendues de rivières ayant des ilots à l'intérieur.
 - pour des éléménts surfaciques (sans creux) très vastes, comme un grand lac ou un corridor forestier: la limite dans OSM est de 2000 nœuds par chemin, au-delà il va falloir utiliser un multipolygone à plusieurs chemins comme contours extérieurs. Exemple dans OpenStreetMap: [cette forêt](https://www.openstreetmap.org/relation/7065900).
-- pour cartographier des éléments à contours extérieurs disjoints. Exemple dans OpenStreetMap: [cet hôpital](https://www.openstreetmap.org/relation/11176282).
+- pour cartographier des éléments à contours extérieurs disjoints. Exemple dans OpenStreetMap: [Harvard University](https://www.openstreetmap.org/relation/2415825).
 
 On a parfois besoin de fusionner un multipolygone avec un polygone ou avec un autre multipolygone. Ce sera par exemple le cas quand un vaste élément surfacique s'étend sur plusieurs taches (carreaux) cartographiques.
 
