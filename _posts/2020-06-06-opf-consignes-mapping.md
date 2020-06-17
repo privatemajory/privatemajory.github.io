@@ -228,7 +228,7 @@ Quand on fusionne les deux chemins adjacents (dont l'un est une limite extérieu
 - choisir les tags à conserver depuis les deux chemins → Comme le nouveau chemin va être la limite extérieure d'un multipolygone, on ne garde aucun attribut, sinon on finira avec à la fois le chemin extérieur et la relation elle même gardant les mêmes attributs `landuse=farmland` + `crop=rice`, ce qui serait une erreur de cartographie.
 - choisir si le multipolygone auquel appartient un des chemins est à conserver ou non → On conserve le multipolygone pour garder les limites intérieures.
 
-Dans le cas de deux limites extérieures de multipolygones adjacents (qui n'ont ainsi pas d'attributs), il va tout simplement falloir conserver les deux multipolygones pour avoir tous leurs limites intérieures.
+Dans le cas de deux limites extérieures de multipolygones adjacents (qui n'ont ainsi pas d'attributs), il va tout simplement falloir conserver les deux multipolygones pour avoir toutes leurs limites intérieures.
 
 <img src="/img/mp_merge.gif" style="zoom:67%;" />
 
