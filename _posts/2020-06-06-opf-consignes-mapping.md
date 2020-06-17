@@ -90,7 +90,7 @@ Essayer de:
 
 ### Hiérarchiser correctement le réseau routier
 
-Les voies de communications sont à hiérarchiser suivant leur dimension économique et social [^3].
+Les voies de communications sont à hiérarchiser suivant leur dimension économique et sociale [^3].
 
 | Catégorie                     | Attribut                 | Dimension économique et sociale                              |
 | ----------------------------- | ------------------------ | ------------------------------------------------------------ |
