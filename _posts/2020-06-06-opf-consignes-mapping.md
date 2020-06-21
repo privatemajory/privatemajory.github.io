@@ -33,7 +33,7 @@ Les illustrations, s'ils ne sont pas de mon propre travail, sont de Wikimedia Co
 
 Plusieurs imageries sont disponibles pour fond, mais les plus utilisées pour Madagascar sont Bing Aerial Imagery et Maxar (Standard ou Premium) Imagery. Bing est fréquemment utilisée pour sa clarté et le fait qu'elle est l'imagerie par défaut dans l'éditeur OpenStreetMap iD; Maxar est moins claire mais est l'imagerie la plus récente disponible gratuitement.
 
-<img src="/img/bing_v_maxar.png" style="zoom:67%;" />
+<img src="/img/bing_v_maxar.png" style="max-height:240px" />
 
 La plus grande difficulté dans l'utilisation des imageries est la gestion de leur géoréférencement. Les règles générales d'OpenStreetMap s'appliquent: utiliser des tracés GPS pour bien aligner l'imagerie, aligner avec les données existantes [^1]. Il est également fréquent de devoir réaligner certaines imageries quand on change de lieu car celles-ci ne se superposent pas à l'imagerie de référence ou aux données existantes.
 
@@ -57,13 +57,13 @@ Consignes:
 - Commencer par le côté qui est collé à un autre bâtiment pour éviter une superposition des bâtiments
 - Maintenir la touche ctrl en dessinant pour désactiver l'accrochage automatique (utile pour des bâtiments très rapprochés mais qui ne se collent pas)
 
-<img src="/img/glued_buildings.gif" style="zoom: 50%;" />
+<img src="/img/glued_buildings.gif" style="max-height:210px" />
 
 ### Extrusion
 
 L'outil extrusion permet d'extruder (avancer/reculer) des facettes de polygones, permettant d'obtenir rapidement des bâtiments de formes orthogonales plus complexes. C'est un outil intégré à JOSM, accessible via le raccourci "X".
 
-<img src="/img/extrusion.gif" style="zoom: 67%;" />
+<img src="/img/extrusion.gif" style="max-height:210px" />
 
 ## Cartographier les voies de communication
 
@@ -73,14 +73,14 @@ La donnée des voies de communication est fondamentale dans toute analyse sur l'
 
 Étant des entités OpenStreetMap linéaires, les routes et les chemins devraient être dessinés suivant leur axe central. Les règles de bonne pratique d’OpenStreetMap s’appliquent: dessiner une route rectiligne avec une ligne droite (sans nœuds intermédiaires), lisser les virages en utilisant un nombre approprié de nœuds pour ne pas avoir des angles prononcés [^2].
 
-<img src="/img/road_nodes.png" style="zoom: 67%;" />
+<img src="/img/road_nodes.png" style="max-height:240px" />
 
 Éviter de:
 
 - accrocher une route aux bordures des bâtiments
 - accrocher une route à une zone d'occupation du sol (champs de culture, plan d'eau, forêt, zone résidentielle...)
 
-<img src="/img/road_ricefield.png" style="zoom: 67%;" />
+<img src="/img/road_ricefield.png" style="max-height:240px" />
 
 Essayer de:
 
@@ -121,13 +121,13 @@ Dans la plupart des cas, on aura: des ruisseaux, des fossés, des rivières et p
 
 Attribut: `waterway=stream`. Les ruisseaux sont de petits cours d'eau peu profonds et assez étroits, partant d'une source d'eau naturelle. On peut probablement sauter par-dessus. Quand il passe par une zone de rizières, un ruisseau peut être artificiellement canalisé et sera ainsi cartographié comme un **fossé**.
 
-<img src="/img/stream.png" style="zoom: 67%;" />
+<img src="/img/stream.png" style="max-height:240px" />
 
 #### Les fossés <!-- omit in toc -->
 
 Attribut: `waterway=ditch`. Un fossé est une petite dépression creusée (naturellement ou artificiellement) qui canalise l'eau, utilisée pour drainer les terres environnantes ou pour évacuer les eaux pluviales. Ces fossés se rencontrent souvent sur les bordures des parcelles de rizières.
 
-<img src="/img/ditch.png" style="zoom:67%;" />
+<img src="/img/ditch.png" style="max-height:240px" />
 
 #### Les rivières <!-- omit in toc -->
 
@@ -135,7 +135,7 @@ Attribut: `waterway=river`. Les rivières sont des cours d'eau plus développés
 
 Quand une rivière est assez étroite (moins de 12 mètres de largeur), on la cartographie avec une ligne passant par ses parties les plus profondes. Quand la rivière est assez large (plus de 12 mètres de largeur), on met en plus de la ligne un polygone (ou un multipolygone s'il y a des îlots) délimitant l'**étendue de l'eau** et portant les attributs `natural=water` et `water=river` [^4].
 
-<img src="/img/river_mapping.png" style="zoom:67%;" />
+<img src="/img/river_mapping.png" style="max-height:240px" />
 
 #### Les canaux <!-- omit in toc -->
 
@@ -149,7 +149,7 @@ Les plans d'eau et les zones humides se cartographient évidemment avec un polyg
 
 Les surfaces d'eau naturelle peuvent être une rivière, un étang, un lac, un lac artificiel... L'étendue d'eau est dessinée avec un polygone avec l'attribut `natural=water`. Le type du plan d'eau, si connu, peut être précisé avec la clé `water=*` dont la valeur est  `river` pour une rivière, `pond` pour un étang, `lake` pour un lac, `reservoir` pour un lac artificiel. Voir [la page wiki de la clé `water=*`](https://wiki.openstreetmap.org/wiki/FR:Key:water)  pour d'autres valeurs.
 
-<img src="/img/water_bodies.png" style="zoom:67%;" />
+<img src="/img/water_bodies.png" style="max-height:260px" />
 
 #### Les zones humides <!-- omit in toc -->
 
@@ -161,7 +161,7 @@ Les zones humides sont des zones naturellement inondées ou avec un sol gorgé d
 | Mangrove | `natural=wetland` + `wetland=mangrove` | Une zone humide à forêt de palétuviers sur la zone intertidale de la côte |
 | Marais   | `natural=wetland` + `wetland=marsh`    | Une zone humide à végétation aquatique ou herbacée           |
 
-<img src="/img/wetlands.png" style="zoom:67%;" />
+<img src="/img/wetlands.png" style="max-height:260px" />
 
 Presque partout à Madagascar, des zones humides sont converties en rizières. Les rizières se démarquent sur l'imagerie par des traits de parcelles. Les zones de rizières sont cartographiées avec un polygone (ou multipolygone) ayant comme attributs `landuse=farmland` et `crop=rice`.
 
@@ -177,7 +177,7 @@ Si le cours d'eau est assez étroit, on met sur **un nœud commun** entre la lig
 
 Si le cours d'eau est assez développé et on a dessiné l'étendue de l'eau avec un polygone, l'attribut `ford=yes` sera mis sur la section de route qui traverse le polygone de la rivière et ayant toujours un nœud en commun avec la ligne de cours d'eau au milieu du polygone (la section de ligne `highway=*` + `ford=yes` doit ainsi avoir au moins 3 nœuds) [^5].
 
-<img src="/img/ford_mapping.png" style="zoom:67%;" />
+<img src="/img/ford_mapping.png" style="max-height:240px" />
 
 ### Un pont
 
@@ -185,17 +185,17 @@ Un pont est une structure de traversée permettant au véhicule ou au piéton de
 
 Un pont **ne partage pas de nœud** avec la rivière au-dessus de laquelle il passe.
 
-<img src="/img/bridge_mapping.png" style="zoom:67%;" />
+<img src="/img/bridge_mapping.png" style="max-height:240px" />
 
 ### Une traversée par bac ou par bateau
 
 Un bac est un type de bateau à fond plat utilisé pour traverser l’eau. Généralement il transporte les véhicules et leurs passagers d’une rive vers l’autre d’une grande rivière (ou d’un lac). Parfois des bateaux ou des pirogues assurent aussi la même fonction. Les bacs et bateaux étant toujours présents sur les lieux, ils sont souvent repérables sur l'imagerie.
 
-<img src="/img/boats.png" style="zoom:67%;" />
+<img src="/img/boats.png" style="max-height:520px" />
 
 Le trajet du bac ou du bateau à travers la rivière est cartographié avec une ligne portant l'attribut `route=ferry`. Cette ligne du trajet ne devrait pas partager de nœud avec la ligne de la rivière. Le premier nœud et le dernier nœud du trajet devraient être cartographiés comme des terminaux de ferry (`amenity=ferry_terminal`) [^6].
 
-<img src="/img/ferry_mapping.png" style="zoom:67%;" />
+<img src="/img/ferry_mapping.png" style="max-height:260px" />
 
 ## À propos de MapWithAI
 
@@ -207,7 +207,7 @@ L'extension MapWithAI pour JOSM permet d'ajouter des routes et des chemins déte
 - Ajuster le tracé des chemins au besoin (utiliser l'outil "W" ou déplacer manuellement les nœuds)
 - Vérifier que tous les segments sont connectés: MapWithAI laisse souvent ces très petits écarts entre les segments. Il faut y zoomer très près pour voir. On peut aussi le tester avec la sélection des chemins adjacents (sélectionner un chemin puis Shift + "E": si le chemin à côté ne se sélectionne pas, ça n'est pas connecté).
 
-<img src="/img/mapwithai_gap.gif" />
+<img src="/img/mapwithai_gap.gif" style="max-height:210px" />
 
 Il faut surtout vérifier l'intersection avec les cours d'eau car MapWithAI ne détecte pas les ponts. Il mettra probablement un nœud à l'intersection où il pourrait y avoir un pont.
 
@@ -221,7 +221,7 @@ Utilisations:
 
 On a parfois besoin de fusionner un multipolygone avec un polygone ou avec un autre multipolygone. Ce sera par exemple le cas quand un vaste élément surfacique s'étend sur plusieurs taches (carreaux) cartographiques.
 
-<img src="/img/to_merge.png" style="zoom:67%;" />
+<img src="/img/to_merge.png" style="max-height:260px" />
 
 Quand on fusionne les deux chemins adjacents (dont l'un est une limite extérieure de multipolygone), il y a des conflits à régler [^7]. Il va falloir:
 
@@ -230,7 +230,7 @@ Quand on fusionne les deux chemins adjacents (dont l'un est une limite extérieu
 
 Dans le cas de deux limites extérieures de multipolygones adjacents (qui n'ont ainsi pas d'attributs), il va tout simplement falloir conserver les deux multipolygones pour avoir toutes leurs limites intérieures.
 
-<img src="/img/mp_merge.gif" style="zoom:67%;" />
+<img src="/img/mp_merge.gif" style="max-height:260px" />
 
 Voir aussi la [page wiki](https://wiki.openstreetmap.org/wiki/FR:Relation:multipolygon) des multipolygones.
 
