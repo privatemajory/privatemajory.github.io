@@ -107,6 +107,8 @@ Logiquement, une route quelconque devrait sortir quelque part vers une route de 
 
 À partir d’une imagerie, il est souvent difficile de déduire l’importance d’une route, si c’est une route mineure ou une route tertiaire. Il est également difficile de voir si la voie est carrossable ou non, la largeur à elle seule ne permet pas de le déduire (un chemin peut être aussi large pour contenir une voiture mais n’est pas empruntable à voiture dans la vérité). Les rues des zones résidentielles et les pistes quant à elles sont relativement plus faciles à déduire.
 
+<img src="/img/highway_tagging_map.png" style="max-height:520px">
+
 ## Cartographier les éléments de l'hydrographie
 
 ### Les cours d'eau
