@@ -18,6 +18,7 @@ Les illustrations, s'ils ne sont pas de mon propre travail, sont de Wikimedia Co
 - [Cartographier les voies de communication](#cartographier-les-voies-de-communication)
   - [Dessiner correctement les chemins et les routes](#dessiner-correctement-les-chemins-et-les-routes)
   - [Hiérarchiser correctement le réseau routier](#hiérarchiser-correctement-le-réseau-routier)
+  - [Veiller à la continuité de la voirie](#veiller-à-la-continuité-de-la-voirie)
 - [Cartographier les éléments de l'hydrographie](#cartographier-les-éléments-de-lhydrographie)
   - [Les cours d'eau](#les-cours-deau)
   - [Les plans d'eau et les zones humides](#les-plans-deau-et-les-zones-humides)
@@ -55,7 +56,7 @@ Consignes:
 
 - Suivre la longueur du bâtiment puis extruder suivant la largeur
 - Commencer par le côté qui est collé à un autre bâtiment pour éviter une superposition des bâtiments
-- Maintenir la touche ctrl en dessinant pour désactiver l'accrochage automatique (utile pour des bâtiments très rapprochés mais qui ne se collent pas)
+- Maintenir la touche Ctrl en dessinant pour désactiver l'accrochage automatique (utile pour des bâtiments très rapprochés mais qui ne se collent pas)
 
 <img src="/img/glued_buildings.gif" style="max-height:210px" />
 
@@ -108,6 +109,21 @@ Logiquement, une route quelconque devrait sortir quelque part vers une route de 
 À partir d’une imagerie, il est souvent difficile de déduire l’importance d’une route, si c’est une route mineure ou une route tertiaire. Il est également difficile de voir si la voie est carrossable ou non, la largeur à elle seule ne permet pas de le déduire (un chemin peut être aussi large pour contenir une voiture mais n’est pas empruntable à voiture dans la vérité). Les rues des zones résidentielles et les pistes quant à elles sont relativement plus faciles à déduire.
 
 <img src="/img/highway_tagging_map.png" style="max-height:520px">
+
+### Veiller à la continuité de la voirie
+
+Les îlots sont des groupes de voies qui ne sont pas connectées au réseau routier principal. Leur présence pose beaucoup de problèmes aux utilisateurs des données. L'existence des voies non connectés peut engendrer de mauvais résultats d'analyses se basent sur les données vectorielles des voies de communication: isochrones, routage, coûts de voyages...
+
+La vérification de la connectivité des voies devrait se faire sur une zone assez vaste (commune ou district). Une façon de la faire dans JOSM consiste à:
+
+- télécharger progressivement les données de la commune en incluant un certain tampon en dehors de la commune
+- appliquer un filtre pour n'afficher que les voies de communication (`highway=*`)
+- sélectionner un segment du réseau routier principal desservant la commune
+- sélectionner progressivement tous les chemins adjacents en faisant plusieurs fois un Shift + "E" jusqu'à ce que des chemins ne se sélectionnent plus. Les chemins sélectionnés sont en rouge et ce qui reste n'est donc pas connecté au réseau routier principal.
+- choisir un îlot, essayer de le connecter au réseau principal, puis repéter la sélection progressive à partir du réseau principal pour voir d'autres îlots.
+
+<img src="/img/highway_filter.png" style="max-height:240px">
+<img src="/img/way_islands.png" style="max-height:340px">
 
 ## Cartographier les éléments de l'hydrographie
 
@@ -203,8 +219,8 @@ Le trajet du bac ou du bateau à travers la rivière est cartographié avec une 
 
 L'extension MapWithAI pour JOSM permet d'ajouter des routes et des chemins détectés par intelligence artificielle. Les étapes de manipulation à suivre sont:
 
-- Télécharger les données MapWithAI de la zone où les données OSM ont été téléchargées au préalable (ctrl + "R")
-- Avec MapWithAI comme calque active, sélectionner les segments de routes à ajouter, puis ctrl + "A" va les ajouter au calque de données OSM
+- Télécharger les données MapWithAI de la zone où les données OSM ont été téléchargées au préalable (Ctrl + "R")
+- Avec MapWithAI comme calque active, sélectionner les segments de routes à ajouter, puis Ctrl + "A" va les ajouter au calque de données OSM
 - Réctifier et/ou compléter les attributs
 - Ajuster le tracé des chemins au besoin (utiliser l'outil "W" ou déplacer manuellement les nœuds)
 - Vérifier que tous les segments sont connectés: MapWithAI laisse souvent ces très petits écarts entre les segments. Il faut y zoomer très près pour voir. On peut aussi le tester avec la sélection des chemins adjacents (sélectionner un chemin puis Shift + "E": si le chemin à côté ne se sélectionne pas, ça n'est pas connecté).
