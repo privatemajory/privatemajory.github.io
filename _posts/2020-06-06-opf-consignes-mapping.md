@@ -123,6 +123,7 @@ La vérification de la connectivité des voies devrait se faire sur une zone ass
 - choisir un îlot, essayer de le connecter au réseau principal, puis repéter la sélection progressive à partir du réseau principal pour voir d'autres îlots.
 
 <img src="/img/highway_filter.png" style="max-height:240px">
+
 <img src="/img/way_islands.png" style="max-height:340px">
 
 ## Cartographier les éléments de l'hydrographie
