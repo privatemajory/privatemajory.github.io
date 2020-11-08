@@ -87,6 +87,7 @@ Essayer de:
 
 -  connecter toute section de route et de chemin au réseau routier général, c’est-à-dire que ce chemin ou cette route devrait à un certain moment aboutir à la route principale desservant la commune/la région/le pays
 - connecter les routes de part et d'autre d'un village/hameau
+- continuer les chemins à travers les rizières, suivant les diguettes, si cela semble évident
 - déduire si une section de chemin ou de route passe à travers une forêt mais cette section n’est pas visible avec l’imagerie. Si oui, tracer grossièrement la partie traversant la forêt
 
 ### Hiérarchiser correctement le réseau routier
