@@ -15,6 +15,7 @@ Les illustrations, s'ils ne sont pas de mon propre travail, sont de Wikimedia Co
 - [Cartographier les bâtiments](#cartographier-les-bâtiments)
   - [Building tools](#building-tools)
   - [Extrusion](#extrusion)
+- [Identifier les hameaux et les villages](#identifier-les-hameaux-et-les-villages)
 - [Cartographier les voies de communication](#cartographier-les-voies-de-communication)
   - [Dessiner correctement les chemins et les routes](#dessiner-correctement-les-chemins-et-les-routes)
   - [Hiérarchiser correctement le réseau routier](#hiérarchiser-correctement-le-réseau-routier)
@@ -65,6 +66,16 @@ Consignes:
 L'outil extrusion permet d'extruder (avancer/reculer) des facettes de polygones, permettant d'obtenir rapidement des bâtiments de formes orthogonales plus complexes. C'est un outil intégré à JOSM, accessible via le raccourci "X".
 
 <img src="/img/extrusion.gif" style="max-height:210px" />
+
+## Identifier les hameaux et les villages
+
+Un village est une agglomération rurale proposant des services de première nécessité. Généralement on y trouve plusieurs magasins, un marché, des services administratifs, des services de soin (CSB). 
+
+Un hameau est une petite agglomération rurale qui dépend d'un village ou d'une ville proche pour les services de premières nécessité. Généralement in n'y trouve qu'une ou deux ou trois épiceries.
+
+Les fonctions de la localité ne peuvent pas être définies à l'aide d'une imagerie, mais certains indicateurs peuvent permettre d'identifier un village: la taille de l'agglomération, présence de grands bâtiments ou d'un marché, structuration du réseau routier...
+
+Pour chaque hameau ou village, un noeud avec l'attribut `place=hamlet` ou `place=village` est à placer sur le centre fonctionnel (sur la place centrale ou le marché principal, devant la mairie, devant une église...). Le nom sera rajouté prochainement par une cartographie sur terrain.
 
 ## Cartographier les voies de communication
 
