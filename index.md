@@ -7,7 +7,7 @@ layout: home
 
 <div style="width: 320px; margin: auto; text-align: center; margin-bottom: 20px">
   <h2>Hello 👋</h2>
-  Welcome to this page, where I share some maps and articles.
+  Welcome to this page, where I share some nice maps and instructive blog posts.
 </div>
 
 <div id="slider" style="margin: auto; margin-bottom: 20px">
@@ -23,6 +23,6 @@ layout: home
 </div>
 
 <div id="buttons_1" style="margin: auto; width: 320px; text-align: center; display: block">
-  <a href="/gallery" class="pageButton"><span class="buttonText"> View my gallery </span></a>
-  <a href="/blog" class="pageButton"><span class="buttonText"> Visit my blog </span></a>
+  <a href="/gallery" class="pageButton"><span class="buttonText"> View some maps </span></a>
+  <a href="/blog" class="pageButton"><span class="buttonText"> Learn something </span></a>
 </div>
