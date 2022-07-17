@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{%- include head.html -%}
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin|PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="/css/justifiedGallery.min.css" rel="stylesheet">
+  <link href="/slider/ideal-image-slider.css" rel="stylesheet">
+  <link href="/slider/themes/default/default.css" rel="stylesheet">
+  <script src="/js/jquery-3.4.1.min.js"></script>
+  <script src="/js/jquery.justifiedGallery.min.js"></script>
+</head>
+
+<body>
+
+  {%- include header.html -%}
+
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      {{ content }}
+    </div>
+  </main>
+
+  {%- include footer.html -%}
+
+  <script src="/slider/ideal-image-slider.js"></script>
+
+</body>
+
+<script>
+  $("#imggallery").justifiedGallery({
+    rowHeight: 160,
+    margins: 6,
+    randomize: true,
+    rtl: true
+  });
+
+  var slider = new IdealImageSlider.Slider({
+    selector: '#slider',
+    height: 160,
+    interval: 3000,
+    transitionDuration: 1000
+  });
+
+  slider.start();
+</script>
+
+</html>

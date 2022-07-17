@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+// Define defaults for each variable.
+
+$base-font-family: 'Libre Franklin',
+serif;
+$base-font-size: 13px !default;
+$base-font-weight: 400 !default;
+$small-font-size: $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit: 30px !default;
+
+$text-color: #111 !default;
+$background-color: #fdfdfd !default;
+$brand-color: #2a7ae2 !default;
+
+$grey-color: #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark: darken($grey-color, 25%) !default;
+
+$table-text-align: left !default;
+
+// Width of the content area
+$content-width: 700px !default;
+
+$on-palm: 600px !default;
+$on-laptop: 700px !default;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+// Import partials.
+@import "minima/base",
+"minima/layout",
+"minima/syntax-highlighting"
+;
+
+body {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+.site-title,
+.site-title:visited,
+nav .page-link,
+.page-link:visited {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0;
+  color: $text-color;
+  font-weight: normal;
+}
+
+header,
+footer,
+.page-content {
+  background-color: #f8f8f8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+code {
+  font-family: monospace;
+}
+
+.post-content table, .post-content p, .post-content ul {
+  font-family: 'PT Serif', serif;
+}
+
+p {
+  text-align: justify;
+}
+
+.centeredcontent {
+  text-align: center;
+}
+
+.pageButton {
+  background-color: #1d8dca;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: 'Libre Franklin';
+  font-size: 13px;
+  padding: 4px 8px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #154682;
+  margin: 2px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.pageButton:hover {
+  background-color: #0b5f9b;
+  text-decoration: none;
+}
+
+.pageButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.buttonText {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#slider {
+  width: 320px;
+}
+
+form.contact-form {
+  width: 480px;
+}
+
+form.contact-form input[type="text"],
+form.contact-form textarea[type="text"] {
+  width: 100%;
+  vertical-align: middle;
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  font-family: monospace;
+  font-weight: lighter;
+  font-size: 1em;
+  border-style: solid;
+  border-color: $grey-color-light;
+  outline-color: #2e83e6;
+  border-width: 1px;
+  border-radius: 3px;
+  transition: box-shadow .2s ease;
+}
+
+.flink u {
+  color: $grey-color;
+}
