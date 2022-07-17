@@ -75,7 +75,7 @@ Un hameau est une petite agglomération rurale qui dépend d'un village ou d'une
 
 Les fonctions de la localité ne peuvent pas être définies à l'aide d'une imagerie, mais certains indicateurs peuvent permettre d'identifier un village: la taille de l'agglomération, présence de grands bâtiments ou d'un marché, structuration du réseau routier...
 
-Pour chaque hameau ou village, un noeud avec l'attribut `place=hamlet` ou `place=village` est à placer sur le centre fonctionnel (sur la place centrale ou le marché principal, devant la mairie, devant une église...). Le nom sera rajouté prochainement par une cartographie sur terrain.
+Pour chaque hameau ou village, un nœud avec l'attribut `place=hamlet` ou `place=village` est à placer sur le centre fonctionnel (sur la place centrale ou le marché principal, devant la mairie, devant une église...). Le nom sera rajouté prochainement par une cartographie sur terrain.
 
 ## Cartographier les voies de communication
 
@@ -132,7 +132,7 @@ La vérification de la connectivité des voies devrait se faire sur une zone ass
 - appliquer un filtre pour n'afficher que les voies de communication (`highway=*`)
 - sélectionner un segment du réseau routier principal desservant la commune
 - sélectionner progressivement tous les chemins adjacents en faisant plusieurs fois un Shift + "E" jusqu'à ce que des chemins ne se sélectionnent plus. Les chemins sélectionnés sont en rouge et ce qui reste n'est donc pas connecté au réseau routier principal.
-- choisir un îlot, essayer de le connecter au réseau principal, puis repéter la sélection progressive à partir du réseau principal pour voir d'autres îlots.
+- choisir un îlot, essayer de le connecter au réseau principal, puis répéter la sélection progressive à partir du réseau principal pour voir d'autres îlots.
 
 <img src="/img/highway_filter.png" style="max-height:240px">
 
@@ -218,6 +218,14 @@ Un pont **ne partage pas de nœud** avec la rivière au-dessus de laquelle il pa
 
 <img src="/img/bridge_mapping.png" style="max-height:240px" />
 
+### Une buse
+
+Une buse est une structure qui canalise l'eau pour la permettre de passer sous une route ou un chemin de fer, souvent sur une digue. La section de cours d'eau qui passe par une buse devrait avoir les attributs supplémentaires `tunnel=culvert` (buse) et `layer=-1` (au-dessous du niveau du sol, de la route,de la digue).
+
+Puisqu'elles ne se trouvent pas au même niveau, la buse et la voie sous laquelle elle passe **n'ont pas de nœud commun**.
+
+<img src="/img/culvert.png" style="max-height:240px" />
+
 ### Une traversée par bac ou par bateau
 
 Un bac est un type de bateau à fond plat utilisé pour traverser l’eau. Généralement il transporte les véhicules et leurs passagers d’une rive vers l’autre d’une grande rivière (ou d’un lac). Parfois des bateaux ou des pirogues assurent aussi la même fonction. Les bacs et bateaux étant toujours présents sur les lieux, ils sont souvent repérables sur l'imagerie.
@@ -234,7 +242,7 @@ L'extension MapWithAI pour JOSM permet d'ajouter des routes et des chemins déte
 
 - Télécharger les données MapWithAI de la zone où les données OSM ont été téléchargées au préalable (Ctrl + "R")
 - Avec MapWithAI comme calque active, sélectionner les segments de routes à ajouter, puis Ctrl + "A" va les ajouter au calque de données OSM
-- Réctifier et/ou compléter les attributs
+- Rectifier et/ou compléter les attributs
 - Ajuster le tracé des chemins au besoin (utiliser l'outil "W" ou déplacer manuellement les nœuds)
 - Vérifier que tous les segments sont connectés: MapWithAI laisse souvent ces très petits écarts entre les segments. Il faut y zoomer très près pour voir. On peut aussi le tester avec la sélection des chemins adjacents (sélectionner un chemin puis Shift + "E": si le chemin à côté ne se sélectionne pas, ça n'est pas connecté).
 
@@ -247,7 +255,7 @@ Il faut surtout vérifier l'intersection avec les cours d'eau car MapWithAI ne d
 Utilisations:
 
 - pour cartographier des surfaces ayant un ou plusieurs creux, comme les étendues de rivières ayant des ilots à l'intérieur.
-- pour des éléménts surfaciques (sans creux) très vastes, comme un grand lac ou un corridor forestier: la limite dans OSM est de 2000 nœuds par chemin, au-delà il va falloir utiliser un multipolygone à plusieurs chemins comme contours extérieurs. Exemple dans OpenStreetMap: [cette forêt](https://www.openstreetmap.org/relation/7065900).
+- pour des éléments surfaciques (sans creux) très vastes, comme un grand lac ou un corridor forestier: la limite dans OSM est de 2000 nœuds par chemin, au-delà il va falloir utiliser un multipolygone à plusieurs chemins comme contours extérieurs. Exemple dans OpenStreetMap: [cette forêt](https://www.openstreetmap.org/relation/7065900).
 - pour cartographier des éléments à contours extérieurs disjoints. Exemple dans OpenStreetMap: [Harvard University](https://www.openstreetmap.org/relation/2415825).
 
 On a parfois besoin de fusionner un multipolygone avec un polygone ou avec un autre multipolygone. Ce sera par exemple le cas quand un vaste élément surfacique s'étend sur plusieurs taches (carreaux) cartographiques.
