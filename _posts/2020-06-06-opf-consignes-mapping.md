@@ -26,6 +26,7 @@ Les illustrations, s'ils ne sont pas de mon propre travail, sont de Wikimedia Co
 - [Cartographier l’intersection route — cours d’eau](#cartographier-lintersection-route--cours-deau)
   - [Un gué](#un-gué)
   - [Un pont](#un-pont)
+  - [Une buse](#une-buse)
   - [Une traversée par bac ou par bateau](#une-traversée-par-bac-ou-par-bateau)
 - [À propos de MapWithAI](#à-propos-de-mapwithai)
 - [À propos des multipolygones](#à-propos-des-multipolygones)
