@@ -18,3 +18,4 @@
 2019-10-08_qgis_antananarivo_shortest_route_1.png
 2019-10-26_b3d_fianarantsoa_part_1.png
 2020-04-14_b3d_lalangina_relief.png
+2022-07-18_qgis_mdg_nobody_lives_here.png

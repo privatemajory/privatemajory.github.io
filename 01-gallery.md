@@ -43,6 +43,8 @@ images:
     caption: 3D map of Fianarantsoa
   - image: 2020-04-14_b3d_lalangina_relief.png
     caption: Map of Lalangina
+  - image: 2022-07-18_qgis_mdg_nobody_lives_here.png
+    caption: Madagascar nobody lives here
     
 ---
 
