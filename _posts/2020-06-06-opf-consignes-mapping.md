@@ -70,13 +70,15 @@ L'outil extrusion permet d'extruder (avancer/reculer) des facettes de polygones,
 
 ## Identifier les hameaux et les villages
 
-Un village est une agglomération rurale proposant des services de première nécessité. Généralement on y trouve plusieurs magasins, un marché, des services administratifs, des services de soin (CSB). 
+Un village est une agglomération rurale proposant des services de première nécessité. Généralement on y trouve plusieurs magasins, un marché, des services administratifs, des services de soin (CSB).
 
-Un hameau est une petite agglomération rurale qui dépend d'un village ou d'une ville proche pour les services de premières nécessité. Généralement in n'y trouve qu'une ou deux ou trois épiceries.
+Un hameau est une petite agglomération rurale qui dépend d'un village ou d'une ville proche pour les services de premières nécessité.
 
 Les fonctions de la localité ne peuvent pas être définies à l'aide d'une imagerie, mais certains indicateurs peuvent permettre d'identifier un village: la taille de l'agglomération, présence de grands bâtiments ou d'un marché, structuration du réseau routier...
 
-Pour chaque hameau ou village, un nœud avec l'attribut `place=hamlet` ou `place=village` est à placer sur le centre fonctionnel (sur la place centrale ou le marché principal, devant la mairie, devant une église...). Le nom sera rajouté prochainement par une cartographie sur terrain.
+Pour chaque hameau ou village, un nœud avec l'attribut `place=hamlet` ou `place=village` est à placer sur le centre (l'endroit qui semble le plus important de l'agglomération: sur la place centrale ou le marché principal, devant la mairie, devant une église...). Le nom sera rajouté prochainement à partir des données de terrain.
+
+<img src="/img/village_mapping.png" style="max-height:290px" />
 
 ## Cartographier les voies de communication
 
@@ -125,7 +127,7 @@ Logiquement, une route quelconque devrait sortir quelque part vers une route de 
 
 ### Veiller à la continuité de la voirie
 
-Les îlots sont des groupes de voies qui ne sont pas connectées au réseau routier principal. Leur présence pose beaucoup de problèmes aux utilisateurs des données. L'existence des voies non connectés peut engendrer de mauvais résultats d'analyses se basent sur les données vectorielles des voies de communication: isochrones, routage, coûts de voyages...
+Les îlots sont des groupes de voies qui ne sont pas connectées au réseau routier principal. Leur présence pose beaucoup de problèmes aux utilisateurs des données. L'existence des voies non connectées peut engendrer de mauvais résultats d'analyses se basent sur les données vectorielles des voies de communication: isochrones, routage, coûts de voyages...
 
 La vérification de la connectivité des voies devrait se faire sur une zone assez vaste (commune ou district). Une façon de la faire dans JOSM consiste à:
 
@@ -265,7 +267,7 @@ On a parfois besoin de fusionner un multipolygone avec un polygone ou avec un au
 
 Quand on fusionne les deux chemins adjacents (dont l'un est une limite extérieure de multipolygone), il y a des conflits à régler [^7]. Il va falloir:
 
-- choisir les tags à conserver depuis les deux chemins → Comme le nouveau chemin va être la limite extérieure d'un multipolygone, on ne garde aucun attribut, sinon on finira avec à la fois le chemin extérieur et la relation elle même gardant les mêmes attributs `landuse=farmland` + `crop=rice`, ce qui serait une erreur de cartographie.
+- choisir les tags à conserver depuis les deux chemins → Comme le nouveau chemin va être la limite extérieure d'un multipolygone, on ne garde aucun attribut, sinon on finira avec à la fois le chemin extérieur et la relation elle-même gardant les mêmes attributs `landuse=farmland` + `crop=rice`, ce qui serait une erreur de cartographie.
 - choisir si le multipolygone auquel appartient un des chemins est à conserver ou non → On conserve le multipolygone pour garder les limites intérieures.
 
 Dans le cas de deux limites extérieures de multipolygones adjacents (qui n'ont ainsi pas d'attributs), il va tout simplement falloir conserver les deux multipolygones pour avoir toutes leurs limites intérieures.
