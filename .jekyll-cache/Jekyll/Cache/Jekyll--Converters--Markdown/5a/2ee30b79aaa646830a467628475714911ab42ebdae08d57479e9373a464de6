@@ -1,0 +1,92 @@
+I"p<p>Road slopes are an important factor to consider when estimating trip costs and durations. GPS applications sometimes show altitude graphs along itinerary, and consider elevation in trip calculations. Android application <a href="https://osmand.net/">OSMAnd</a> is one example. In this post I will share one method I have used to fetch road slope data from a digital elevation model (DEM). From the data I could make a slope-along-road graph such as on OSMAnd.</p>
+
+<p>What is needed:</p>
+<ul>
+  <li><a href="https://qgis.org/en/site/">QGIS</a> software with <strong>qProf</strong> plugin enabled</li>
+  <li>some road data in a vector format</li>
+  <li>a DEM covering the road data</li>
+</ul>
+
+<p>In this article, I will use as an example the Madagascan Route Nationale 2 (RN 2) from Antananarivo to Toamasina.</p>
+
+<p><br /></p>
+<p class="centeredcontent"><img src="/img/rn2_profile.png" alt="Elevation and slope along the RN 2" /><br /><br />
+Elevation and slope along the RN 2. A graph created with the wonderful <a href="https://d3js.org">D3.js</a>.</p>
+<p><br /></p>
+
+<h2 id="preparing-the-data">Preparing the data</h2>
+
+<p>My elevation data is a Shuttle Radar Topographic Mission (SRTM) DEM with 30 metres spatial resolution. Multiple tiles have been merged to cover the whole RN 2.</p>
+
+<p>My road data has been retrieved from OpenStreetMap. All parts of the RN 2 have been downloaded using <a href="https://overpass-turbo.eu/?q=LyoKVGhpcyBoYcSGYmVlbiBnxI1lcmF0ZWQgYnkgdGhlIG92xJJwxIlzLXR1cmJvIHdpemFyZC7EgsSdxJ9yaWdpbmFsIHNlxLBjaMSsxIk6CsOiwoDCnHR5cGU6d2HEmmFuxJfEhGdoxZB5PSogxZPEl3JlZj0iTiAyIiDEuiBNYWRhZ8SJY8SwxYjCnQoqLwpbb3V0Ompzb25dW3RpbWXFu8W9MjVdOwovLyBmZXTFgsWdxaBhIMWIwpzFrMWuxbBzxbJyxbTEm8SrxL_FgcWDxLoKe3vEkG9jb2RlQcaYOsadxa_FscSwfX0tPi7GpnLFgsazxYDGjsaQxI_ElMSdciDFoHN1bHRzCigKICDHhXF1xJLEmsSjcnTGkm9yOsaaxYnFlsWYxZHFm8WdxZTHisWhxaPFpcWnxbTHk8WEeVsix6TFmSLGgyLFoGYix6zFpse3KMSwxYDGvsWAx4Box4JhKcaOyInGj8aRcMS3bsedx4vHjcePCsaJxJjGsHnGjj7GjsiWc2tlxL1xdDs&amp;c=Bdgfd8WPKJ">this Overpass query</a>.</p>
+
+<p>For things to work, I needed to edit my road data to get <strong>one profile line</strong> at the end, i.e a single feature line from Antananarivo to Toamasina. This means:</p>
+<ul>
+  <li>If the line is doubled at some parts (multiple lanes or roundabout), I needed to work it to make it a single line, for example by removing the lane going opposite.</li>
+  <li>There should be no gap</li>
+  <li>When I was sure there was no more doubled line and all the gaps were filled, I merged all parts to get a single feature line</li>
+</ul>
+
+<p><br /></p>
+<p class="centeredcontent"><img src="/img/doubled_road.gif" alt="Doubled road example" /><br /><br />
+Fixing a doubled road section.</p>
+<p><br /></p>
+
+<h2 id="resampling">Resampling</h2>
+
+<p>So now I have a line layer with a single feature of the RN 2 from Antananarivo to Toamasina. The next thing to do is choosing a sampling value for the profile. My distance is about 350 km so having a point every 100 m would be too much if I want to visualize it in a 16 cm wide graph (3500 data points!). For the final graph above, I used a sampling of 1 km (about 350 data points) and it looked good enough for a document size graph, without loosing too much detail.</p>
+
+<p>To resample the profile line, I generated points at equal distance of 1 km, then made a new line out of these points. For this, I used the <strong>Points along geometry</strong> processing tool in QGIS, setting the “distance” parameter at 1 km.</p>
+
+<p>To convert the points to a line, I used the <strong>Points to path</strong> processing tool, and used the distance column (created by the previous tool) for the “order field” parameter.</p>
+
+<p><br /></p>
+<p class="centeredcontent"><img src="/img/points_to_path.png" alt="Points to path processing tool" style="width: 90%; max-width: 480px" /><br /><br />
+The <em>Points to path</em> processing tool in QGIS.</p>
+<p><br /></p>
+
+<h2 id="generating-the-data">Generating the data</h2>
+
+<p>A this point, if it is not the case yet, my profile line (the one I generated from points) and my DEM should be in a projected coordinate system. This is to avoid unit problems in our data. I used the Tananarive (Paris) / Laborde Grid approximation (EPSG 29702), a commonly used projection for Madagascar.</p>
+
+<p>My next step is to generate a profile data from these in qProf, which can be called through the Plugins menu in QGIS’s main menu. When the plugin is called, a new qProf panel appears in QGIS’s user interface.</p>
+
+<p>Under “Topography” tab, within “DEM input” this is what I did:</p>
+<ul>
+  <li>under “Input DEMs” I selected my DEM</li>
+  <li>under “Input line” I checked “Line layer” and chose my previously resampled road layer. For the “Line densify distance” I entered my sampling value, 1000 meters.</li>
+  <li>I clicked on “Read source data”. At this point, qProf warns if the profile exceeds the 10 000 data points limit. This depends on the length of the line and the data points distance. For the sampling value I have chosen, I got 349 data points.</li>
+</ul>
+
+<p>Under “Export” tab and within “Topographic profile data”, I exported the data as a CSV text for further editing and visualization in D3.js.</p>
+
+<p><br /></p>
+<p class="centeredcontent"><img src="/img/qprof_interface.png" alt="Generating and exporting the profile data using qProf" style="width: 90%; max-width: 400px" /><br /><br />
+Generating and exporting the road profile data using qProf.</p>
+<p><br /></p>
+
+<p>The data I obtained from qProf had these fields:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">prof_id</code>: As I only had one feature in my line layer, it had only one value, 1</li>
+  <li><code class="language-plaintext highlighter-rouge">rec_id</code>: Different for each point data, so 1 to 349 in my case</li>
+  <li><code class="language-plaintext highlighter-rouge">x</code>: X coordinate</li>
+  <li><code class="language-plaintext highlighter-rouge">y</code>: Y coordinate</li>
+  <li><code class="language-plaintext highlighter-rouge">cds2d</code>: 2D (horizontal) distance along the profile</li>
+  <li><code class="language-plaintext highlighter-rouge">z</code>: Z coordinate (elevation)</li>
+  <li><code class="language-plaintext highlighter-rouge">cds3d</code>: 3D (with elevation) distance along the profile</li>
+  <li><code class="language-plaintext highlighter-rouge">dirslop</code>: Directional slope along the profile (from Antananarivo to Toamasina) in degrees. Positive values indicate ascents and negative values indicate descents.</li>
+</ul>
+
+<p>The CSV file can be downloaded from <a href="https://raw.githubusercontent.com/privatemajory/rnprof/master/data/profile_n2.csv">this link</a>.</p>
+
+<p>To get the graph at the beginning of this post, I simply plotted the Z coordinate (<code class="language-plaintext highlighter-rouge">z</code>) and the directional slope (<code class="language-plaintext highlighter-rouge">dirslop</code>) along the horizontal distance (<code class="language-plaintext highlighter-rouge">cds2d</code>), to get the elevation and directional slope graphs respectively. I put a live version of the graph with the 4 major roads of Madagascar on <a href="https://privatemajory.github.io/rnprof">this page</a>.</p>
+
+<h2 id="going-a-little-further">Going a little further</h2>
+
+<p>Using the same base but with a slightly different workflow, I could estimate the average street steepness in the major urban areas of Madagascar:</p>
+
+<p><br /></p>
+<p class="centeredcontent"><img src="/img/mdg_urban_road_slope_2.png" alt="Madagascar average road slope in major urban areas" style="width: 90%; max-width: 480px" /><br /><br />
+Average road slope in major urban areas of Madagascar.</p>
+<p><br /></p>
+:ET

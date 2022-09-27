@@ -1,0 +1,389 @@
+I"w<p>Cet article cerne des consignes et des exemples spécifiques pour aider ceux qui cartographient à distance dans le cadre de l’activité de cartographie d’Operation Fistula à Madagascar. Il couvre les éléments cartographiques suivants: les bâtiments, les voies de communication et l’hydrographie. Il est assumé que l’éditeur OpenStreetMap utilisé est JOSM.</p>
+
+<p>Les illustrations, s’ils ne sont pas de mon propre travail, sont de Wikimedia Commons.</p>
+
+<h2 id="sommaire-">Sommaire <!-- omit in toc --></h2>
+
+<ul>
+  <li><a href="#à-propos-de-limagerie">À propos de l’imagerie</a></li>
+  <li><a href="#cartographier-les-bâtiments">Cartographier les bâtiments</a>
+    <ul>
+      <li><a href="#building-tools">Building tools</a></li>
+      <li><a href="#extrusion">Extrusion</a></li>
+    </ul>
+  </li>
+  <li><a href="#identifier-les-hameaux-et-les-villages">Identifier les hameaux et les villages</a></li>
+  <li><a href="#cartographier-les-voies-de-communication">Cartographier les voies de communication</a>
+    <ul>
+      <li><a href="#dessiner-correctement-les-chemins-et-les-routes">Dessiner correctement les chemins et les routes</a></li>
+      <li><a href="#hiérarchiser-correctement-le-réseau-routier">Hiérarchiser correctement le réseau routier</a></li>
+      <li><a href="#veiller-à-la-continuité-de-la-voirie">Veiller à la continuité de la voirie</a></li>
+    </ul>
+  </li>
+  <li><a href="#cartographier-les-éléments-de-lhydrographie">Cartographier les éléments de l’hydrographie</a>
+    <ul>
+      <li><a href="#les-cours-deau">Les cours d’eau</a></li>
+      <li><a href="#les-plans-deau-et-les-zones-humides">Les plans d’eau et les zones humides</a></li>
+    </ul>
+  </li>
+  <li><a href="#cartographier-lintersection-route--cours-deau">Cartographier l’intersection route — cours d’eau</a>
+    <ul>
+      <li><a href="#un-gué">Un gué</a></li>
+      <li><a href="#un-pont">Un pont</a></li>
+      <li><a href="#une-buse">Une buse</a></li>
+      <li><a href="#une-traversée-par-bac-ou-par-bateau">Une traversée par bac ou par bateau</a></li>
+    </ul>
+  </li>
+  <li><a href="#à-propos-de-mapwithai">À propos de MapWithAI</a></li>
+  <li><a href="#à-propos-des-multipolygones">À propos des multipolygones</a></li>
+  <li><a href="#notes">Notes</a></li>
+</ul>
+
+<h2 id="à-propos-de-limagerie">À propos de l’imagerie</h2>
+
+<p>Plusieurs imageries sont disponibles pour fond, mais les plus utilisées pour Madagascar sont Bing Aerial Imagery et Maxar (Standard ou Premium) Imagery. Bing est fréquemment utilisée pour sa clarté et le fait qu’elle est l’imagerie par défaut dans l’éditeur OpenStreetMap iD; Maxar est moins claire mais est l’imagerie la plus récente disponible gratuitement.</p>
+
+<p><img src="/img/bing_v_maxar.png" style="max-height:240px" /></p>
+
+<p>La plus grande difficulté dans l’utilisation des imageries est la gestion de leur géoréférencement. Les règles générales d’OpenStreetMap s’appliquent: utiliser des tracés GPS pour bien aligner l’imagerie, aligner avec les données existantes <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>. Il est également fréquent de devoir réaligner certaines imageries quand on change de lieu car celles-ci ne se superposent pas à l’imagerie de référence ou aux données existantes.</p>
+
+<p>Au cours de la cartographie, il est pratique de basculer fréquemment entre diverses imageries pour mieux identifier les éléments à cartographier. Par exemple, si les contours d’un bâtiment ne sont pas du tout clairs dans l’imagerie Maxar, essayer de basculer vers Bing ou d’autres imageries. Dans JOSM, le raccourci par défaut pour rapidement basculer entre les imageries est la touche “~”. Ce raccourci peut être modifié dans les paramètres.</p>
+
+<h2 id="cartographier-les-bâtiments">Cartographier les bâtiments</h2>
+
+<p>L’ajout des bâtiments prend la majeure partie du temps dans une tache de cartographie. En dehors des agglomérations, ça prend beaucoup de temps d’identifier chaque petit bâtiment éparpillé. Dans les agglomérations où le bâti est dense, il faut beaucoup d’effort pour identifier et dessiner chacun des bâtiments collés entre eux.</p>
+
+<p>Diverses techniques pour dessiner correctement les bâtiments sont développées <a href="https://wiki.openstreetmap.org/wiki/Roof_modelling">ici</a>.</p>
+
+<p>Dans les régions Sava et Vatovavy Fitovinany, la plupart des bâtiments ont des formes rectangulaires ou en “L”. Ces formes de bâtiments peuvent être rapidement ajoutées à l’aide des outils <em>building tools</em> et extrusion de JOSM.</p>
+
+<h3 id="building-tools">Building tools</h3>
+
+<p>Dans JOSM <em>building tools</em> vient avec l’extension du même nom et s’active avec le raccourci “B”. Il permet de dessiner rapidement un bâtiment rectangulaire avec un attribut par défaut <code class="language-plaintext highlighter-rouge">building=yes</code>.</p>
+
+<p>Consignes:</p>
+
+<ul>
+  <li>Suivre la longueur du bâtiment puis extruder suivant la largeur</li>
+  <li>Commencer par le côté qui est collé à un autre bâtiment pour éviter une superposition des bâtiments</li>
+  <li>Maintenir la touche Ctrl en dessinant pour désactiver l’accrochage automatique (utile pour des bâtiments très rapprochés mais qui ne se collent pas)</li>
+</ul>
+
+<p><img src="/img/glued_buildings.gif" style="max-height:210px" /></p>
+
+<h3 id="extrusion">Extrusion</h3>
+
+<p>L’outil extrusion permet d’extruder (avancer/reculer) des facettes de polygones, permettant d’obtenir rapidement des bâtiments de formes orthogonales plus complexes. C’est un outil intégré à JOSM, accessible via le raccourci “X”.</p>
+
+<p><img src="/img/extrusion.gif" style="max-height:210px" /></p>
+
+<h2 id="identifier-les-hameaux-et-les-villages">Identifier les hameaux et les villages</h2>
+
+<p>Un village est une agglomération rurale proposant des services de première nécessité. Généralement on y trouve plusieurs magasins, un marché, des services administratifs, des services de soin (CSB).</p>
+
+<p>Un hameau est une petite agglomération rurale qui dépend d’un village ou d’une ville proche pour les services de premières nécessité.</p>
+
+<p>Les fonctions de la localité ne peuvent pas être définies à l’aide d’une imagerie, mais certains indicateurs peuvent permettre d’identifier un village: la taille de l’agglomération, présence de grands bâtiments ou d’un marché, structuration du réseau routier…</p>
+
+<p>Pour chaque hameau ou village, un nœud avec l’attribut <code class="language-plaintext highlighter-rouge">place=hamlet</code> ou <code class="language-plaintext highlighter-rouge">place=village</code> est à placer sur le centre (l’endroit qui semble le plus important de l’agglomération: sur la place centrale ou le marché principal, devant la mairie, devant une église…). Le nom sera rajouté prochainement à partir des données de terrain.</p>
+
+<p><img src="/img/village_mapping.png" style="max-height:290px" /></p>
+
+<h2 id="cartographier-les-voies-de-communication">Cartographier les voies de communication</h2>
+
+<p>La donnée des voies de communication est fondamentale dans toute analyse sur l’accessibilité de chaque localité: peut-on y aller, par quel moyen s’y rendre, combien de temps pour y arriver. Cette donnée joue un rôle important dans l’organisation des déplacements sur le terrain.  Ainsi il faut cartographier les voies de communication avec soin et vigilance.</p>
+
+<h3 id="dessiner-correctement-les-chemins-et-les-routes">Dessiner correctement les chemins et les routes</h3>
+
+<p>Étant des entités OpenStreetMap linéaires, les routes et les chemins devraient être dessinés suivant leur axe central. Les règles de bonne pratique d’OpenStreetMap s’appliquent: dessiner une route rectiligne avec une ligne droite (sans nœuds intermédiaires), lisser les virages en utilisant un nombre approprié de nœuds pour ne pas avoir des angles prononcés <sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>.</p>
+
+<p><img src="/img/road_nodes.png" style="max-height:240px" /></p>
+
+<p>Éviter de:</p>
+
+<ul>
+  <li>accrocher une route aux bordures des bâtiments</li>
+  <li>accrocher une route à une zone d’occupation du sol (champs de culture, plan d’eau, forêt, zone résidentielle…)</li>
+</ul>
+
+<p><img src="/img/road_ricefield.png" style="max-height:240px" /></p>
+
+<p>Essayer de:</p>
+
+<ul>
+  <li>connecter toute section de route et de chemin au réseau routier général, c’est-à-dire que ce chemin ou cette route devrait à un certain moment aboutir à la route principale desservant la commune/la région/le pays</li>
+  <li>connecter les routes de part et d’autre d’un village/hameau</li>
+  <li>continuer les chemins à travers les rizières, suivant les diguettes, si cela semble évident</li>
+  <li>déduire si une section de chemin ou de route passe à travers une forêt mais cette section n’est pas visible avec l’imagerie. Si oui, tracer grossièrement la partie traversant la forêt</li>
+</ul>
+
+<h3 id="hiérarchiser-correctement-le-réseau-routier">Hiérarchiser correctement le réseau routier</h3>
+
+<p>Les voies de communications sont à hiérarchiser suivant leur dimension économique et sociale <sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Catégorie</th>
+      <th>Attribut</th>
+      <th>Dimension économique et sociale</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Route primaire</td>
+      <td><code class="language-plaintext highlighter-rouge">highway=primary</code></td>
+      <td>Routes desservant les plus grandes villes du pays, les chefs-lieux de province</td>
+    </tr>
+    <tr>
+      <td>Route secondaire</td>
+      <td><code class="language-plaintext highlighter-rouge">highway=secondary</code></td>
+      <td>Routes desservant les capitales régionales</td>
+    </tr>
+    <tr>
+      <td>Route tertiaire</td>
+      <td><code class="language-plaintext highlighter-rouge">highway=tertiary</code></td>
+      <td>Routes principales desservant les communes. Généralement, ce sont les routes empruntées par les taxi-brousses.</td>
+    </tr>
+    <tr>
+      <td>Route mineure</td>
+      <td><code class="language-plaintext highlighter-rouge">highway=unclassified</code></td>
+      <td>Routes ne servant pas au transit (pas de taxi-brousse), desservant des petits villages</td>
+    </tr>
+    <tr>
+      <td>Rues des zones résidentielles</td>
+      <td><code class="language-plaintext highlighter-rouge">highway=residential</code></td>
+      <td>Rues desservant plusieurs maisons dans une ville ou dans un grand village</td>
+    </tr>
+    <tr>
+      <td>Voies d’accès</td>
+      <td><code class="language-plaintext highlighter-rouge">highway=service</code></td>
+      <td>Voies menant à une propriété, à un parking ou à une zone industrielle</td>
+    </tr>
+    <tr>
+      <td>Pistes</td>
+      <td><code class="language-plaintext highlighter-rouge">highway=track</code></td>
+      <td>Pistes carrossables servant d’accès à une forêt ou à une zone agricole. Généralement ces pistes ne sont utilisées que par des camions, des tracteurs ou des charrettes.</td>
+    </tr>
+    <tr>
+      <td>Chemins</td>
+      <td><code class="language-plaintext highlighter-rouge">highway=path</code></td>
+      <td>Voies non accessibles aux véhicules à 4 roues, empruntées par les piétons et les véhicules à deux roues (motos et bicyclettes)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Logiquement, une route quelconque devrait sortir quelque part vers une route de plus grande dimension dans le réseau routier, et non l’inverse.</p>
+
+<p>À partir d’une imagerie, il est souvent difficile de déduire l’importance d’une route, si c’est une route mineure ou une route tertiaire. Il est également difficile de voir si la voie est carrossable ou non, la largeur à elle seule ne permet pas de le déduire (un chemin peut être aussi large pour contenir une voiture mais n’est pas empruntable à voiture dans la vérité). Les rues des zones résidentielles et les pistes quant à elles sont relativement plus faciles à déduire.</p>
+
+<p><img src="/img/highway_tagging_map.png" style="max-height:520px" /></p>
+
+<h3 id="veiller-à-la-continuité-de-la-voirie">Veiller à la continuité de la voirie</h3>
+
+<p>Les îlots sont des groupes de voies qui ne sont pas connectées au réseau routier principal. Leur présence pose beaucoup de problèmes aux utilisateurs des données. L’existence des voies non connectées peut engendrer de mauvais résultats d’analyses se basent sur les données vectorielles des voies de communication: isochrones, routage, coûts de voyages…</p>
+
+<p>La vérification de la connectivité des voies devrait se faire sur une zone assez vaste (commune ou district). Une façon de la faire dans JOSM consiste à:</p>
+
+<ul>
+  <li>télécharger progressivement les données de la commune en incluant un certain tampon en dehors de la commune</li>
+  <li>appliquer un filtre pour n’afficher que les voies de communication (<code class="language-plaintext highlighter-rouge">highway=*</code>)</li>
+  <li>sélectionner un segment du réseau routier principal desservant la commune</li>
+  <li>sélectionner progressivement tous les chemins adjacents en faisant plusieurs fois un Shift + “E” jusqu’à ce que des chemins ne se sélectionnent plus. Les chemins sélectionnés sont en rouge et ce qui reste n’est donc pas connecté au réseau routier principal.</li>
+  <li>choisir un îlot, essayer de le connecter au réseau principal, puis répéter la sélection progressive à partir du réseau principal pour voir d’autres îlots.</li>
+</ul>
+
+<p><img src="/img/highway_filter.png" style="max-height:240px" /></p>
+
+<p><img src="/img/way_islands.png" style="max-height:340px" /></p>
+
+<h2 id="cartographier-les-éléments-de-lhydrographie">Cartographier les éléments de l’hydrographie</h2>
+
+<h3 id="les-cours-deau">Les cours d’eau</h3>
+
+<p>Les mêmes bonnes pratiques que les routes et chemins s’appliquent quand on dessine des cours d’eau: pas trop de nœuds non nécessaires mais aussi pas d’angles prononcés. La ligne devrait relier les parties les plus profondes de la rivière.</p>
+
+<p>Le sens de la ligne doit <strong>suivre le sens de l’écoulement de l’eau</strong>: si on a dessiné le cours d’eau d’aval en amont il faudra inverser le sens de la ligne (raccourci “R” pour JOSM). Quand il est difficile de voir avec l’imagerie dans quel sens l’eau coule, l’ajout d’un calque contenant des courbes de niveau comme <em>OpenCycleMap</em> ou <em>OpenTopoMap</em> peut aider. Dans JOSM, la symbologie des lignes contient des flèches qui permettent de voir le sens suivant lequel ces lignes ont été dessinées.</p>
+
+<p>Dans la plupart des cas, on aura: des ruisseaux, des fossés, des rivières et parfois des canaux.</p>
+
+<h4 id="les-ruisseaux-">Les ruisseaux <!-- omit in toc --></h4>
+
+<p>Attribut: <code class="language-plaintext highlighter-rouge">waterway=stream</code>. Les ruisseaux sont de petits cours d’eau peu profonds et assez étroits, partant d’une source d’eau naturelle. On peut probablement sauter par-dessus. Quand il passe par une zone de rizières, un ruisseau peut être artificiellement canalisé et sera ainsi cartographié comme un <strong>fossé</strong>.</p>
+
+<p><img src="/img/stream.png" style="max-height:240px" /></p>
+
+<h4 id="les-fossés-">Les fossés <!-- omit in toc --></h4>
+
+<p>Attribut: <code class="language-plaintext highlighter-rouge">waterway=ditch</code>. Un fossé est une petite dépression creusée (naturellement ou artificiellement) qui canalise l’eau, utilisée pour drainer les terres environnantes ou pour évacuer les eaux pluviales. Ces fossés se rencontrent souvent sur les bordures des parcelles de rizières.</p>
+
+<p><img src="/img/ditch.png" style="max-height:240px" /></p>
+
+<h4 id="les-rivières-">Les rivières <!-- omit in toc --></h4>
+
+<p>Attribut: <code class="language-plaintext highlighter-rouge">waterway=river</code>. Les rivières sont des cours d’eau plus développés que forment les ruisseaux qui se rejoignent. Une rivière se déverse dans une autre rivière, dans la mer ou dans un plan d’eau endoréique (et jamais dans un ruisseau ou un fossé).</p>
+
+<p>Quand une rivière est assez étroite (moins de 12 mètres de largeur), on la cartographie avec une ligne passant par ses parties les plus profondes. Quand la rivière est assez large (plus de 12 mètres de largeur), on met en plus de la ligne un polygone (ou un multipolygone s’il y a des îlots) délimitant l’<strong>étendue de l’eau</strong> et portant les attributs <code class="language-plaintext highlighter-rouge">natural=water</code> et <code class="language-plaintext highlighter-rouge">water=river</code> <sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup>.</p>
+
+<p><img src="/img/river_mapping.png" style="max-height:240px" /></p>
+
+<h4 id="les-canaux-">Les canaux <!-- omit in toc --></h4>
+
+<p>Attribut: <code class="language-plaintext highlighter-rouge">waterway=canal</code>. On parle ici de cours d’eau artificiels assez larges servant de voie de transport (par exemple, le canal des Pangalanes).</p>
+
+<h3 id="les-plans-deau-et-les-zones-humides">Les plans d’eau et les zones humides</h3>
+
+<p>Les plans d’eau et les zones humides se cartographient évidemment avec un polygone. Certains mappers peuvent trouver l’extension <a href="https://wiki.openstreetmap.org/wiki/JOSM/Plugins/FastDraw">FastDraw</a> de JOSM efficace pour dessiner ces éléments.</p>
+
+<h4 id="les-plans-deau-">Les plans d’eau <!-- omit in toc --></h4>
+
+<p>Les surfaces d’eau naturelle peuvent être une rivière, un étang, un lac, un lac artificiel… L’étendue d’eau est dessinée avec un polygone avec l’attribut <code class="language-plaintext highlighter-rouge">natural=water</code>. Le type du plan d’eau, si connu, peut être précisé avec la clé <code class="language-plaintext highlighter-rouge">water=*</code> dont la valeur est  <code class="language-plaintext highlighter-rouge">river</code> pour une rivière, <code class="language-plaintext highlighter-rouge">pond</code> pour un étang, <code class="language-plaintext highlighter-rouge">lake</code> pour un lac, <code class="language-plaintext highlighter-rouge">reservoir</code> pour un lac artificiel. Voir <a href="https://wiki.openstreetmap.org/wiki/FR:Key:water">la page wiki de la clé <code class="language-plaintext highlighter-rouge">water=*</code></a>  pour d’autres valeurs.</p>
+
+<p><img src="/img/water_bodies.png" style="max-height:260px" /></p>
+
+<h4 id="les-zones-humides-">Les zones humides <!-- omit in toc --></h4>
+
+<p>Les zones humides sont des zones naturellement inondées ou avec un sol gorgé d’eau, entre autres, les marécages, les mangroves et les marais.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Attributs</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Marécage</td>
+      <td><code class="language-plaintext highlighter-rouge">natural=wetland</code> + <code class="language-plaintext highlighter-rouge">wetland=swamp</code></td>
+      <td>Une zone humide à arbres ou arbustes</td>
+    </tr>
+    <tr>
+      <td>Mangrove</td>
+      <td><code class="language-plaintext highlighter-rouge">natural=wetland</code> + <code class="language-plaintext highlighter-rouge">wetland=mangrove</code></td>
+      <td>Une zone humide à forêt de palétuviers sur la zone intertidale de la côte</td>
+    </tr>
+    <tr>
+      <td>Marais</td>
+      <td><code class="language-plaintext highlighter-rouge">natural=wetland</code> + <code class="language-plaintext highlighter-rouge">wetland=marsh</code></td>
+      <td>Une zone humide à végétation aquatique ou herbacée</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/img/wetlands.png" style="max-height:260px" /></p>
+
+<p>Presque partout à Madagascar, des zones humides sont converties en rizières. Les rizières se démarquent sur l’imagerie par des traits de parcelles. Les zones de rizières sont cartographiées avec un polygone (ou multipolygone) ayant comme attributs <code class="language-plaintext highlighter-rouge">landuse=farmland</code> et <code class="language-plaintext highlighter-rouge">crop=rice</code>.</p>
+
+<h2 id="cartographier-lintersection-route--cours-deau">Cartographier l’intersection route — cours d’eau</h2>
+
+<p>Quand le réseau routier doit traverser un cours d’eau, les situations les plus courantes sont: une traversée à gué, une traversée à pont, une traversée à bac ou à bateau.</p>
+
+<h3 id="un-gué">Un gué</h3>
+
+<p>Un gué est une traversée de cours d’eau où le véhicule (ou le piéton) doit toucher le fond de l’eau. Parfois des pierres y sont posées pour faciliter le passage des piétons.</p>
+
+<p>Si le cours d’eau est assez étroit, on met sur <strong>un nœud commun</strong> entre la ligne du cours d’eau et la ligne de la route l’attribut <code class="language-plaintext highlighter-rouge">ford=yes</code>.</p>
+
+<p>Si le cours d’eau est assez développé et on a dessiné l’étendue de l’eau avec un polygone, l’attribut <code class="language-plaintext highlighter-rouge">ford=yes</code> sera mis sur la section de route qui traverse le polygone de la rivière et ayant toujours un nœud en commun avec la ligne de cours d’eau au milieu du polygone (la section de ligne <code class="language-plaintext highlighter-rouge">highway=*</code> + <code class="language-plaintext highlighter-rouge">ford=yes</code> doit ainsi avoir au moins 3 nœuds) <sup id="fnref:5" role="doc-noteref"><a href="#fn:5" class="footnote" rel="footnote">5</a></sup>.</p>
+
+<p><img src="/img/ford_mapping.png" style="max-height:240px" /></p>
+
+<h3 id="un-pont">Un pont</h3>
+
+<p>Un pont est une structure de traversée permettant au véhicule ou au piéton de traverser au-dessus du niveau de l’eau. La section de route qui passe par le pont est cartographiée avec les attributs supplémentaires <code class="language-plaintext highlighter-rouge">bridge=yes</code> et <code class="language-plaintext highlighter-rouge">layer=1</code> pour indiquer un passage via un pont au-dessus du niveau du sol (le fond de la rivière). Optionnellement, le pont en tant que structure peut être cartographié avec un polygone portant l’attribut <code class="language-plaintext highlighter-rouge">man_made=bridge</code>.</p>
+
+<p>Un pont <strong>ne partage pas de nœud</strong> avec la rivière au-dessus de laquelle il passe.</p>
+
+<p><img src="/img/bridge_mapping.png" style="max-height:240px" /></p>
+
+<h3 id="une-buse">Une buse</h3>
+
+<p>Une buse est une structure qui canalise l’eau pour la permettre de passer sous une route ou un chemin de fer, souvent sur une digue. La section de cours d’eau qui passe par une buse devrait avoir les attributs supplémentaires <code class="language-plaintext highlighter-rouge">tunnel=culvert</code> (buse) et <code class="language-plaintext highlighter-rouge">layer=-1</code> (au-dessous du niveau du sol, de la route,de la digue).</p>
+
+<p>Puisqu’elles ne se trouvent pas au même niveau, la buse et la voie sous laquelle elle passe <strong>n’ont pas de nœud commun</strong>.</p>
+
+<p><img src="/img/culvert.png" style="max-height:240px" /></p>
+
+<h3 id="une-traversée-par-bac-ou-par-bateau">Une traversée par bac ou par bateau</h3>
+
+<p>Un bac est un type de bateau à fond plat utilisé pour traverser l’eau. Généralement il transporte les véhicules et leurs passagers d’une rive vers l’autre d’une grande rivière (ou d’un lac). Parfois des bateaux ou des pirogues assurent aussi la même fonction. Les bacs et bateaux étant toujours présents sur les lieux, ils sont souvent repérables sur l’imagerie.</p>
+
+<p><img src="/img/boats.png" style="max-height:520px" /></p>
+
+<p>Le trajet du bac ou du bateau à travers la rivière est cartographié avec une ligne portant l’attribut <code class="language-plaintext highlighter-rouge">route=ferry</code>. Cette ligne du trajet ne devrait pas partager de nœud avec la ligne de la rivière. Le premier nœud et le dernier nœud du trajet devraient être cartographiés comme des terminaux de ferry (<code class="language-plaintext highlighter-rouge">amenity=ferry_terminal</code>) <sup id="fnref:6" role="doc-noteref"><a href="#fn:6" class="footnote" rel="footnote">6</a></sup>.</p>
+
+<p><img src="/img/ferry_mapping.png" style="max-height:260px" /></p>
+
+<h2 id="à-propos-de-mapwithai">À propos de MapWithAI</h2>
+
+<p>L’extension MapWithAI pour JOSM permet d’ajouter des routes et des chemins détectés par intelligence artificielle. Les étapes de manipulation à suivre sont:</p>
+
+<ul>
+  <li>Télécharger les données MapWithAI de la zone où les données OSM ont été téléchargées au préalable (Ctrl + “R”)</li>
+  <li>Avec MapWithAI comme calque active, sélectionner les segments de routes à ajouter, puis Ctrl + “A” va les ajouter au calque de données OSM</li>
+  <li>Rectifier et/ou compléter les attributs</li>
+  <li>Ajuster le tracé des chemins au besoin (utiliser l’outil “W” ou déplacer manuellement les nœuds)</li>
+  <li>Vérifier que tous les segments sont connectés: MapWithAI laisse souvent ces très petits écarts entre les segments. Il faut y zoomer très près pour voir. On peut aussi le tester avec la sélection des chemins adjacents (sélectionner un chemin puis Shift + “E”: si le chemin à côté ne se sélectionne pas, ça n’est pas connecté).</li>
+</ul>
+
+<p><img src="/img/mapwithai_gap.gif" style="max-height:210px" /></p>
+
+<p>Il faut surtout vérifier l’intersection avec les cours d’eau car MapWithAI ne détecte pas les ponts. Il mettra probablement un nœud à l’intersection où il pourrait y avoir un pont.</p>
+
+<h2 id="à-propos-des-multipolygones">À propos des multipolygones</h2>
+
+<p>Utilisations:</p>
+
+<ul>
+  <li>pour cartographier des surfaces ayant un ou plusieurs creux, comme les étendues de rivières ayant des ilots à l’intérieur.</li>
+  <li>pour des éléments surfaciques (sans creux) très vastes, comme un grand lac ou un corridor forestier: la limite dans OSM est de 2000 nœuds par chemin, au-delà il va falloir utiliser un multipolygone à plusieurs chemins comme contours extérieurs. Exemple dans OpenStreetMap: <a href="https://www.openstreetmap.org/relation/7065900">cette forêt</a>.</li>
+  <li>pour cartographier des éléments à contours extérieurs disjoints. Exemple dans OpenStreetMap: <a href="https://www.openstreetmap.org/relation/2415825">Harvard University</a>.</li>
+</ul>
+
+<p>On a parfois besoin de fusionner un multipolygone avec un polygone ou avec un autre multipolygone. Ce sera par exemple le cas quand un vaste élément surfacique s’étend sur plusieurs taches (carreaux) cartographiques.</p>
+
+<p><img src="/img/to_merge.png" style="max-height:260px" /></p>
+
+<p>Quand on fusionne les deux chemins adjacents (dont l’un est une limite extérieure de multipolygone), il y a des conflits à régler <sup id="fnref:7" role="doc-noteref"><a href="#fn:7" class="footnote" rel="footnote">7</a></sup>. Il va falloir:</p>
+
+<ul>
+  <li>choisir les tags à conserver depuis les deux chemins → Comme le nouveau chemin va être la limite extérieure d’un multipolygone, on ne garde aucun attribut, sinon on finira avec à la fois le chemin extérieur et la relation elle-même gardant les mêmes attributs <code class="language-plaintext highlighter-rouge">landuse=farmland</code> + <code class="language-plaintext highlighter-rouge">crop=rice</code>, ce qui serait une erreur de cartographie.</li>
+  <li>choisir si le multipolygone auquel appartient un des chemins est à conserver ou non → On conserve le multipolygone pour garder les limites intérieures.</li>
+</ul>
+
+<p>Dans le cas de deux limites extérieures de multipolygones adjacents (qui n’ont ainsi pas d’attributs), il va tout simplement falloir conserver les deux multipolygones pour avoir toutes leurs limites intérieures.</p>
+
+<p><img src="/img/mp_merge.gif" style="max-height:260px" /></p>
+
+<p>Voir aussi la <a href="https://wiki.openstreetmap.org/wiki/FR:Relation:multipolygon">page wiki</a> des multipolygones.</p>
+
+<h2 id="notes">Notes</h2>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p><a href="https://wiki.openstreetmap.org/wiki/FR:Using_Imagery">FR:Using Imagery</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p><a href="https://wiki.openstreetmap.org/wiki/FR:Bonnes_pratiques#Laissez_droites_les_routes_droites">FR:Bonnes pratiques &gt; Laissez droites les routes droites</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p><a href="https://wiki.openstreetmap.org/wiki/FR:Highway_Tag_Africa">FR:Highway Tag Africa</a> <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p><a href="https://wiki.openstreetmap.org/wiki/Rivers#How_to_map">Rivers &gt; How to map</a> <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:5" role="doc-endnote">
+      <p><a href="https://wiki.openstreetmap.org/wiki/Tag:ford%3Dyes#How_to_Map">Tag:ford=yes &gt; How to Map</a> <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:6" role="doc-endnote">
+      <p><a href="https://wiki.openstreetmap.org/wiki/FR:Tag:route%3Dferry#Comment_cartographier_avec_un_simple_chemin">FR:Tag:route=ferry &gt; Comment cartographier avec un simple chemin</a> <a href="#fnref:6" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:7" role="doc-endnote">
+      <p><a href="https://josm.openstreetmap.de/wiki/Help/Action/CombineWay#TagsMembershipsConflictDialog">JOSM Tags Memberships Conflict Dialog</a> <a href="#fnref:7" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+:ET
