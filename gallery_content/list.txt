@@ -19,3 +19,10 @@
 2019-10-26_b3d_fianarantsoa_part_1.png
 2020-04-14_b3d_lalangina_relief.png
 2022-07-18_qgis_mdg_nobody_lives_here.png
+2023-07-12_b3d_itasy_hexagons.png
+2023-07-12_b3d_mayotte.png
+2023-07-12_b3d_st_louis.png
+2023-07-12_drainage_divide_map.png
+2023-07-12_qgis_5_largest_lakes.png
+2023-07-12_qgis_buildings_in_antananarivo.png
+2023-07-12_qgis_toamasina_land_cover.png

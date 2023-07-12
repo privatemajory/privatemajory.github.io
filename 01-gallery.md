@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Gallery
+title: Portfolio
 permalink: /gallery/
 images:
   # - image: 2019-05-21_b3d_andavamamba.png
@@ -45,7 +45,20 @@ images:
     caption: Map of Lalangina
   - image: 2022-07-18_qgis_mdg_nobody_lives_here.png
     caption: Madagascar nobody lives here
-    
+  - image: 2023-07-12_b3d_itasy_hexagons.png
+    caption: Lake Itasy
+  - image: 2023-07-12_b3d_mayotte.png
+    caption: Mayotte
+  - image: 2023-07-12_b3d_st_louis.png
+    caption: Saint-Louis Island (Senegal)
+  - image: 2023-07-12_drainage_divide_map.png
+    caption: Madagascar west/east drainage divide
+  - image: 2023-07-12_qgis_5_largest_lakes.png
+    caption: Madagascar's 5 largest lakes
+  - image: 2023-07-12_qgis_buildings_in_antananarivo.png
+    caption: Antananarivo buildings coloured by terrain slope
+  - image: 2023-07-12_qgis_toamasina_land_cover.png
+    caption: Land cover of Toamasina
 ---
 
 <div id="imggallery" class="justified-gallery">

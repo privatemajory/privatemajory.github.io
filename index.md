@@ -23,6 +23,6 @@ layout: home
 </div>
 
 <div id="buttons_1" style="margin: auto; width: 320px; text-align: center; display: block">
-  <a href="/gallery" class="pageButton"><span class="buttonText"> View some maps </span></a>
-  <a href="/blog" class="pageButton"><span class="buttonText"> Learn something </span></a>
+  <a href="/gallery" class="pageButton"><span class="buttonText"> Go to portfolio </span></a>
+  <a href="/blog" class="pageButton"><span class="buttonText"> Go to blog </span></a>
 </div>
