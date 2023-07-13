@@ -1,3 +1,3 @@
 #!/bin/sh
-mogrify -path thumb -thumbnail x800 *.png
+mogrify -path thumb -thumbnail x500 *.jpg
 
