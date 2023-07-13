@@ -3,19 +3,19 @@ layout: page
 title: Datasets
 permalink: /datasets/
 files:
-  - path: /downloads/datasets/mg_agencesboa_v1.zip
+  - path: /datasets/mg_agencesboa_v1.zip
     title: BOA Offices in Madagascar
     format: CSV
     size: 4
-  - path: /downloads/datasets/mg_lyceespublics_v1.zip
+  - path: /datasets/mg_lyceespublics_v1.zip
     title: Public Lycées in Madagascar
     format: CSV
     size: 5
-  - path: /downloads/datasets/mg_populationfokontany_v1.zip
+  - path: /datasets/mg_populationfokontany_v1.zip
     title: 2009 Population by Fokontany in Madagascar
     format: Shapefile
     size: 20264
-  - path: /downloads/datasets/mg_profilsrnmajeures_v1.zip
+  - path: /datasets/mg_profilsrnmajeures_v1.zip
     title: Slope along major roads in Madagascar
     format: CSV
     size: 703

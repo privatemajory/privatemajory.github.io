@@ -3,8 +3,6 @@ layout: page
 title: Portfolio
 permalink: /gallery/
 images:
-  # - image: 2019-05-21_b3d_andavamamba.jpg
-  #   caption: Andavamamba
   - image: 2019-05-21_b3d_galapagos.jpg
     caption: Galapagos
   - image: 2019-05-21_b3d_gorges_tsiribihina.jpg
@@ -13,8 +11,6 @@ images:
     caption: Tsiroanomandidy
   - image: 2019-05-21_inkscape_ihorombe_relief_map.jpg
     caption: Ihorombe
-  # - image: 2019-05-21_inkscape_mdg_relief_map.jpg
-  #   caption: Madagascar relief map
   - image: 2019-05-21_qgis_cape_verde.jpg
     caption: Cape Verde
   - image: 2019-05-21_qgis_galapagos_tanaka.jpg
