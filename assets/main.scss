@@ -3,9 +3,6 @@
 ---
 
 @import "minima";
-.caption {
-    font-family: 'Libre Franklin', sans-serif;
-}
 
 .site-header {
     border-top: none;
@@ -109,8 +106,18 @@ table {
     border: 1px solid #e8e8e8; }
 
 img {
-  margin-bottom: 30px; }
+  margin-bottom: 10px; }
+
+figure {
+  padding: 10px;
+  border-top: 1px solid #E8E7DF; 
+  border-bottom: 1px solid #E8E7DF;
+  border-left: none;
+  border-right: none;
+}
+
+figure figcaption {
+  font-family: 'Libre Franklin', sans-serif; }
 
 .footnotes ol {
-  font-family: 'PT Serif', serif;
-}
+  font-family: 'PT Serif', serif; }

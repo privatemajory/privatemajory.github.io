@@ -14,10 +14,10 @@ What is needed:
 
 In this article, I will use as an example the Madagascan Route Nationale 2 (RN 2) from Antananarivo to Toamasina.
 
-<br />
-<p class="centeredcontent"><img src="/img/rn2_profile.png" alt="Elevation and slope along the RN 2" /><br /><br />
-Elevation and slope along the RN 2. A graph created with the wonderful <a href="https://d3js.org">D3.js</a>.</p>
-<br />
+<figure>
+<img src="/img/rn2_profile.png" alt="Elevation and slope along the RN 2" />
+<figcaption>Elevation and slope along the RN 2. A graph created with the wonderful <a href="https://d3js.org">D3.js</a>.</figcaption>
+</figure>
 
 
 ## Preparing the data
@@ -31,10 +31,10 @@ For things to work, I needed to edit my road data to get **one profile line** at
 - There should be no gap
 - When I was sure there was no more doubled line and all the gaps were filled, I merged all parts to get a single feature line
 
-<br />
-<p class="centeredcontent"><img src="/img/doubled_road.gif" alt="Doubled road example" /><br /><br />
-Fixing a doubled road section.</p>
-<br />
+<figure>
+<img src="/img/doubled_road.gif" alt="Doubled road example" />
+<figcaption>Fixing a doubled road section.</figcaption>
+</figure>
 
 
 ## Resampling
@@ -45,10 +45,10 @@ To resample the profile line, I generated points at equal distance of 1 km, then
 
 To convert the points to a line, I used the **Points to path** processing tool, and used the distance column (created by the previous tool) for the "order field" parameter.
 
-<br />
-<p class="centeredcontent"><img src="/img/points_to_path.png" alt="Points to path processing tool" style="width: 90%; max-width: 480px" /><br /><br />
-The <em>Points to path</em> processing tool in QGIS.</p>
-<br />
+<figure>
+<img src="/img/points_to_path.png" alt="Points to path processing tool" style="width: 90%; max-width: 480px" />
+<figcaption>The <em>Points to path</em> processing tool in QGIS.</figcaption>
+</figure>
 
 
 ## Generating the data
@@ -64,10 +64,10 @@ Under "Topography" tab, within "DEM input" this is what I did:
 
 Under "Export" tab and within "Topographic profile data", I exported the data as a CSV text for further editing and visualization in D3.js.
 
-<br />
-<p class="centeredcontent"><img src="/img/qprof_interface.png" alt="Generating and exporting the profile data using qProf" style="width: 90%; max-width: 400px" /><br /><br />
-Generating and exporting the road profile data using qProf.</p>
-<br />
+<figure>
+<img src="/img/qprof_interface.png" alt="Generating and exporting the profile data using qProf" style="width: 90%; max-width: 400px" />
+<figcaption>Generating and exporting the road profile data using qProf.</figcaption>
+</figure>
 
 The data I obtained from qProf had these fields:
 - ``prof_id``: As I only had one feature in my line layer, it had only one value, 1
@@ -87,7 +87,7 @@ To get the graph at the beginning of this post, I simply plotted the Z coordinat
 
 Using the same base but with a slightly different workflow, I could estimate the average street steepness in the major urban areas of Madagascar:
 
-<br />
-<p class="centeredcontent"><img src="/img/mdg_urban_road_slope_2.png" alt="Madagascar average road slope in major urban areas" style="width: 90%; max-width: 480px" /><br /><br />
-Average road slope in major urban areas of Madagascar.</p>
-<br />
+<figure>
+<img src="/img/mdg_urban_road_slope_2.png" alt="Madagascar average road slope in major urban areas" style="width: 90%; max-width: 480px" />
+<figcaption>Average road slope in major urban areas of Madagascar.</figcaption>
+</figure>
