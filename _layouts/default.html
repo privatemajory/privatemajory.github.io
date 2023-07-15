@@ -24,21 +24,19 @@
 
   {%- include footer.html -%}
 
-  <script src="/slider/ideal-image-slider.js"></script>
+  <script src="/slider/ideal-image-slider.min.js"></script>
 
 </body>
 
 <script>
   $("#imggallery").justifiedGallery({
-    rowHeight: 160,
+    rowHeight: 200,
     margins: 6,
-    randomize: true,
-    rtl: true
   });
 
   var slider = new IdealImageSlider.Slider({
     selector: '#slider',
-    height: 160,
+    height: 300,
     interval: 3000,
     transitionDuration: 1000
   });

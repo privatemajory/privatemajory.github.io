@@ -5,7 +5,7 @@
 layout: home
 ---
 
-<div style="width: 320px; margin: auto; text-align: center; margin-bottom: 20px">
+<div style="width: auto; margin: auto; text-align: center; margin-bottom: 20px">
   <h2>Hello 👋</h2>
   Welcome to this page, where I share some nice maps and instructive blog posts.
 </div>
@@ -19,10 +19,9 @@ layout: home
   <img src="slider_content/2019-05-21_qgis_nosy-be.png" alt="Nosy Be">
   <img src="slider_content/2019-07-13_b3d_manhattan.png" alt="Manhattan FD">
   <img src="slider_content/2019-08-08_b3d_tampere_landscape.png" alt="Tampere 3D">
-  <img src="slider_content/2019-10-01_qgis_mdg_hrsl.png" alt="Madagascar_HRSL">
 </div>
 
-<div id="buttons_1" style="margin: auto; width: 320px; text-align: center; display: block">
+<div id="buttons_1" style="margin: auto; width: auto; text-align: center; display: block">
   <a href="/gallery" class="pageButton"><span class="buttonText"> Go to portfolio </span></a>
   <a href="/blog" class="pageButton"><span class="buttonText"> Go to blog </span></a>
 </div>
