@@ -29,8 +29,10 @@ images:
   #   caption: Tsiroanomandidy
   - image: 2019-05-21_qgis_cape_verde.jpg
     caption: Cape Verde
-  - image: 2019-10-08_qgis_antananarivo_shortest_route_1.jpg
-    caption: Shortest route to Mahamasina
+  # - image: 2019-10-08_qgis_antananarivo_shortest_route_1.jpg
+  #   caption: Shortest route to Mahamasina
+  - image: 2023-07-18_qgis_antananarivo_shortest_route_2.jpg
+    caption: Shortest route to Mahamasina (remake)
   - image: 2019-10-26_b3d_fianarantsoa_part_1.jpg
     caption: 3D map of Fianarantsoa
   - image: 2020-04-14_b3d_lalangina_relief.jpg

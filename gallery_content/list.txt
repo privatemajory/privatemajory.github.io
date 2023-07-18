@@ -26,3 +26,4 @@
 2023-07-12_qgis_5_largest_lakes.jpg
 2023-07-12_qgis_buildings_in_antananarivo.jpg
 2023-07-12_qgis_toamasina_land_cover.jpg
+2023-07-18_qgis_antananarivo_shortest_route_2.jpg

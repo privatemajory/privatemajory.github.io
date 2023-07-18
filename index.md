@@ -12,7 +12,6 @@ layout: home
 
 <div id="slider" style="margin: auto; margin-bottom: 20px">
   <img src="/slider_content/2019-05-21_b3d_galapagos.png" alt="Galapagos 3D">
-  <img src="/slider_content/2019-05-21_b3d_gorges_tsiribihina.png" alt="Gorges du Tsiribihina">
   <img src="/slider_content/2019-05-21_b3d_tsiroanomandidy_part.png" alt="Tsiroanomandidy">
   <img src="/slider_content/2019-05-21_inkscape_ihorombe_relief_map.png" alt="Ihorombe">
   <img src="/slider_content/2019-05-21_qgis_cape_verde.png" alt="Cape Verde">
