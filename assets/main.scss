@@ -1,13 +1,7 @@
 --- # Only the main Sass file needs front matter (the dashes are enough) --- @import "minima";
 
-.site-header {
-  border-top: none;
-  min-height: 0px;
-}
-
 .site-nav {
   float: right;
-  line-height: 43.875px;
 }
 
 .site-nav .nav-trigger {

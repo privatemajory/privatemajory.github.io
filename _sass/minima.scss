@@ -4,7 +4,7 @@
 
 $base-font-family: 'Libre Franklin',
 serif;
-$base-font-size: 13.5px !default;
+$base-font-size: 13px !default;
 $base-font-weight: 400 !default;
 $small-font-size: $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
@@ -56,12 +56,21 @@ body {
   -webkit-font-smoothing: antialiased !important;
 }
 
+.site-header {
+  border-top: none;
+  border-bottom: 1px solid $grey-color-light;
+  min-height: 0px;
+
+  // Positioning context for the mobile navigation icon
+  position: relative;
+}
+
 .site-title,
 .site-title:visited,
 nav .page-link,
 .page-link:visited {
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 13.5px;
+  font-size: 13px;
   letter-spacing: 0;
   color: $text-color;
   font-weight: normal;
@@ -108,7 +117,7 @@ p {
   cursor: pointer;
   color: #ffffff;
   font-family: 'Libre Franklin';
-  font-size: 13.5px;
+  font-size: 13px;
   padding: 4px 8px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #154682;
