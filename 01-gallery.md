@@ -42,7 +42,7 @@ images:
   # - image: 2019-05-21_qgis_galapagos_tanaka.jpg
   #   caption: Galapagos Tanaka contours
   - image: 2019-05-21_qgis_mdg_urban_road_slope.jpg
-    caption: Madagascar urban road rlope
+    caption: Madagascar urban road slope
   - image: 2019-05-21_qgis_nosy-be.jpg
     caption: Nosy Be
   - image: 2019-06-29_b3d_nyc.jpg

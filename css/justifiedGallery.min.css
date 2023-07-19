@@ -16,6 +16,7 @@
   display: inline-block;
   overflow: hidden;
   /* background: #888888; To have gray placeholders while the gallery is loading with waitThumbnailsLoad = false */
+  border-radius: 10px;
   filter: "alpha(opacity=10)";
   opacity: 0.1;
   margin: 0;
@@ -64,7 +65,6 @@
   display: initial;
   filter: "alpha(opacity=70)";
   opacity: 0.7;
-  border-radius: 0 0 10px 10px;
   -webkit-transition: opacity 500ms ease-in;
   -moz-transition: opacity 500ms ease-in;
   -o-transition: opacity 500ms ease-in;
