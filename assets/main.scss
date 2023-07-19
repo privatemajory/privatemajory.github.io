@@ -92,26 +92,26 @@ table {
   text-align: left;
   color: #3f3f3f;
   border-collapse: collapse;
-  border: 1px solid #e8e8e8; }
+  border: 1px solid $grey-color-light; }
   table tr:nth-child(even) {
     background-color: #f7f7f7; }
   table th, table td {
     padding: 5px 7.5px; }
   table th {
     background-color: #f0f0f0;
-    border: 1px solid #dedede;
-    border-bottom-color: #c9c9c9;
+    border: 1px solid $grey-color-light;
+    border-bottom-color: $grey-color;
     text-transform: uppercase; }
   table td {
-    border: 1px solid #e8e8e8; }
+    border: 1px solid $grey-color-light; }
 
 img {
   margin-bottom: 10px; }
 
 figure {
   padding: 10px;
-  border-top: 1px solid #E8E7DF; 
-  border-bottom: 1px solid #E8E7DF;
+  border-top: 1px solid $grey-color-light; 
+  border-bottom: 1px solid $grey-color-light;
   border-left: none;
   border-right: none;
 }
@@ -121,3 +121,7 @@ figure figcaption {
 
 .footnotes ol {
   font-family: 'PT Serif', serif; }
+
+.justified-gallery img {
+  border-radius: 10px;
+}

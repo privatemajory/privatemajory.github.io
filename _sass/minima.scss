@@ -4,7 +4,7 @@
 
 $base-font-family: 'Libre Franklin',
 serif;
-$base-font-size: 13px !default;
+$base-font-size: 13.5px !default;
 $base-font-weight: 400 !default;
 $small-font-size: $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
@@ -16,8 +16,8 @@ $background-color: #fdfdfd !default;
 $brand-color: #2a7ae2 !default;
 
 $grey-color: #828282 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark: darken($grey-color, 25%) !default;
+$grey-color-light: lighten($grey-color, 30%) !default;
+$grey-color-dark: darken($grey-color, 20%) !default;
 
 $table-text-align: left !default;
 
@@ -61,7 +61,7 @@ body {
 nav .page-link,
 .page-link:visited {
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 13px;
+  font-size: 13.5px;
   letter-spacing: 0;
   color: $text-color;
   font-weight: normal;
@@ -106,13 +106,13 @@ p {
   cursor: pointer;
   color: #ffffff;
   font-family: 'Libre Franklin';
-  font-size: 13px;
+  font-size: 13.5px;
   padding: 4px 8px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #154682;
   margin: 2px;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 .pageButton:hover {
@@ -132,6 +132,7 @@ p {
 
 #slider {
   width: auto;
+  border-radius: 10px;
 }
 
 form.contact-form {
