@@ -1,9 +1,7 @@
-2019-05-21_b3d_andavamamba.jpg
 2019-05-21_b3d_galapagos.jpg
 2019-05-21_b3d_gorges_tsiribihina.jpg
 2019-05-21_b3d_tsiroanomandidy_part.jpg
 2019-05-21_inkscape_ihorombe_relief_map.jpg
-2019-05-21_inkscape_mdg_relief_map.jpg
 2019-05-21_qgis_cape_verde.jpg
 2019-05-21_qgis_galapagos_tanaka.jpg
 2019-05-21_qgis_mdg_urban_road_slope.jpg
@@ -27,3 +25,4 @@
 2023-07-12_qgis_buildings_in_antananarivo.jpg
 2023-07-12_qgis_toamasina_land_cover.jpg
 2023-07-18_qgis_antananarivo_shortest_route_2.jpg
+2023-07-27_qgis_mdg_croplands&population.jpg

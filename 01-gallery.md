@@ -15,6 +15,8 @@ images:
     caption: Madagascar's 5 largest lakes
   - image: 2023-07-12_qgis_buildings_in_antananarivo.jpg
     caption: Antananarivo buildings coloured by terrain slope
+  - image: 2023-07-27_qgis_mdg_croplands&population.jpg
+    caption: Madagascar croplands vs population
   - image: 2023-07-12_qgis_toamasina_land_cover.jpg
     caption: Land cover of Toamasina  
   - image: 2019-08-08_b3d_tampere_landscape.jpg
