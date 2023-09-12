@@ -43,16 +43,18 @@ images:
     caption: Madagascar nobody lives here
   # - image: 2019-05-21_qgis_galapagos_tanaka.jpg
   #   caption: Galapagos Tanaka contours
+  - image: 2023-09-12_qgis_district_ikongo.jpg
+    caption: Ikongo district
+  - image: 2019-07-05_qgis_united_kingdoms_of_madagascar.jpg
+    caption: United Kingdoms of Madagascar
+  - image: 2019-07-13_b3d_manhattan.jpg
+    caption: Financial District of Manhattan
   - image: 2019-05-21_qgis_mdg_urban_road_slope.jpg
     caption: Madagascar urban road slope
   - image: 2019-05-21_qgis_nosy-be.jpg
     caption: Nosy Be
   - image: 2019-06-29_b3d_nyc.jpg
     caption: Financial District of Manhattan 3D
-  - image: 2019-07-05_qgis_united_kingdoms_of_madagascar.jpg
-    caption: United Kingdoms of Madagascar
-  - image: 2019-07-13_b3d_manhattan.jpg
-    caption: Financial District of Manhattan
   - image: 2019-10-01_qgis_mdg_hrsl.jpg
     caption: Madagascar settlement map
   - image: 2019-05-21_inkscape_ihorombe_relief_map.jpg
