@@ -17,6 +17,8 @@ images:
     caption: Antananarivo buildings coloured by terrain slope
   - image: 2023-07-27_qgis_mdg_croplands&population.jpg
     caption: Madagascar croplands vs population
+  - image: 2023-11-11_anivorano.jpg
+    caption: Vintage style map of Anivorano region
   - image: 2023-07-12_qgis_toamasina_land_cover.jpg
     caption: Land cover of Toamasina  
   - image: 2019-08-08_b3d_tampere_landscape.jpg
@@ -59,8 +61,14 @@ images:
     caption: Madagascar settlement map
   - image: 2019-05-21_inkscape_ihorombe_relief_map.jpg
     caption: Ihorombe
+  - image: 2023-11-09_a_hex_world.jpg
+    caption: Hexagon globe
   - image: 2019-08-07_qgis_tampere.jpg
     caption: Downtown Tampere
+  - image: 2023-11-13_madagascar_wwdist.jpg
+    caption: Madagascar distance to waterway
+  - image: 2023-11-14_ljubljana.jpg
+    caption: Ljubljana
 ---
 
 <div id="imggallery" class="justified-gallery">
