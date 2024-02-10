@@ -12,7 +12,9 @@ $base-line-height: 1.5 !default;
 $spacing-unit: 30px !default;
 
 $text-color: #111 !default;
-$background-color: #fdfdfd !default;
+$background-color: #ffffff !default;
+$header-background-color: #2e2e2e;
+$header-text-color: #fdfdfd;
 $brand-color: #2a7ae2 !default;
 
 $grey-color: #828282 !default;
@@ -58,8 +60,9 @@ body {
 
 .site-header {
   border-top: none;
-  border-bottom: 1px solid $grey-color-light;
+  border-bottom: 1px solid #111;
   min-height: 0px;
+  background-color: $header-background-color;
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -70,19 +73,20 @@ body {
 nav .page-link,
 .page-link:visited {
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 13px;
-  letter-spacing: 0;
-  color: $text-color;
-  font-weight: normal;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $header-text-color;
+  font-weight: lighter;
 }
 
 header,
 .page-content {
-  background-color: #f3f2ee;
+  background-color: $background-color;
 }
 
 footer {
-  background-color: #e8e7df;
+  background-color: #f7f7f7;
 }
 
 h1,
@@ -112,7 +116,7 @@ p {
 }
 
 .pageButton {
-  background-color: #1d8dca;
+  background-color: $header-background-color;
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
@@ -120,15 +124,15 @@ p {
   font-size: 13px;
   padding: 8px 16px;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #154682;
   margin: 2px;
-  border: 1px solid #154682a0;
-  border-radius: 20px;
+  border: 1px solid #111;
+  border-radius: 10px;
 }
 
 .pageButton:hover {
   background-color: #0b5f9b;
   text-decoration: none;
+  border: 1px solid #084c7c;
 }
 
 .pageButton:active {
@@ -148,4 +152,72 @@ p {
 
 .flink u {
   color: $grey-color;
+}
+
+.site-nav {
+  float: right;
+}
+
+.site-nav .nav-trigger {
+  display: none;
+}
+
+.site-nav .menu-icon {
+  display: none;
+}
+
+.site-nav .page-link {
+  color: $header-text-color;
+  line-height: 1.5;
+}
+
+.site-nav .page-link:not(:last-child) {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .site-nav {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    background-color: #2e2e2e;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .site-nav label[for="nav-trigger"] {
+    display: block;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .site-nav .menu-icon {
+    display: block;
+    float: right;
+    line-height: 0;
+    text-align: center;
+  }
+
+  .site-nav .menu-icon>svg {
+    fill: #fdfdfd;
+  }
+
+  .site-nav input~.trigger {
+    clear: both;
+    display: none;
+  }
+
+  .site-nav input:checked~.trigger {
+    display: block;
+    padding: 5px;
+  }
+
+  .site-nav .page-link {
+    display: block;
+    margin-left: 0px;
+  }
+
+  .site-nav .page-link:not(:last-child) {
+    margin-right: 0;
+  }
 }
