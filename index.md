@@ -4,23 +4,35 @@
 
 layout: home
 ---
+<style>  
+  .no-border-table, .no-border-table td, .no-border-table tr {
+    border: none;
+  }
+</style>
 
-<div style="width: auto; margin: auto; text-align: center; margin-bottom: 20px">
-  <h2>Hello 👋</h2>
-  Welcome to this page, where I share some nice maps and instructive blog posts.
+<div class="overlay-content">
+  <table class="no-border-table">
+    <tr>
+      <td style="width: 120px;">
+        <img src="https://raw.githubusercontent.com/privatemajory/signature/master/img/profile.png" alt="Photo" style="width: 120px; height: 120px;">
+      </td>
+      <td>
+        <p>
+          I'm Dolly Andriatsiferana, a geographer from Madagascar with a deep love for maps. This page is a showcase of my cartographic creations and insights into the world of mapping. Enjoy your visit!
+        </p>
+          <div id="buttons_1" style="margin: auto; width: auto; text-align: left; display: block; margin-bottom: 10px">
+            <a href="/gallery" class="pageButton"><span class="buttonText">Explore Maps</span></a>
+            <a href="/blog" class="pageButton"><span class="buttonText">Mapping Insights</span></a>
+          </div>
+      </td>
+    </tr>
+  </table>
 </div>
 
 <div id="slider" style="margin: auto; margin-bottom: 20px">
-  <img src="/slider_content/2019-05-21_b3d_galapagos.png" alt="Galapagos 3D">
-  <img src="/slider_content/2019-05-21_b3d_tsiroanomandidy_part.png" alt="Tsiroanomandidy">
-  <img src="/slider_content/2019-05-21_inkscape_ihorombe_relief_map.png" alt="Ihorombe">
-  <img src="/slider_content/2019-05-21_qgis_cape_verde.png" alt="Cape Verde">
-  <img src="slider_content/2019-05-21_qgis_nosy-be.png" alt="Nosy Be">
-  <img src="slider_content/2019-07-13_b3d_manhattan.png" alt="Manhattan FD">
-  <img src="slider_content/2019-08-08_b3d_tampere_landscape.png" alt="Tampere 3D">
-</div>
-
-<div id="buttons_1" style="margin: auto; width: auto; text-align: center; display: block">
-  <a href="/gallery" class="pageButton"><span class="buttonText"> Go to portfolio </span></a>
-  <a href="/blog" class="pageButton"><span class="buttonText"> Go to blog </span></a>
+  {% for file in site.static_files %}
+    {% if file.path contains 'slider_content' and file.extname == '.jpg' or file.extname == '.jpeg' %}
+      <img src="{{ file.path }}" alt="Slider Image">
+    {% endif %}
+  {% endfor %}
 </div>

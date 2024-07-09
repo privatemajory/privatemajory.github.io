@@ -194,11 +194,6 @@ figure figcaption {
   color: #ffffff;
 }
 
-#slider {
-  width: auto;
-  border-radius: 10px;
-}
-
 .flink u {
   color: $grey-color;
 }
@@ -275,4 +270,8 @@ small {
   font-size: 80%;
   color: #404040;
   line-height: 0.8; // Adjust line height here
+}
+
+#slider {
+  border-radius: 10px;
 }
