@@ -111,6 +111,55 @@ p {
   text-align: justify;
 }
 
+table {
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: left;
+  color: #3f3f3f;
+  border-collapse: collapse;
+  border: 1px solid $grey-color-light;
+}
+
+table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+table th,
+table td {
+  padding: 5px 7.5px;
+}
+
+table th {
+  background-color: #f7f7f7;
+  border: 1px solid $grey-color-light;
+  border-bottom-color: $grey-color;
+  text-transform: uppercase;
+}
+
+table td {
+  border: 1px solid $grey-color-light;
+}
+
+img {
+  margin-bottom: 10px;
+}
+
+figure {
+  padding: 10px;
+  border-top: 1px solid $grey-color-light;
+  border-bottom: 1px solid $grey-color-light;
+  border-left: none;
+  border-right: none;
+}
+
+figure figcaption {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.footnotes ol {
+  font-family: 'PT Serif', serif;
+}
+
 .centeredcontent {
   text-align: center;
 }
@@ -122,11 +171,11 @@ p {
   color: #ffffff;
   font-family: 'Libre Franklin';
   font-size: 13px;
-  padding: 8px 16px;
+  padding: 4px 8px;
   text-decoration: none;
   margin: 2px;
   border: 1px solid #111;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 .pageButton:hover {
@@ -224,6 +273,6 @@ p {
 
 small {
   font-size: 80%;
-  color: #5c5c5c;
+  color: #404040;
   line-height: 0.8; // Adjust line height here
 }
