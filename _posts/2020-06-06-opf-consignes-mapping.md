@@ -9,29 +9,6 @@ Cet article cerne des consignes et des exemples spécifiques pour aider ceux qui
 
 Les illustrations, s'ils ne sont pas de mon propre travail, sont de Wikimedia Commons.
 
-## Sommaire <!-- omit in toc -->
-
-- [À propos de l’imagerie](#à-propos-de-limagerie)
-- [Cartographier les bâtiments](#cartographier-les-bâtiments)
-  - [Building tools](#building-tools)
-  - [Extrusion](#extrusion)
-- [Identifier les hameaux et les villages](#identifier-les-hameaux-et-les-villages)
-- [Cartographier les voies de communication](#cartographier-les-voies-de-communication)
-  - [Dessiner correctement les chemins et les routes](#dessiner-correctement-les-chemins-et-les-routes)
-  - [Hiérarchiser correctement le réseau routier](#hiérarchiser-correctement-le-réseau-routier)
-  - [Veiller à la continuité de la voirie](#veiller-à-la-continuité-de-la-voirie)
-- [Cartographier les éléments de l'hydrographie](#cartographier-les-éléments-de-lhydrographie)
-  - [Les cours d'eau](#les-cours-deau)
-  - [Les plans d'eau et les zones humides](#les-plans-deau-et-les-zones-humides)
-- [Cartographier l’intersection route — cours d’eau](#cartographier-lintersection-route--cours-deau)
-  - [Un gué](#un-gué)
-  - [Un pont](#un-pont)
-  - [Une buse](#une-buse)
-  - [Une traversée par bac ou par bateau](#une-traversée-par-bac-ou-par-bateau)
-- [À propos de MapWithAI](#à-propos-de-mapwithai)
-- [À propos des multipolygones](#à-propos-des-multipolygones)
-- [Notes](#notes)
-
 ## À propos de l’imagerie
 
 Plusieurs imageries sont disponibles pour fond, mais les plus utilisées pour Madagascar sont Bing Aerial Imagery et Maxar (Standard ou Premium) Imagery. Bing est fréquemment utilisée pour sa clarté et le fait qu'elle est l'imagerie par défaut dans l'éditeur OpenStreetMap iD; Maxar est moins claire mais est l'imagerie la plus récente disponible gratuitement.

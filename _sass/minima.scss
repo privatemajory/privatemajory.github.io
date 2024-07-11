@@ -107,7 +107,7 @@ code {
   font-family: 'PT Serif', serif;
 }
 
-p {
+p, ul, ol, figure figcaption {
   text-align: justify;
 }
 
@@ -140,20 +140,26 @@ table td {
   border: 1px solid $grey-color-light;
 }
 
-img {
-  margin-bottom: 10px;
+figure {
+  display: table;
+  padding-left: 10px;
+  border-left: 1px solid $grey-color-light;
 }
 
-figure {
-  padding: 10px;
-  border-top: 1px solid $grey-color-light;
-  border-bottom: 1px solid $grey-color-light;
-  border-left: none;
-  border-right: none;
+figure img {
+  display: table-row;
+  max-width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid $grey-color-light;
 }
 
 figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  word-wrap: break-word;
   font-family: 'Libre Franklin', sans-serif;
+  padding-left: 10px;
+  border-left: 1px solid $grey-color-light;
 }
 
 .footnotes ol {
@@ -274,4 +280,36 @@ small {
 
 #slider {
   border-radius: 10px;
+}
+
+// Numbering of headings
+
+.e-content {
+  counter-reset: h1counter h2counter h3counter h4counter h5counter;
+}
+
+.e-content h1 { counter-reset: h2counter; }
+.e-content h2 { counter-reset: h3counter; }
+.e-content h3 { counter-reset: h4counter; }
+.e-content h4 { counter-reset: h5counter; }
+
+.e-content h2:before {
+  counter-increment: h2counter;
+  content: counter(h2counter) ".\0000a0\0000a0";
+}
+
+.e-content h3:before {
+  counter-increment: h3counter;
+  content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
+}
+
+.e-content h4:before {
+  counter-increment: h4counter;
+  content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) ".\0000a0\0000a0";
+}
+
+.e-content h2:before, .e-content h3:before, .e-content h4:before {
+  color: $grey-color;
+  font-size: 80%;
+  font-weight: normal;
 }
