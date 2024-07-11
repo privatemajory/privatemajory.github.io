@@ -55,7 +55,7 @@ Cette analyse vise à détecter les anomalies potentielles dans la continuité d
 
 <figure>
 <img src="/img/road-network-isodistance-anomaly.png" style="zoom:66%;" />
-<figcaption>Possible endroit à connecter. Il y a un écart de 10 km de parcours entre les nœuds encadrés en rouge (6 - 1 = 5 pour des groupes de distances de 2 km à partir de Soavina).</figcaption>
+<figcaption>Possible endroit à connecter. Il y a un écart de 10 km de parcours entre les nœuds encadrés en rouge (La différence entre 6 et 1 est 5, et les catégories ici sont à intervalle de 2 km à partir de Soavina, donc une distance de 5 x 2 km).</figcaption>
 </figure>
 
 ## Conclusion
