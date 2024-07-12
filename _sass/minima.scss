@@ -62,7 +62,18 @@ body {
   border-top: none;
   border-bottom: 1px solid #111;
   min-height: 0px;
-  background-color: $header-background-color;
+  // background-color: $header-background-color;
+
+  // CSS pattern
+  background:
+    radial-gradient(circle farthest-side at 0% 50%,#2e2e2e 23.5%,#0000 0)10.5px 15px,
+    radial-gradient(circle farthest-side at 0% 50%,#383838 24%,#0000 0)9.5px 15px,
+    linear-gradient(#2e2e2e 14%,#0000 0, #0000 85%,#2e2e2e 0)0 0,
+    linear-gradient(150deg,#2e2e2e 24%,#383838 0,#383838 26%,#0000 0,#0000 74%,#383838 0,#383838 76%,#2e2e2e 0)0 0,
+    linear-gradient(30deg,#2e2e2e 24%,#383838 0,#383838 26%,#0000 0,#0000 74%,#383838 0,#383838 76%,#2e2e2e 0)0 0,
+    linear-gradient(90deg,#383838 2%,#2e2e2e 0,#2e2e2e 98%,#383838 0%)0 0 #2e2e2e;
+  background-size: 20px 30px;
+  background-color: #2e2e2e;
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -231,7 +242,7 @@ figure figcaption {
     top: 3px;
     right: 3px;
     background-color: #2e2e2e;
-    border: none;
+    border: 1px solid #383838;
     border-radius: 10px;
   }
 
