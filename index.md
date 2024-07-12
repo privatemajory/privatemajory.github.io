@@ -21,8 +21,10 @@ layout: page
           I'm Dolly Andriatsiferana, a geographer from Madagascar with a deep love for maps. This page is a showcase of my cartographic creations and insights into the world of mapping. Enjoy your visit!
         </p>
           <div id="buttons_1" style="margin: auto; width: auto; text-align: left; display: block; margin-bottom: 10px">
-            <a href="/gallery" class="pageButton"><span class="buttonText">Explore Maps</span></a>
-            <a href="/blog" class="pageButton"><span class="buttonText">Mapping Insights</span></a>
+            <a href="/gallery" class="pageButton"><i class="fas fa-map"></i><span class="buttonText"> Maps</span></a>
+            <a href="/blog" class="pageButton"><i class="fas fa-lightbulb"></i><span class="buttonText"> Insights</span></a>
+            <a href="/datasets" class="pageButton"><i class="fas fa-database"></i><span class="buttonText"> Datasets</span></a>
+            <a href="/media" class="pageButton"><i class="fas fa-music"></i><span class="buttonText"> Music</span></a>
           </div>
       </td>
     </tr>

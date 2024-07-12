@@ -66,6 +66,7 @@ Explore my collection of free datasets below. Click the download button to acces
       </td>
       <td width="10em">
         <a href="{{ file.path }}" class="pageButton" aria-label="Download {{ file.title }}">
+          <i class="fas fa-download white-icon"></i>
           <span class="buttonText">Download</span>
         </a>
       </td>

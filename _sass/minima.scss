@@ -183,6 +183,8 @@ figure figcaption {
 
 .pageButton {
   background-color: $header-background-color;
+  display: flex;
+  align-items: center;
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
@@ -193,6 +195,7 @@ figure figcaption {
   margin: 2px;
   border: 1px solid #111;
   border-radius: 4px;
+
 }
 
 .pageButton:hover {
@@ -206,9 +209,19 @@ figure figcaption {
   top: 1px;
 }
 
+.pageButton i {
+  margin-right: 5px;
+}
+
+.pageButton i,
 .buttonText {
   text-decoration: none;
   color: #ffffff;
+}
+
+.datasetsTable .pageButton {
+  display: flex;
+  align-items: center;
 }
 
 .flink u {
