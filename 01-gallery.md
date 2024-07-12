@@ -71,6 +71,8 @@ images:
     caption: Ljubljana
 ---
 
+I make maps. A lot of them.
+
 <div id="imggallery" class="justified-gallery">
 {%- for entry in page.images -%}
   <a href="/gallery_content/{{ entry.image }}">
