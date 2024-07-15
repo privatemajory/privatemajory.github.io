@@ -11,15 +11,15 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit: 30px !default;
 
-$text-color: #111 !default;
-$background-color: #ffffff !default;
-$header-background-color: #2e2e2e;
-$header-text-color: #fdfdfd;
-$brand-color: #2a7ae2 !default;
-
 $grey-color: #828282 !default;
 $grey-color-light: lighten($grey-color, 30%) !default;
 $grey-color-dark: darken($grey-color, 20%) !default;
+
+$text-color: #111 !default;
+$background-color: #ffffff !default;
+$header-background-color: #2e2e2e;
+$header-text-color: lighten($grey-color, 20%);
+$brand-color: #2a7ae2 !default;
 
 $table-text-align: left !default;
 
@@ -88,7 +88,10 @@ nav .page-link,
   letter-spacing: 1px;
   text-transform: uppercase;
   color: $header-text-color;
-  font-weight: lighter;
+}
+
+.site-header a:hover {
+  color: #ffffff;
 }
 
 header,
@@ -241,7 +244,6 @@ figure figcaption {
 }
 
 .site-nav .page-link {
-  color: $header-text-color;
   line-height: 1.5;
 }
 
