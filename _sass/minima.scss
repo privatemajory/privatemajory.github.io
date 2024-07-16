@@ -18,6 +18,7 @@ $grey-color-dark: darken($grey-color, 20%) !default;
 $text-color: #111 !default;
 $background-color: #ffffff !default;
 $header-background-color: #2e2e2e;
+$footer-background-color: #f7f7f7;
 $header-text-color: lighten($grey-color, 20%);
 $brand-color: #2a7ae2 !default;
 
@@ -100,7 +101,23 @@ header,
 }
 
 footer {
-  background-color: #f7f7f7;
+  background-color: $footer-background-color;
+}
+
+footer .footerButton {
+  width: 24px;
+  background-color: $footer-background-color;
+  display: flex;
+  align-items: center;
+  display: inline-block;
+  cursor: pointer;
+  color: $header-background-color;
+  font-size: 13px;
+  padding: 3.5px 1.5px;
+  text-decoration: none;
+  margin: 2px;
+  border: 0.5px solid $header-background-color;
+  border-radius: 50%;
 }
 
 h1,

@@ -1,20 +1,9 @@
 <footer class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    
-
-    <div class="footer-col-wrapper">
-
-      <div style="margin: auto; text-align: center;">
-        <span> 
-        Contact me: &nbsp; {%- if site.email -%}<a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>{%- endif -%}
-        </span>
-      </div>
-
-    </div>
-
+  <div style="margin: auto; text-align: center;">
+    <a class="footerButton" href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i></a>
+    <a class="footerButton" href="https://x.com/privatemajory"><i class="fab fa-twitter"></i></a>
+    <a class="footerButton" href="https://www.reddit.com/user/privatemajory/"><i class="fab fa-reddit"></i></a>
+    <a class="footerButton" href="https://www.linkedin.com/in/dolly-andriatsiferana/"><i class="fab fa-linkedin"></i></a>
   </div>
-
 </footer>
