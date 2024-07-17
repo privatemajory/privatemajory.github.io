@@ -19,7 +19,7 @@ $text-color: #111 !default;
 $background-color: #ffffff !default;
 $header-background-color: #2e2e2e;
 $footer-background-color: #f7f7f7;
-$header-text-color: lighten($grey-color, 20%);
+$header-text-color: lighten($grey-color, 20%) !default;
 $brand-color: #2a7ae2 !default;
 
 $table-text-align: left !default;
@@ -82,7 +82,7 @@ body {
 
 .site-title,
 .site-title:visited,
-nav .page-link,
+.site-nav .page-link,
 .page-link:visited {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 11px;
@@ -258,10 +258,6 @@ figure figcaption {
 
 .site-nav .menu-icon {
   display: none;
-}
-
-.site-nav .page-link {
-  line-height: 1.5;
 }
 
 .site-nav .page-link:not(:last-child) {
