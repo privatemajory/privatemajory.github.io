@@ -47,7 +47,7 @@ Explore my collection of free datasets below. Click the download button to acces
   {%- for file in page.files -%}
   <tr class="flink">
     <td>
-      <strong>{{ file.title }}</strong><br/>
+      <h4>{{ file.title }}</h4>
       <small>{{ file.description }}</small>
     </td>
     <td>

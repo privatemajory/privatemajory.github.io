@@ -16,7 +16,8 @@ $grey-color-light: lighten($grey-color, 30%) !default;
 $grey-color-dark: darken($grey-color, 20%) !default;
 
 $text-color: #111 !default;
-$background-color: #ffffff !default;
+$background-color: #e8e8e8 !default;
+$content-background-color: #f6f6f6;
 $header-background-color: #e8e8e8aa;
 $footer-background-color: $header-background-color;
 $header-text-color: $grey-color-dark !default;
@@ -25,10 +26,10 @@ $brand-color: #2a7ae2 !default;
 $table-text-align: left !default;
 
 // Width of the content area
-$content-width: 700px !default;
+$content-width: 720px !default;
 
 $on-palm: 600px !default;
-$on-laptop: 700px !default;
+$on-laptop: 720px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -57,8 +58,12 @@ $on-laptop: 700px !default;
 
 body {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.04);
+  color: $text-color;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
+  background-color: $background-color;
+  max-width: $content-width;
+  margin: auto;
 }
 
 // Header
@@ -86,8 +91,8 @@ body {
 .site-nav .page-link,
 .page-link:visited {
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 11px;
-  letter-spacing: 1px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   color: $header-text-color;
 }
@@ -99,9 +104,24 @@ body {
 }
 
 #current-page {
+  position: relative;
   color: darken($grey-color-dark, 20%);
-  border-bottom: 1px solid $grey-color;
   font-weight: 600;
+  padding-bottom: 12px;
+
+  // Base border
+  border-bottom: 10px solid transparent;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 10px;
+    background: linear-gradient(to bottom, #82828280, transparent);
+    z-index: -1;
+  }
 }
 
 // Navigation
@@ -133,7 +153,7 @@ footer {
 
 footer .footerButton {
   width: 24px;
-  background-color: $footer-background-color;
+  background-color: $content-background-color;
   display: flex;
   align-items: center;
   display: inline-block;
@@ -148,6 +168,15 @@ footer .footerButton {
 }
 
 // Text content styling
+
+.page-content {
+  background-color: $content-background-color;
+  border-radius: 10px;
+}
+
+.post-link, .post-link:visited {
+  color: $text-color;
+}
 
 h1,
 h2,
@@ -272,9 +301,33 @@ figure figcaption {
 
 // Datasets table
 
+.datasetsTable {
+  border-collapse: collapse; // Make sure borders don't double up
+  border: none;
+
+  // Horizontal borders between rows, no border on the top and bottom
+  tr:not(:last-child) td, tr:not(:last-child) th {
+    border-bottom: 1px solid $grey-color-light;
+  }
+
+  // Vertical borders between columns, no borders on the left and right
+  td:not(:last-child), th:not(:last-child) {
+    border-right: 1px solid $grey-color-light;
+  }
+
+  // Remove outer borders
+  table, th, td {
+    border: none; // Ensure no outer borders
+  }
+}
+
 .datasetsTable .pageButton {
   display: flex;
   align-items: center;
+}
+
+.datasetsTable h4 {
+  margin-bottom: 0px;
 }
 
 .flink u {
@@ -332,9 +385,12 @@ small {
     position: absolute;
     top: 3px;
     right: 3px;
-    background-color: #2e2e2e;
-    border: 1px solid #383838;
+    background-color: $background-color;
+    border: 1px solid $grey-color-light;
     border-radius: 10px;
+    background: $header-background-color;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   .site-nav label[for="nav-trigger"] {
@@ -348,10 +404,11 @@ small {
     float: right;
     line-height: 0;
     text-align: center;
+    background: transparent;
   }
 
   .site-nav .menu-icon>svg {
-    fill: #fdfdfd;
+    fill: $grey-color-dark;
   }
 
   .site-nav input~.trigger {
@@ -371,5 +428,19 @@ small {
 
   .site-nav .page-link:not(:last-child) {
     margin-right: 0;
+  }
+
+  #current-page {
+    position: relative;
+    color: darken($grey-color-dark, 20%);
+    font-weight: 600;
+    padding-bottom: 5px;
+  
+    // Base border
+    border-bottom: 2px solid transparent;
+  
+    &::after {
+      content: none;
+    }
   }
 }
