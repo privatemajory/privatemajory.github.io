@@ -75,9 +75,10 @@ body {
   background: $header-background-color;
   border-top: none;
   border-bottom: 1px solid lighten($grey-color-light, 10%) !important;
+  padding: 5px;
   transition: background 0.3s ease;
-  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .site-header.scrolled {
@@ -302,7 +303,7 @@ figure figcaption {
 // Datasets table
 
 .datasetsTable {
-  border-collapse: collapse; // Make sure borders don't double up
+  border-collapse: collapse;
   border: none;
 
   // Horizontal borders between rows, no border on the top and bottom
@@ -317,7 +318,7 @@ figure figcaption {
 
   // Remove outer borders
   table, th, td {
-    border: none; // Ensure no outer borders
+    border: none;
   }
 }
 
@@ -339,7 +340,7 @@ figure figcaption {
 small {
   font-size: 80%;
   color: #404040;
-  line-height: 0.8; // Adjust line height here
+  line-height: 0.8;
 }
 
 #slider {
@@ -382,15 +383,12 @@ small {
 
 @media screen and (max-width: 600px) {
   .site-nav {
-    position: absolute;
-    top: 3px;
-    right: 3px;
     background-color: $background-color;
     border: 1px solid $grey-color-light;
     border-radius: 10px;
     background: $header-background-color;
-    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
   }
 
   .site-nav label[for="nav-trigger"] {
@@ -401,7 +399,6 @@ small {
 
   .site-nav .menu-icon {
     display: block;
-    float: right;
     line-height: 0;
     text-align: center;
     background: transparent;
