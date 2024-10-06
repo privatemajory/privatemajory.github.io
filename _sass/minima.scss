@@ -153,19 +153,14 @@ footer {
 }
 
 footer .footerButton {
-  width: 24px;
-  background-color: $content-background-color;
   display: flex;
   align-items: center;
   display: inline-block;
   cursor: pointer;
   color: $grey-color;
-  font-size: 13px;
-  padding: 3.5px 1.5px;
+  font-size: 16px;
   text-decoration: none;
-  margin: 2px;
-  border: 0.5px solid $grey-color-light;
-  border-radius: 50%;
+  margin: 0px 10px;
 }
 
 // Text content styling
