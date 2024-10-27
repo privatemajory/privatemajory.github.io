@@ -15,6 +15,8 @@ images:
     caption: Madagascar's 5 largest lakes
   - image: 2023-07-12_qgis_buildings_in_antananarivo.jpg
     caption: Antananarivo buildings coloured by terrain slope
+  - image: 2024-10-26_qgis_haute_matsiatra.jpg
+    caption: Haute Matsiatra region
   - image: 2023-07-27_qgis_mdg_croplands&population.jpg
     caption: Madagascar croplands vs population
   - image: 2023-11-11_anivorano.jpg
