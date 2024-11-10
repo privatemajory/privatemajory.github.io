@@ -71,6 +71,8 @@ images:
     caption: Downtown Tampere
   - image: 2023-11-13_madagascar_wwdist.jpg
     caption: Madagascar distance to waterway
+  - image: 2022-10-27_qgis_highest_point_per_region.jpg
+    caption: Highest point per region in Madagascar
   - image: 2023-11-14_ljubljana.jpg
     caption: Ljubljana
 ---

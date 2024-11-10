@@ -26,10 +26,10 @@ $brand-color: #2a7ae2 !default;
 $table-text-align: left !default;
 
 // Width of the content area
-$content-width: 720px !default;
+$content-width: 800px !default;
 
 $on-palm: 600px !default;
-$on-laptop: 720px !default;
+$on-laptop: 800px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -167,7 +167,6 @@ footer .footerButton {
 
 .page-content {
   background-color: $content-background-color;
-  border-radius: 10px;
 }
 
 .post-link, .post-link:visited {
@@ -189,7 +188,7 @@ code {
 .post-content table,
 .post-content p,
 .post-content ul {
-  font-family: 'PT Serif', serif;
+  font-family: 'Lora', serif;
 }
 
 p, ul, ol, figure figcaption {
@@ -248,7 +247,7 @@ figure figcaption {
 }
 
 .footnotes ol {
-  font-family: 'PT Serif', serif;
+  font-family: 'Lora', serif;
 }
 
 .centeredcontent {
@@ -336,10 +335,6 @@ small {
   font-size: 80%;
   color: #404040;
   line-height: 0.8;
-}
-
-#slider {
-  border-radius: 10px;
 }
 
 // Numbering of headings
