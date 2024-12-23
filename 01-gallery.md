@@ -43,6 +43,8 @@ images:
     caption: 3D map of Fianarantsoa
   - image: 2020-04-14_b3d_lalangina_relief.jpg
     caption: Map of Lalangina
+  - image: 2024-12-23_qgis_cyclone_landfall.jpg
+    caption: Madagascar cyclone landfall
   - image: 2024-05-20_qgis_fianar_bus.jpg
     caption: Bus map of Fianarantsoa
   # - image: 2022-07-18_qgis_mdg_nobody_lives_here.jpg
