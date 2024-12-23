@@ -34,4 +34,4 @@
 2023-11-14_ljubljana.jpg
 2024-05-20_qgis_fianar_bus.jpg
 2024-10-26_qgis_haute_matsiatra.jpg
-2024-12-23_qgis_cyclone_tracks.jpg
+2024-12-23_qgis_cyclone_landfall.jpg
