@@ -16,9 +16,9 @@ $grey-color-light: lighten($grey-color, 30%) !default;
 $grey-color-dark: darken($grey-color, 20%) !default;
 
 $text-color: #111 !default;
-$background-color: #e8e8e8 !default;
-$content-background-color: #f6f6f6;
-$header-background-color: #e8e8e8aa;
+$background-color: #ffffff !default;
+$content-background-color: #ffffff;
+$header-background-color: #ffffff;
 $footer-background-color: $header-background-color;
 $header-text-color: $grey-color-dark !default;
 $brand-color: #2a7ae2 !default;
@@ -74,7 +74,7 @@ body {
   z-index: 1000;
   background: $header-background-color;
   border-top: none;
-  border-bottom: 1px solid lighten($grey-color-light, 10%) !important;
+  border-bottom: 1px solid $grey-color-light !important;
   padding: 5px;
   transition: background 0.3s ease;
   -webkit-backdrop-filter: blur(10px);
@@ -83,8 +83,6 @@ body {
 
 .site-header.scrolled {
   background: #ffffffaa;
-  border-bottom: 1px solid $grey-color-light !important;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
 }
 
 .site-title,
@@ -108,21 +106,21 @@ body {
   position: relative;
   color: darken($grey-color-dark, 20%);
   font-weight: 600;
-  padding-bottom: 12px;
+  padding-bottom: 14px;
 
   // Base border
-  border-bottom: 10px solid transparent;
+  border-bottom: 5px solid $grey-color-light;
 
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 10px;
-    background: linear-gradient(to bottom, #82828280, transparent);
-    z-index: -1;
-  }
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   height: 10px;
+  //   background: linear-gradient(to bottom, #8e8e8e6a, transparent);
+  //   z-index: -1;
+  // }
 }
 
 // Navigation
@@ -149,7 +147,7 @@ body {
 
 footer {
   background-color: $footer-background-color;
-  border-top: 1px solid lighten($grey-color-light, 10%) !important;
+  border-top: 1px solid $grey-color-light !important;
 }
 
 footer .footerButton {
@@ -167,6 +165,7 @@ footer .footerButton {
 
 .page-content {
   background-color: $content-background-color;
+  padding: 40px 0px;
 }
 
 .post-link, .post-link:visited {
