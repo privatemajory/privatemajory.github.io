@@ -4,24 +4,26 @@
 
 $base-font-family: 'Libre Franklin',
 serif;
-$base-font-size: 13px !default;
+$base-font-size: 14px !default;
 $base-font-weight: 400 !default;
 $small-font-size: $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
 $spacing-unit: 20px !default;
 
-$grey-color: #828282 !default;
-$grey-color-light: lighten($grey-color, 30%) !default;
-$grey-color-dark: darken($grey-color, 20%) !default;
+$grey-color: #909090 !default;
+$grey-color-light: #dfdfdf !default;
+$grey-color-dark: #606060 !default;
 
-$text-color: #111 !default;
+$text-color: #1f2937 !default;
 $background-color: #ffffff !default;
 $content-background-color: #ffffff;
 $header-background-color: #ffffff;
-$footer-background-color: $header-background-color;
-$header-text-color: $grey-color-dark !default;
-$brand-color: #2a7ae2 !default;
+$footer-background-color: #f9fafb;
+$header-text-color: #6b7280 !default;
+$brand-color: #296667 !default;
+$accent-color: #47a6a1 !default;
+$success-color: #228B22 !default;
 
 $table-text-align: left !default;
 
@@ -72,63 +74,75 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: $header-background-color;
+  background: rgba(255, 255, 255, 0.95);
   border-top: none;
   border-bottom: 1px solid $grey-color-light !important;
-  padding: 5px;
-  transition: background 0.3s ease;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  padding: 0;
+  transition: all 0.3s ease;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 
 .site-header.scrolled {
-  background: #ffffffaa;
+  background: rgba(255, 255, 255, 0.98);
 }
 
 .site-title,
-.site-title:visited,
+.site-title:visited {
+  font-family: 'Libre Franklin', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  color: $brand-color;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.site-title:hover {
+  color: $accent-color;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 .site-nav .page-link,
 .page-link:visited {
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 12px;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  text-transform: none;
   color: $header-text-color;
+  transition: all 0.2s ease;
+  position: relative;
 }
 
-.site-header a:hover {
-  color: darken($grey-color-dark, 20%);
+.site-nav .page-link:hover {
+  color: $brand-color;
   text-decoration: none;
   font-weight: 600;
 }
 
 #current-page {
   position: relative;
-  color: darken($grey-color-dark, 20%);
+  color: $brand-color;
   font-weight: 600;
-  padding-bottom: 14px;
+  padding-bottom: 16px;
 
-  // Base border
-  border-bottom: 5px solid $grey-color-light;
-
-  // &::after {
-  //   content: '';
-  //   position: absolute;
-  //   left: 0;
-  //   right: 0;
-  //   bottom: 0;
-  //   height: 10px;
-  //   background: linear-gradient(to bottom, #8e8e8e6a, transparent);
-  //   z-index: -1;
-  // }
-}
-
-// Navigation
-
-.site-nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, $brand-color, $accent-color);
+    border-radius: 1px;
+  }
 }
 
 .site-nav .nav-trigger {
@@ -256,31 +270,33 @@ figure figcaption {
 // Buttons
 
 .pageButton {
-  background-color: $grey-color-dark;
-  display: flex;
+  background: linear-gradient(135deg, $brand-color, $accent-color);
+  display: inline-flex;
   align-items: center;
-  display: inline-block;
   cursor: pointer;
   color: #ffffff;
   font-family: 'Libre Franklin';
-  font-size: 13px;
-  padding: 4px 8px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px 16px;
   text-decoration: none;
-  margin: 2px;
-  border: 1px solid #111;
-  border-radius: 4px;
-
+  margin: 4px;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
 }
 
 .pageButton:hover {
-  background-color: #0b5f9b;
+  background: linear-gradient(135deg, darken($brand-color, 10%), darken($accent-color, 10%));
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
   text-decoration: none;
-  border: 1px solid #084c7c;
 }
 
 .pageButton:active {
-  position: relative;
-  top: 1px;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
 }
 
 .pageButton i {
@@ -371,19 +387,41 @@ small {
 // For smaller screens
 
 @media screen and (max-width: 600px) {
+  body {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .site-header {
+    padding: 10px 0;
+  }
+
+  .site-title {
+    font-size: 14px;
+  }
+
   .site-nav {
-    background-color: $background-color;
+    background-color: rgba(255, 255, 255, 0.95);
     border: 1px solid $grey-color-light;
-    border-radius: 10px;
+    border-radius: 12px;
     background: $header-background-color;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+    padding: 10px;
+    margin-top: 10px;
   }
 
   .site-nav label[for="nav-trigger"] {
     display: block;
     z-index: 2;
     cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+  }
+
+  .site-nav label[for="nav-trigger"]:hover {
+    background-color: $grey-color-light;
   }
 
   .site-nav .menu-icon {
@@ -395,6 +433,8 @@ small {
 
   .site-nav .menu-icon>svg {
     fill: $grey-color-dark;
+    width: 20px;
+    height: 20px;
   }
 
   .site-nav input~.trigger {
@@ -404,29 +444,46 @@ small {
 
   .site-nav input:checked~.trigger {
     display: block;
-    padding: 5px;
+    padding: 10px 0;
   }
 
   .site-nav .page-link {
     display: block;
     margin-left: 0px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    font-size: 13px;
+  }
+
+  .site-nav .page-link:hover {
+    background-color: $grey-color-light;
   }
 
   .site-nav .page-link:not(:last-child) {
     margin-right: 0;
+    margin-bottom: 5px;
   }
 
   #current-page {
     position: relative;
-    color: darken($grey-color-dark, 20%);
+    color: $brand-color;
     font-weight: 600;
-    padding-bottom: 5px;
-  
-    // Base border
-    border-bottom: 2px solid transparent;
+    padding-bottom: 16px;
+    background-color: rgba($brand-color, 0.1);
   
     &::after {
       content: none;
     }
+  }
+
+  .page-content {
+    padding: 20px 0;
+  }
+
+  .pageButton {
+    font-size: 13px;
+    padding: 6px 12px;
+    margin: 2px;
   }
 }
