@@ -16,6 +16,9 @@
   <meta name="theme-color" content="#8B4513">
   <meta name="description" content="{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}

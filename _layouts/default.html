@@ -44,6 +44,7 @@
     
     /* Enhanced gallery hover effects */
     #imggallery a {
+      border-radius: 10px;
       transition: all 0.3s ease;
     }
     
@@ -105,7 +106,7 @@
   // Initialize gallery with enhanced settings
   $("#imggallery").justifiedGallery({
     rowHeight: 200,
-    margins: 4,
+    margins: 12,
     border: 0,
     waitThumbnailsLoad: true,
     animate: true,
@@ -115,6 +116,7 @@
   // Enhanced slider with smooth transitions
   var slider = new IdealImageSlider.Slider({
     selector: '#hero-slider',
+    height: '100%',
     interval: 6000,
     transitionDuration: 1000,
     effect: 'fade',
