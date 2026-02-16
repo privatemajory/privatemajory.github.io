@@ -23,21 +23,13 @@ layout: default
           <i class="fas fa-images"></i>
           <span class="buttonText">Gallery</span>
         </a>
-        <a href="/blog/" class="pageButton">
-          <i class="fas fa-blog"></i>
-          <span class="buttonText">Blog</span>
-        </a>
         <a href="/projects/" class="pageButton">
           <i class="fas fa-code"></i>
           <span class="buttonText">Projects</span>
         </a>
-        <a href="/datasets/" class="pageButton">
-          <i class="fas fa-database"></i>
-          <span class="buttonText">Datasets</span>
-        </a>
-        <a href="/media/" class="pageButton">
-          <i class="fas fa-music"></i>
-          <span class="buttonText">Media</span>
+        <a href="/blog/" class="pageButton">
+          <i class="fas fa-blog"></i>
+          <span class="buttonText">Blog</span>
         </a>
       </div>
     </div>

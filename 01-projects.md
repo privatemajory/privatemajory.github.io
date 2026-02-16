@@ -3,18 +3,27 @@ layout: page
 title: Projects
 permalink: /projects/
 projects:
-  - title: "Optimal walking paths"
+  - title: "Walk between two points"
     icon: "fas fa-map"
     status: "Web application"
-    description: "An interactive web application that uses elevation and roughness data to estimate the fastest path between two points in the Ikongo district. Users can adjust parameters like season, base speed, maximum slope, and uphill/downhill costs to see how different conditions affect the optimal route."
+    description: "An interactive web application that uses elevation and roughness data to estimate the fastest path between two points in the Ikongo district."
     thumbnail: "lcpath.jpg"
     tech_stack:
       - "Flask"
       - "Leaflet.js"
-      - "JavaScript"
-      - "GeoJSON"
-      - "Rasters"
-    demo_url: "https://privatemajory.pythonanywhere.com/"
+      - "Chart.js"
+    demo_url: "https://privatemajory.pythonanywhere.com/lcpath"
+    details_url: "#"
+  - title: "Walk to a health facility"
+    icon: "fas fa-house-medical"
+    status: "Web application"
+    description: "An interactive web application that uses elevation and roughness data to estimate the fastest path from a chosen point to the nearest health facility in the Ikongo district."
+    thumbnail: "hfpath.jpg"
+    tech_stack:
+      - "Flask"
+      - "Leaflet.js"
+      - "Chart.js"
+    demo_url: "https://privatemajory.pythonanywhere.com/hfpath"
     details_url: "#"
 ---
 
