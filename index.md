@@ -21,7 +21,7 @@ layout: default
       <div class="button-container">
         <a href="/gallery/" class="pageButton">
           <i class="fas fa-images"></i>
-          <span class="buttonText">Gallery</span>
+          <span class="buttonText">Maps</span>
         </a>
         <a href="/projects/" class="pageButton">
           <i class="fas fa-code"></i>
@@ -36,16 +36,17 @@ layout: default
   </div>
 </div>
 
-<script src="/slider/ideal-image-slider.min.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    new IdealImageSlider.Slider({
+    var slider = new IdealImageSlider.Slider({
       selector: '#hero-slider',
       height: 'auto',
-      interval: 4000,
-      transitionDuration: 1000,
+      interval: 5000,
+      transitionDuration: 2500,
       effect: 'fade',
       overflow: 'hidden'
     });
+
+    slider.start();
   });
 </script>

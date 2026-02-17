@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Portfolio
+title: Maps
 permalink: /gallery/
 images:
   - image: 2023-07-12_b3d_itasy_hexagons.jpg
