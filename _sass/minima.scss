@@ -28,18 +28,11 @@ $success-color: #228B22 !default;
 $table-text-align: left !default;
 
 // Width of the content area
-$content-width: 800px !default;
-
+$content-width: 1000px !default;
 $on-palm: 600px !default;
 $on-laptop: 800px !default;
 
-// Use media queries like this:
-// @include media-query($on-palm) {
-//   .wrapper {
-//     padding-right: $spacing-unit / 2;
-//     padding-left: $spacing-unit / 2;
-//   }
-// }
+// Media queries
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
     @content;
@@ -174,6 +167,13 @@ footer .footerButton {
   font-size: 16px;
   text-decoration: none;
   margin: 0px 10px;
+}
+
+footer .footerButton:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.2);
+  color: $accent-color;
+  text-decoration: none;
 }
 
 // Text content styling
@@ -426,15 +426,15 @@ small {
   overflow: hidden;
   transition: all 0.3s ease;
   position: relative;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-  border-color: #536872;
+  transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  border-color: white;
 }
 
 .project-thumbnail {
@@ -457,16 +457,18 @@ small {
   right: 0;
   bottom: 0;
   background: linear-gradient(180deg, 
-    rgba(83, 104, 114, 0.6) 0%, 
-    rgba(47, 79, 79, 0.95) 100%);
+    rgba(224, 224, 224, 0.85) 0%, 
+    rgba(109, 128, 127, 0.75) 50%,
+    rgba(24, 68, 61, 0.65) 100%);
   transition: all 0.3s ease;
   z-index: 2;
 }
 
 .project-card:hover .project-thumbnail::before {
   background: linear-gradient(180deg, 
-    rgba(83, 104, 114, 0.7) 0%, 
-    rgba(47, 79, 79, 0.9) 100%);
+    rgba(224, 224, 224, 0.85) 0%, 
+    rgba(109, 128, 127, 0.75) 50%,
+    rgba(24, 68, 61, 0.65) 100%);
 }
 
 .project-header {
@@ -569,7 +571,7 @@ small {
 
 .project-link.primary:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(83, 104, 114, 0.3);
+  box-shadow: 0 6px 12px rgba(83, 104, 114, 0.3);
 }
 
 .project-link.secondary {
@@ -604,7 +606,7 @@ small {
   padding-bottom: 40vh;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   border: 1px solid #dfdfdf;
 }
 
@@ -703,7 +705,6 @@ small {
   height: 120px;
   border-radius: 50%;
   border: 4px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
   margin: 0 auto 10px;
 }

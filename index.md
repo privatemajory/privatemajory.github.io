@@ -36,7 +36,7 @@ layout: default
   </div>
 </div>
 
-<script src="/js/ideal-image-slider.min.js"></script>
+<script src="/slider/ideal-image-slider.min.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     new IdealImageSlider.Slider({

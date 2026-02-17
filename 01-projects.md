@@ -27,7 +27,7 @@ projects:
     details_url: "#"
 ---
 
-<p>Discover my collection of interactive web applications developed with Python, showcasing data visualization, cartographic solutions, and innovative tools</p>
+<p>Discover my collection of interactive web applications developed with Python, showcasing the use of GIS to provide solutions to real-world problems.</p>
 
 <div class="project-grid">
   {%- for project in page.projects -%}
