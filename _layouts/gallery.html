@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<header class="page-header">
+  <div class="container">
+    <p class="kicker">{{ page.kicker | default: "Archive" }}</p>
+    <div class="page-header__row">
+      <div>
+        <h1>{{ page.title | escape }}</h1>
+        {%- if page.summary -%}
+          <p class="page-header__intro">{{ page.summary }}</p>
+        {%- endif -%}
+      </div>
+      <div class="page-header__aside">
+        <span class="gallery-count" data-gallery-count>{{ site.data.maps | size }} maps</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="filter-bar">
+  <div class="container filter-bar__inner" role="group" aria-label="Filter maps by category">
+    {%- for category in site.data.map_categories -%}
+      {%- if category.slug == "everything" -%}
+        {%- assign count = site.data.maps | size -%}
+      {%- else -%}
+        {%- assign count = site.data.maps | where: "category", category.slug | size -%}
+      {%- endif -%}
+      <button class="filter" type="button" data-filter="{{ category.slug }}" aria-pressed="{% if category.slug == 'everything' %}true{% else %}false{% endif %}">
+        {{ category.label }}<span>{{ count }}</span>
+      </button>
+    {%- endfor -%}
+  </div>
+</div>
+
+<section class="section section--tight" data-gallery>
+  <div class="container">
+    <div class="map-columns" data-reveal>
+      {%- for map in site.data.maps -%}
+        {% include map-card.html map=map %}
+      {%- endfor -%}
+    </div>
+    <p class="gallery-empty" data-gallery-empty hidden>No maps in this category yet.</p>
+  </div>
+</section>
+
+{% include lightbox.html %}

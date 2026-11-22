@@ -1,0 +1,12 @@
+- slug: population
+  label: Population
+- slug: education
+  label: Education
+- slug: energy
+  label: Energy
+- slug: transport
+  label: Transport
+- slug: hydrography
+  label: Hydrography
+- slug: services
+  label: Services

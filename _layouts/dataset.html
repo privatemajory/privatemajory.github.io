@@ -1,0 +1,253 @@
+---
+layout: default
+---
+{%- assign ds = site.data.datasets | where: "slug", page.slug | first -%}
+{%- if ds -%}
+{%- assign theme = site.data.dataset_themes | where: "slug", ds.theme | first -%}
+<article class="dataset-detail">
+
+  <header class="page-header">
+    <div class="container">
+      <p class="kicker">{{ ds.theme_label | default: theme.label }}</p>
+      <div class="page-header__row">
+        <div>
+          <h1>{{ ds.title | escape }}</h1>
+          <p class="page-header__intro">{{ ds.summary }}</p>
+        </div>
+      </div>
+
+      <ul class="dataset-facts">
+        <li><strong>{{ ds.primary_format }}</strong> <span>Format</span></li>
+        <li><strong>{{ ds.records | default: "n/a" }}</strong> <span>Records</span></li>
+        <li><strong>{{ ds.geometry_label }}</strong> <span>Geometry</span></li>
+        <li><strong>{{ ds.date }}</strong> <span>First published</span></li>
+        <li><strong>{{ ds.license_short }}</strong> <span>Licence</span></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="container dataset-detail__actions">
+    <a class="button button--accent" href="{{ ds.primary_path | relative_url }}" download>
+      Download {{ ds.primary_format }}
+      {% include icon.html name="download" class="icon" %}
+    </a>
+    <a class="button button--ghost" href="{{ ds.zip_path | relative_url }}" download>
+      Download ZIP
+      {% include icon.html name="download" class="icon" %}
+    </a>
+    <span class="dataset-detail__size">{{ ds.zip_size }} archive{% if ds.files.size > 1 %} · {{ ds.files.size }} files{% endif %}</span>
+  </div>
+
+  <div class="container dataset-detail__layout">
+    <div class="dataset-detail__main">
+
+      {%- if ds.map_svg -%}
+        <section class="dataset-block">
+          <h2>Coverage</h2>
+          <div class="dataset-map__frame">
+            {{ ds.map_svg }}
+          </div>
+          <p class="dataset-block__note">
+            {%- if ds.geometry == "point" -%}
+              Every recorded location, plotted from the coordinates in the file.
+            {%- else -%}
+              Features larger than roughly 9&nbsp;km² are drawn as outlines; smaller ones as points.
+            {%- endif -%}
+          </p>
+        </section>
+      {%- elsif ds.bounds -%}
+        <section class="dataset-block">
+          <h2>Coverage</h2>
+          <p class="dataset-block__note">
+            Bounding box {{ ds.bounds[0] }}, {{ ds.bounds[1] }} to {{ ds.bounds[2] }}, {{ ds.bounds[3] }} (WGS 84),
+            covering the whole country. {{ ds.records }} polygons in total.
+          </p>
+        </section>
+      {%- endif -%}
+
+      {%- if ds.preview -%}
+        <section class="dataset-block">
+          <h2>Preview</h2>
+          <p class="dataset-block__note">The first {{ ds.preview.rows.size }} rows of <code>{{ ds.files.first.name }}</code>.</p>
+          <div class="table-scroll">
+            <table class="data-preview">
+              <thead>
+                <tr>
+                  {%- for column in ds.preview.columns -%}
+                    <th scope="col">{{ column }}</th>
+                  {%- endfor -%}
+                </tr>
+              </thead>
+              <tbody>
+                {%- for row in ds.preview.rows -%}
+                  <tr>
+                    {%- for cell in row -%}
+                      <td>{{ cell | truncate: 46 }}</td>
+                    {%- endfor -%}
+                  </tr>
+                {%- endfor -%}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      {%- endif -%}
+
+      {%- if ds.fields.size > 0 -%}
+        <section class="dataset-block">
+          <h2>Fields</h2>
+          <table class="field-schema">
+            <thead>
+              <tr>
+                <th scope="col">Field</th>
+                {%- if ds.fields.first.type != "" -%}<th scope="col">Type</th>{%- endif -%}
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              {%- for field in ds.fields -%}
+                <tr>
+                  <th scope="row"><code>{{ field.name }}</code></th>
+                  {%- if ds.fields.first.type != "" -%}<td>{{ field.type | default: "n/a" }}</td>{%- endif -%}
+                  <td>{{ field.description | default: "n/a" }}</td>
+                </tr>
+              {%- endfor -%}
+            </tbody>
+          </table>
+        </section>
+      {%- endif -%}
+
+      {%- if ds.original_description -%}
+        <section class="dataset-block">
+          <h2>Original description</h2>
+          <p class="dataset-block__note">Recorded in <code>metadata.txt</code> inside the archive, in {% if ds.language_label == "French" %}French{% else %}{{ ds.language_label }}{% endif %}.</p>
+          <blockquote class="dataset-quote" lang="{{ ds.language | slice: 0, 2 | downcase }}">
+            <p>{{ ds.original_description | escape }}</p>
+            {%- if ds.original_title -%}
+              <cite>{{ ds.original_title | escape }}</cite>
+            {%- endif -%}
+          </blockquote>
+        </section>
+      {%- endif -%}
+
+      <section class="dataset-block">
+        <h2>Files</h2>
+        <table class="field-schema">
+          <thead>
+            <tr>
+              <th scope="col">File</th>
+              <th scope="col">Format</th>
+              <th scope="col">Size</th>
+              <th scope="col">Records</th>
+            </tr>
+          </thead>
+          <tbody>
+            {%- for file in ds.files -%}
+              <tr>
+                <th scope="row">
+                  {%- if file.name contains "." -%}
+                    <a href="{{ file.path | relative_url }}" download><code>{{ file.name }}</code></a>
+                  {%- else -%}
+                    <code>{{ file.name }}</code>
+                  {%- endif -%}
+                </th>
+                <td>{{ file.format }}</td>
+                <td>{{ file.size }}</td>
+                <td>{{ file.records | default: "n/a" }}</td>
+              </tr>
+            {%- endfor -%}
+          </tbody>
+        </table>
+      </section>
+
+    </div>
+
+    <aside class="dataset-detail__aside">
+      <section class="dataset-aside">
+        <h2>About this data</h2>
+        <dl class="meta-list">
+          <dt>Author</dt>
+          <dd>{{ ds.author | default: "Not stated" }}</dd>
+          <dt>First published</dt>
+          <dd>{{ ds.date | default: "Not stated" }}</dd>
+          <dt>Language</dt>
+          <dd>{{ ds.language_label }}</dd>
+          <dt>Coordinate system</dt>
+          <dd>
+            {%- if ds.crs -%}
+              {{ ds.crs }}{% if ds.crs_epsg %} <span class="meta-list__tag">EPSG:{{ ds.crs_epsg }}</span>{% endif %}
+            {%- else -%}
+              Not specified
+            {%- endif -%}
+          </dd>
+          {%- if ds.source -%}
+            <dt>Source</dt>
+            <dd>{{ ds.source }}</dd>
+          {%- endif -%}
+          <dt>Records</dt>
+          <dd>{{ ds.records | default: "n/a" }}</dd>
+        </dl>
+      </section>
+
+      <section class="dataset-aside">
+        <h2>Licence</h2>
+        <p class="dataset-aside__license">
+          <a href="{{ ds.license_url }}" target="_blank" rel="noopener">{{ ds.license_name }}</a>
+        </p>
+        <p class="dataset-block__note">{{ ds.license_summary }}</p>
+      </section>
+
+      <section class="dataset-aside">
+        <h2>Cite this</h2>
+        {%- capture citation -%}{{ ds.author }} ({{ ds.date | date: "%Y" }}). {{ ds.title }} [data set]. {{ ds.license_short }}. {{ site.url }}{{ ds.zip_path }}{%- endcapture -%}
+        <div class="citation">
+          <p id="citation-text">{{ citation }}</p>
+          <button class="button button--ghost button--small" type="button" data-copy="{{ citation | escape }}">
+            Copy citation
+            {% include icon.html name="check" class="icon" %}
+          </button>
+        </div>
+      </section>
+    </aside>
+  </div>
+
+  <div class="container dataset-detail__foot">
+    <a class="link-arrow" href="{{ '/datasets/' | relative_url }}">
+      {% include icon.html name="arrow-left" class="icon" %}
+      All datasets
+    </a>
+  </div>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": {{ ds.title | jsonify }},
+  "description": {{ ds.summary | jsonify }},
+  "url": "{{ site.url }}{{ page.url }}",
+  "license": {{ ds.license_url | jsonify }},
+  "creator": { "@type": "Person", "name": {{ ds.author | jsonify }} },
+  "datePublished": {{ ds.date | jsonify }},
+  "inLanguage": {{ ds.language | slice: 0, 2 | downcase | jsonify }},
+  "keywords": {{ ds.tags | join: ", " | jsonify }},
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": {{ ds.files.first.name | jsonify }},
+      "encodingFormat": {{ ds.primary_format | jsonify }},
+      "contentUrl": "{{ site.url }}{{ ds.primary_path }}"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "ZIP archive",
+      "encodingFormat": "application/zip",
+      "contentUrl": "{{ site.url }}{{ ds.zip_path }}"
+    }
+  ]
+}
+</script>
+{%- else -%}
+<div class="container page-body">
+  <p class="lede">This dataset could not be found.</p>
+</div>
+{%- endif -%}

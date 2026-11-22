@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://privatemajory.github.io/sitemap.xml

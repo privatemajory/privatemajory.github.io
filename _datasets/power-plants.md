@@ -1,0 +1,3 @@
+---
+slug: power-plants
+---

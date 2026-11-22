@@ -1,0 +1,397 @@
+ID,District,Etablissement
+1,Ambalavao,Lycée Joel Sylvain
+2,Ambalavao,Lycée Mananjara Ambohimahamasina
+3,Ambalavao,Lycée Matavy
+4,Ambalavao,Lycée Anjoma
+5,Ambalavao,Lycée Mahazony
+6,Ambalavao,Lycée Ankaramena
+7,Ambalavao,Lycée Andrainjato Kiririoka
+8,Ambalavao,Lycée Ambinaniroa
+9,Ambanja,Lycée Mixte Tsiarasoa Ambanja
+10,Ambanja,Lycée Mixte Bemaneviky/H-S
+11,Ambatoboeny,Lycée Ambatoboeny
+12,Ambatoboeny,Lycée Tsaramandroso
+13,Ambatofinandrahana,Lycée Annexe Soavina
+14,Ambatofinandrahana,Lycée Ambatofinandrahana
+15,Ambatofinandrahana,Lycée Bemahazemona
+16,Ambatofinandrahana,Lycée D’Enseignement Général Fenoarivo
+17,Ambatolampy,Lycée Ambatolampy
+18,Ambatolampy,Lycée Mixte Behenjy
+19,Ambatolampy,Lycée Antsampandrano
+20,Ambatomainty,Lycée Santatra Ambatomainty
+21,Ambatondrazaka,Lycée Annexe Imerimandroso
+22,Ambatondrazaka,Lycée Ranohavimanana Norbert Ambatondrazaka
+23,Ambatondrazaka,Lycée Bejofo
+24,Ambatondrazaka,Lycée Andilanatoby
+25,Ambatondrazaka,Lycée Annexe Didy
+26,Ambilobe,Lycée Mixte Ambohijery Ambilobe
+27,Ambilobe,Lycée Mixte Betsiaka
+28,Ambilobe,Lycée Anaborano-Ifasy
+29,Ambilobe,Lycée Mixte Ampondralava
+30,Ambilobe,Lycée Mixte Beramanja
+31,Ambilobe,Lycée Mixte Sirama
+32,Amboasary-Sud,Lycée Amboasary Sud
+33,Amboasary-Sud,Lycée Tsivory
+34,Ambohidratrimo,Lycée Ambohidratrimo
+35,Ambohidratrimo,Lycée Mahitsy
+36,Ambohidratrimo,Lycée Ivato Aeroport
+37,Ambohidratrimo,Lycée Ambohitrimanjaka
+38,Ambohidratrimo,Lycée Ampangabe
+39,Ambohidratrimo,Lycée Antanetibe Mahazaza
+40,Ambohidratrimo,Lycée Mahabo
+41,Ambohidratrimo,Lycée Talatamaty
+42,Ambohidratrimo,Lycée Ampanotokana
+43,Ambohimahasoa,Lycée Randrianasolo Gervais Protais
+44,Ambohimahasoa,Lycée Vohiposa
+45,Ambohimahasoa,Lycée Ambalakindresy
+46,Ambohimahasoa,Lycée Sahave Ambohimahasoa
+47,Ambohimahasoa,Lycée Camp Robin
+48,Ambohimahasoa,Lycée Befeta
+49,Ambohimahasoa,Lycée Morafeno
+50,Ambohimahasoa,Lycée Ankafina Tsarafidy Annexe
+51,Ambositra,Lycée Rakotoarisoa
+52,Ambositra,Lycée Annexe Marosoa
+53,Ambositra,Lycée Annexe Ilaka Centre
+54,Ambositra,Lycée Tsarasaotra
+55,Ambositra,Lycée Ivato Centre
+56,Ambositra,Lycée Andina
+57,Ambositra,Lycée Public de Kianjandrakefina
+58,Ambositra,Lycée Annexe Moderne Ankorombe
+59,Ambovombe,Lycée Resampa Andre
+60,Ambovombe,Lycée Ambondro Anatirova
+61,Ambovombe,Lycée Mixte Laha Gaston
+62,Ampanihy,Lycée Ampanihy Ouest
+63,Ampanihy,Lycée Ejeda
+64,Ampanihy,Lycée Communautaire Itampolo
+65,Amparafaravola,Lycée Amparafaravola
+66,Amparafaravola,Lycée de Morarano Chrome
+67,Amparafaravola,Lycée Tanambe
+68,Analalava,Lycée Befotaka-Nord
+69,Analalava,Lycée Communautaire Maromandia
+70,Analalava,Lycée Alidy Aboudou
+71,Analalava,Lycée Communautaire Marovantaza
+72,Analalava,Lycée Communautaire Marovatolena
+73,Analalava,Lycée Ankaramy
+74,Analalava,Lycée Communautaire Antonibe
+75,Andapa,Lycée Mixte Andapa
+76,Andapa,Lycée Mixte Ambodiangezoka
+77,Andapa,Lycée Mixte Doany
+78,Andilamena,Lycée Andilamena
+79,Andilamena,Lycée Antanimenakaba
+80,Andramasina,Lycée Alatsinainy Bakaro
+81,Andramasina,Lycée Andramasina
+82,Andramasina,Lycée Ambohimiadana
+83,Andramasina,Lycée Communautaire Mandrosoa
+84,Andramasina,Lycée Vohitsarahasina
+85,Anjozorobe,Lycée Communautaire Amboasary Nord
+86,Anjozorobe,Lycée Communautaire Betatao
+87,Anjozorobe,Lycée Antanetibe Anativolo
+88,Anjozorobe,Lycée Ambatomanoina
+89,Anjozorobe,Lycée Anjozorobe
+90,Anjozorobe,Lycée Mangamila
+91,Anjozorobe,Lycée Communautaire Ambohibary Vohilena
+92,Ankazoabo,Lycée Ankazoabo
+93,Ankazobe,Lycée Lovasoa Ankazobe
+94,Ankazobe,Lycée Modele Mahavelona
+95,Ankazobe,Lycée Fihaonana
+96,Anosibe An'Ala,Lycée Anosibe An'Ala
+97,Anosibe An'Ala,Lycée Communautaire Antandrokomby (Annexe Anosibe an'Ala)
+98,Antalaha,Lycée Horace Francois
+99,Antalaha,Lycée Communautaire Antsahanoro
+100,Antanambao-Manampotsy,Lycée Antanambao-Manampontsy
+101,Antananarivo Atsimondrano,Lycée Joseph Ravoahangy Andrianavalona
+102,Antananarivo Atsimondrano,Lycée Fenoarivo
+103,Antananarivo Atsimondrano,Lycée Ampitatafika
+104,Antananarivo Atsimondrano,Lycée Andoharanofotsy
+105,Antananarivo Atsimondrano,Lycée Anosizato Andrefana
+106,Antananarivo Atsimondrano,Lycée Soalandy
+107,Antananarivo Atsimondrano,Lycée Ambatofahavalo
+108,Antananarivo Avaradrano,Lycée Andrianampoinimerina
+109,Antananarivo Avaradrano,Lycée Ambohimangakely
+110,Antananarivo Avaradrano,Lycée Tsararivotra Andriamanelo Saint Christo. Alasora
+111,Antananarivo Avaradrano,Lycée Ambohimalaza
+112,Antananarivo Avaradrano,Lycée Talata Volonondry
+113,Antananarivo Avaradrano,Lycée Ambohimanambola
+114,Antananarivo Avaradrano,Lycée Radama 1ER Manandriana
+115,Antananarivo Avaradrano,Lycée d'Enseignement Général Ankadinandriana
+116,Antananarivo Avaradrano,Lycée Moderne Ankadikely Ilafy
+117,Antananarivo Renivohitra,Lycée Nanisana
+118,Antananarivo Renivohitra,Lycée Jules Ferry Faravohitra
+119,Antananarivo Renivohitra,Lycée Ambohimanarina
+120,Antananarivo Renivohitra,Lycée Jean Joseph Rabearivelo
+121,Antananarivo Renivohitra,Lycée Moderne Ampefiloha
+122,Antananarivo Renivohitra,Lycée Analamahitsy
+123,Antananarivo Renivohitra,Lycée Gallieni Andohalo
+124,Antanifotsy,Lycée Public Antanifotsy
+125,Antanifotsy,Lycée Ambohimandroso
+126,Antanifotsy,Lycée Ambohitompoina
+127,Antsalova,Lycée Antsalova
+128,Antsirabe I,Lycée Andre Resampa Antsirabe
+129,Antsirabe I,Lycée Mandaniresaka
+130,Antsirabe II,Lycée Ambohibary
+131,Antsirabe II,Lycée Tsarahasina
+132,Antsirabe II,Lycée Andranomanelatra
+133,Antsirabe II,Lycée Soanindrariny
+134,Antsirabe II,Lycée Ambohidranandriana
+135,Antsiranana I,Lycée Mixte Antsiranana
+136,Antsiranana I,Lycée Annexe
+137,Antsiranana II,Lycée Anivorano Nord
+138,Antsiranana II,Lycée Antanamitarana
+139,Antsohihy,Lycée Antsohihy
+140,Antsohihy,Lycée Anjiamangirana I
+141,Antsohihy,Lycée Ambodimadiro
+142,Arivonimamo,Lycée Arivonimamo
+143,Arivonimamo,Lycée d'Enseignement Général d'Imerintsiatosika
+144,Arivonimamo,Lycée Manalalondo
+145,Arivonimamo,Lycée Ambohimandry
+146,Arivonimamo,Lycée Ambohimasina
+147,Arivonimamo,Lycée Miantsoarivo
+148,Arivonimamo,Lycée Ambohipandrano
+149,Bealanana,Lycée Bealanana
+150,Bealanana,Lycée Ambatoriha Est
+151,Bealanana,Lycée Ambatosia
+152,Befandriana-Nord,Lycée Jeanvain Paul
+153,Befandriana-Nord,Lycée Antsakabary
+154,Befandriana-Nord,Lycée Ambodimotso Sud
+155,Befandriana-Nord,Lycée Ambararata
+156,Befotaka,Lycée Befotaka-Sud
+157,Bekily,Lycée Saint Joseph
+158,Bekily,Lycée Bekily
+159,Belo Sur Tsiribihina,Lycée Ampanjaka Toera
+160,Beloha,Lycée Beloha
+161,Benenitra,Lycée Benenitra
+162,Beroroha,Lycée Mixte Beroroha
+163,Besalampy,Lycée Besalampy
+164,Betafo,Lycée Betafo
+165,Betafo,Lycée Anosiarivo Manapa
+166,Betioky,Lycée d'Enseignement Général Bezaha
+167,Betioky,Lycée Betioky Atsimo
+168,Betioky,Lycée Ambatry
+169,Betroka,Lycée Mixte Jangany
+170,Betroka,Lycée Tsiebo Calvin Betroka
+171,Betroka,Lycée Mixte Isoanala
+172,Brickaville,Lycée Brickaville
+173,Brickaville,Lycée Communautaire Ranomafana-Est
+174,Brickaville,Lycée Anivorano Est
+175,Fandriana,Lycée d'Enseignement Général Fandriana
+176,Fandriana,Lycée Annexe Sandrandahy
+177,Fandriana,Lycée d'Enseignement Général Imito
+178,Fandriana,Lycée d'Enseignemeent Général Ambadikimanangana
+179,Fandriana,Lycée Annexe Tsarazaza
+180,Fandriana,Lycée Annexe Alakamisy Ambohimahazo
+181,Fandriana,Lycée Annexe Fiadanana
+182,Fandriana,Lycée Annexe Mahazoarivo
+183,Farafangana,Lycée Tata Max Farafangana
+184,Farafangana,Lycée Ankarana
+185,Farafangana,Lycée Evato
+186,Farafangana,Lycée Bevoay Beretra
+187,Faratsiho,Lycée Faratsiho
+188,Faratsiho,Lycée Miandrarivo
+189,Faratsiho,Lycée Annexe Ambatofotsy
+190,Faratsiho,Lycée Antsampanimahazo
+191,Faratsiho,Lycée Vinaninony Sud
+192,Fenerive-Est,Lycée d'Enseignement Général Fenerive Est
+193,Fenerive-Est,Lycée Ampasina Maningory
+194,Fenerive-Est,Lycée Communautaire Ampasimbe Manantsatrana
+195,Fenerive-Est,Lycée Vohilengo
+196,Fenoarivobe,Lycée Fenoarivobe
+197,Fenoarivobe,Lycéecommunautaire Firavahana
+198,Fenoarivobe,Lycée Kiranomena
+199,Fenoarivobe,Lycée Communautaire Ambohitromby
+200,Fianarantsoa I,Lycée Raherivelo Ramamonjy
+201,Fianarantsoa I,Lycée Mahazengy
+202,Fianarantsoa I,Sekoly Miaramilam-Pirenena
+203,Iakora,Lycée Iakora
+204,Iakora,Lycée Ranotsara Nord
+205,Ifanadiana,Lycée Ambohimanga Sud
+206,Ifanadiana,Lycée Kelilalina
+207,Ifanadiana,Lycée Ifanadiana
+208,Ihosy,Lycée Ihosy
+209,Ihosy,Lycée Ranohira
+210,Ikalamavony,Lycée Ikalamavony
+211,Ikalamavony,Lycée Mangidy
+212,Ikongo,Lycée Andriampanoha
+213,Ikongo,Lycée Tolongoina
+214,Ikongo,Lycée Ambatofotsy
+215,Ikongo,Lycée Manampatrana
+216,Ikongo,Lycée Ifanirea
+217,Isandra,Lycée Communautaire Nasandratrony
+218,Isandra,Lycée Isorana
+219,Isandra,Lycée Andoharanomaitso
+220,Isandra,Lycée Anjoma Itsara
+221,Isandra,Lycée Communautaire Ambondrona
+222,Ivohibe,Lycée Ivohibe
+223,Kandreho,Lycée Kandreho
+224,Lalangina,Lycée Jean Ralaimongo
+225,Lalangina,Lycée Alakamisy Ambohimaha
+226,Lalangina,Lycée Communautaire Lalangina Est
+227,Lalangina,Lycée Communautaire Andrainjato-Centre
+228,Lalangina,Lycée Ambalamahasoa
+229,Lalangina,Lycée Communautaire Andrainjato-Est
+230,Lalangina,Lycée Communautaire Ambalakely
+231,Lalangina,Lycée Communautaire Ivoamba
+232,Maevatanana,Lycée Maevatanana
+233,Maevatanana,Lycée Mahazoma
+234,Maevatanana,Lycée Mahatsinjo RN4
+235,Maevatanana,Lycée Andriba
+236,Mahabo,Lycée Mahabo Resaotsy
+237,Mahabo,Lycée Malaimbandy
+238,Mahabo,Lycée Annexe Resaotsy Ankilizato
+239,Mahajanga I,Lycée Philibert Tsiranana Mahajanga
+240,Mahajanga II,Lycée Antanimalandy
+241,Mahanoro,Lycée Mahanoro
+242,Mahanoro,Lycée d'Enseignement Général Ambinanindrano
+243,Maintirano,Lycée Maintirano
+244,Mampikony,Lycée Mampikony
+245,Mampikony,Lycée Ampasimatera
+246,Mampikony,Lycée Malakialina
+247,Mampikony,Lycée Communautaire Ambohitoaka
+248,Manakara,Lycée Sileny Paul
+249,Manakara,Lycée Communautaire Managnano
+250,Manakara,Lycée Ambahive
+251,Manakara,Lycée Faraony Ampasimanjeva
+252,Manakara,Lycée Sahasinaka
+253,Mananara-Nord,Lycée Mananara Ville
+254,Mananara-Nord,Lycée Antanambe
+255,Mananara-Nord,Lycée Sandrakatsy
+256,Manandriana,Lycée Ambatomarina
+257,Manandriana,Lycée Anjoman' Ankona
+258,Manandriana,Lycée Manandriana
+259,Manandriana,Lycée Annexe Ambohimahazo
+260,Mananjary,Lycée Public Mananjary Justin Manambelona
+261,Mananjary,Lycée Communautaire Fanantara
+262,Mananjary,Lycée Communautaire Sangasanga
+263,Mananjary,Lycée Communautaire Vohilava
+264,Mandoto,Lycée Ankazomiriotra
+265,Mandoto,Lycée Mandoto
+266,Mandritsara,Lycée Victor Miadana
+267,Mandritsara,Lycée Marotandrano
+268,Mandritsara,Lycée Andohajango
+269,Mandritsara,Lycée Pont Sofia
+270,Mandritsara,Lycée Ambalakirajy
+271,Mandritsara,Lycée Antsatramidola
+272,Manja,Lycée Manja
+273,Manja,Lycée d'Ankiliabo
+274,Manjakandriana,Lycée Manjakandriana
+275,Manjakandriana,Lycée Ambohitseheno
+276,Manjakandriana,Lycée Antsahalalina
+277,Manjakandriana,Lycée Mananara Ambatomena
+278,Manjakandriana,Lycée Ankazondandy
+279,Manjakandriana,Lycée Ambohitrandriamanitra
+280,Manjakandriana,Lycée Ambanitsena
+281,Manjakandriana,Lycée Anjepy
+282,Manjakandriana,Lycée Ankadimanga
+283,Manjakandriana,Lycée Sadabe
+284,Manjakandriana,Lycée Ambohitrolomahitsy
+285,Manjakandriana,Lycée Ambohibao Sud
+286,Manjakandriana,Lycée Jean Laborde Mantasoa
+287,Manjakandriana,Lycée d'Enseignement Général Ambohitratrimoanala
+288,Maroantsetra,Lycée Maroantsetra
+289,Maroantsetra,Lycée Anjahana
+290,Marolambo,Lycée Ambohimilanja
+291,Marolambo,Lycée Marolambo
+292,Marolambo,Lycée Androrangavola
+293,Marovoay,Lycée Marovoay
+294,Marovoay,Lycée Ankazomborona
+295,Marovoay,Lycée Manaratsandry
+296,Marovoay,Lycée Ambolomoty
+297,Miandrivazo,Lycée Miandrivazo
+298,Miarinarivo,Lycée Mandiavato
+299,Miarinarivo,Lycée Miarinarivo
+300,Miarinarivo,Lycée Anosibe Ifanja
+301,Miarinarivo,Lycée Analavory
+302,Midongy-Sud,Lycée Midongy Atsimo
+304,Mitsinjo,Lycée Mitsinjo
+305,Morafenobe,Lycée Annexe Morafenobe
+306,Moramanga,Lycée Razafindrabe Victorien Moramanga
+307,Moramanga,Lycée Sabotsy Anjiro
+308,Moramanga,Lycée Vodiriana
+309,Moramanga,Lycée Amboasary
+310,Moramanga,Lycée Communautaire Andasibe
+311,Moramanga,Lycée Mandialaza
+312,Moramanga,Lycée Andaingo
+313,Moramanga,Lycée Communautaire Morarano Gara
+314,Morombe,Lycée Jefson Jean Jonasy Morombe
+315,Morombe,Lycée Ambahikily
+316,Morombe,Lycée Ankatsakatsa Sud
+317,Morondava,Lycée Pole Morondava
+318,Morondava,Lycée Bemanonga
+319,Morondava,Lycée Analaiva
+320,Nosy-BE,Lycée Mixte Nosy Be
+321,Nosy-BE,Lycée Mixte Dzamandzar
+322,Nosy-Varika,Lycée Nosy Varika
+323,Nosy-Varika,Lycée Ampasinambo
+324,Nosy-Varika,Lycée Communautaire Vohitrandriana
+325,Nosy-Varika,Lycée Communautaire Sahavato
+326,Port-Berge,Lycée Port-Berge
+327,Port-Berge,Lycée Marovato
+328,Sainte-Marie,Lycée Sainte Marie
+329,Sakaraha,Lycée Sakaraha
+330,Sambava,Lycée Mixte Sambava
+331,Sambava,Lycée Mixte Bemanevika
+332,Sambava,Lycée Mixte Ambodiampana
+333,Sambava,Lycée d'Enseignement Général Amboangibe
+334,Sambava,Lycée Mixte Ambohimitsinjo
+335,Sambava,Lycée Mixte Ambodivoara
+336,Soalala,Lycée Soalala
+337,Soanierana Ivongo,Lycée Soanierana Ivongo
+338,Soanierana Ivongo,Lycée Antanifotsy
+339,Soavinandriana,Lycée Radimisoa Albert
+340,Soavinandriana,Lycée Ambatoasana
+341,Soavinandriana,Lycée Mahavelona
+342,Taolanaro,Lycée Pole Taolanaro
+343,Taolanaro,Lycée Ranomafana
+344,Taolanaro,Lycée Manantenina
+345,Taolanaro,Lycée Manambaro
+346,Taolanaro,Lycée Ampasy Nahampoana
+347,Toamasina I,Lycée Jacques Rabemananjara
+348,Toamasina II,Lycée Toamasina II
+349,Toamasina II,Lycée Foulpointe
+350,Toliara I,Lycée Laurent Botokeky
+351,Toliara I,Lycée Antaninarenina
+352,Toliara I,Lycée Mixte Mahavatse II
+353,Toliara I,Lycée Mixte Betania
+354,Toliara II,Lycée Mitsinjo Betanimena
+355,Toliara II,Lycée Ankililoaka
+356,Toliara II,Lycée Colonel Fiakara Jean Ferlin Saint Augustin
+357,Toliara II,Lycée Miary
+358,Toliara II,Lycée Mixte Manombo
+359,Tsaratanana,Lycée Communautaire Andriamena
+360,Tsaratanana,Lycée Brieville
+361,Tsaratanana,Lycée Tsaratanana
+362,Tsihombe,Lycée Mixte Tsihombe
+363,Tsihombe,Lycée Antaritarika
+364,Tsiroanomandidy,Lycée Tsiroanomandidy
+365,Tsiroanomandidy,Lycée d'Enseignement Général Ankadinondry Sakay
+366,Tsiroanomandidy,Lycée Mahasolo
+367,Tsiroanomandidy,Lycée Ambararatabe
+368,Tsiroanomandidy,Lycée Anosy
+371,Tsiroanomandidy,Lycée Ambalanirana
+372,Tsiroanomandidy,Lycée Communautaire Belobaka
+373,Tsiroanomandidy,Lycée Tsinjoarivo Imanga
+374,Vagaindrano,Lycée Ranomena
+375,Vagaindrano,Lycée Vangaindrano
+376,Vagaindrano,Lycée Manambondro
+377,Vagaindrano,Lycée Matanga
+379,Vatomandry,Lycée Zokinjaza Rambeloson Ilaka Est
+380,Vatomandry,Lycée Vatomandry
+381,Vavatenina,Lycée de Vavatenina
+382,Vavatenina,Lycée Tsarajoro Anjahambe
+383,Vavatenina,Lycée Communautaire Ambohibe
+384,Vohemar,Lycée d'Enseignement Général Vohemar
+385,Vohemar,Lycée Mixte Ampanefena
+386,Vohemar,Lycée Communautaire Antsirabe Nord
+387,Vohibato,Lycée Mahaditra
+388,Vohibato,Lycée Mahasoabe
+389,Vohibato,Lycée Alakamisy Itenina
+390,Vohibato,Lycée Andranomiditra
+391,Vohibato,Lycée Communautaire Vinanitelo
+392,Vohibato,Lycée Talata Ampano
+393,Vohibato,Lycée Communautaire Andranovorivato
+394,Vohibato,Lycée Communautaire Vohitrafeno
+395,Vohipeno,Lycée Vohipeno
+396,Vohipeno,Lycée Ilakatra
+397,Vohipeno,Lycée Andemaka
+398,Vohipeno,Lycée Nato
+399,Vondrozo,Lycée Vondrozo
+400,Vondrozo,Lycée Karianga

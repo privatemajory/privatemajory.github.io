@@ -1,0 +1,78 @@
+# Curated presentation layer for the dataset catalog.
+#
+# Everything else (author, dates, CRS, language, field schemas, record counts,
+# file sizes, source) is extracted from each archive's metadata.txt by
+# scripts/build_datasets.py. Only the English-facing copy, the theme and the
+# licence are curated here, because those are editorial decisions rather than
+# facts recorded inside the archives.
+
+- file: mg_agencesboa_v1.zip
+  slug: boa-offices
+  title: BOA offices in Madagascar
+  summary: Every Bank of Africa branch in Madagascar, with address, phone number and e-mail.
+  theme: services
+  license: CC-BY-SA-4.0
+  geometry: none
+  tags:
+    - banking
+    - points of interest
+
+- file: mg_lyceespublics_v1.zip
+  slug: public-high-schools
+  title: Public high schools in Madagascar
+  summary: Public lycées across Madagascar, listed by district.
+  theme: education
+  license: CC-BY-SA-4.0
+  geometry: none
+  tags:
+    - schools
+    - education
+
+- file: mg_populationfokontany_v1.zip
+  slug: population-fokontany
+  title: Population by fokontany
+  summary: 2009 population, density and area for every fokontany in Madagascar, as polygons.
+  theme: population
+  license: CC-BY-SA-4.0
+  geometry: polygon
+  source: INSTAT, 2009
+  tags:
+    - census
+    - density
+    - boundaries
+
+- file: mg_centrales_electriques_v1.zip
+  slug: power-plants
+  title: Power plants in Madagascar
+  summary: Power plants with type, operator, installed capacity and coordinates.
+  theme: energy
+  license: CC-BY-SA-4.0
+  geometry: point
+  tags:
+    - electricity
+    - infrastructure
+
+- file: mg_profilsrnmajeures_v1.zip
+  slug: road-profiles
+  title: Profiles of the major national roads
+  summary: Longitudinal profiles along the RN 2, RN 4, RN 6 and RN 7, with altitude, 2D/3D distance and slope.
+  theme: transport
+  license: CC-BY-SA-4.0
+  geometry: none
+  tags:
+    - roads
+    - elevation
+    - slope
+
+- file: mg_lacs_v1.zip
+  slug: lakes
+  title: Lakes in Madagascar
+  summary: A non-exhaustive list of Madagascar's lakes with location, area and polygon geometry.
+  theme: hydrography
+  license: ODbL-1.0
+  geometry: polygon
+  source: GEOnet Names Server (NGA) and OpenStreetMap
+  tags:
+    - water
+    - inland
+    - openstreetmap

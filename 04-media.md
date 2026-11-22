@@ -2,8 +2,32 @@
 layout: page
 title: Media
 permalink: /media/
+kicker: Sound
+summary: "Maps are not the only thing I make. Some ideas come out as sound instead."
+description: "Music by Dolly Andriatsiferana (Privatemajory), including the 2023 collection on SoundCloud."
 ---
 
-I make music too! Listen to some music tracks I created below.
+<div class="media-card">
+  <div class="media-card__intro">
+    <p class="kicker">SoundCloud</p>
+    <h2>2023</h2>
+    <p>A collection of tracks made away from the map. Percussion, loops and a little bit of noise.</p>
+    <p>
+      <a class="link-arrow" href="https://soundcloud.com/privatemajory/sets/2023a1" target="_blank" rel="noopener">
+        Open on SoundCloud
+        {% include icon.html name="arrow-up-right" class="icon" %}
+      </a>
+    </p>
+  </div>
+  <div class="media-card__player">
+    <iframe
+      title="Privatemajory, 2023 playlist on SoundCloud"
+      width="100%"
+      height="320"
+      loading="lazy"
+      allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1734721902&color=%23b4451f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+  </div>
+</div>
 
-<iframe height="300" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1734721902&color=%237d837d&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 13px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/privatemajory" title="Privatemajory" target="_blank" style="color: #cccccc; text-decoration: none;">Privatemajory</a> · <a href="https://soundcloud.com/privatemajory/sets/2023a1" title="2023" target="_blank" style="color: #cccccc; text-decoration: none;">2023</a></div>
+<p class="collection-foot muted">More tracks at <a href="https://soundcloud.com/privatemajory" target="_blank" rel="noopener">soundcloud.com/privatemajory</a>.</p>

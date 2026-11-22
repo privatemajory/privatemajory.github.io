@@ -1,0 +1,65 @@
+---
+layout: default
+---
+<article class="project-detail">
+  <header class="project-detail__header">
+    <div class="container">
+      <p class="post-meta">
+        <a href="{{ '/projects/' | relative_url }}">Projects</a>
+        <span class="sep"></span>
+        <span>{{ page.status }}</span>
+        <span class="sep"></span>
+        <span>{{ page.year }}</span>
+      </p>
+      <h1>{{ page.title | escape }}</h1>
+      <p class="project-detail__summary">{{ page.summary }}</p>
+    </div>
+  </header>
+
+  <figure class="project-detail__hero">
+    <picture>
+      <source type="image/webp"
+              srcset="{{ '/assets/images/projects/' | append: page.image_slug | append: '-800.webp' | relative_url }} 800w, {{ '/assets/images/projects/' | append: page.image_slug | append: '-1200.webp' | relative_url }} 1200w, {{ '/assets/images/projects/' | append: page.image_slug | append: '-1600.webp' | relative_url }} 1600w"
+              sizes="(min-width: 1200px) 1100px, 92vw">
+      <img src="{{ '/assets/images/projects/' | append: page.image_slug | append: '-800.jpg' | relative_url }}"
+           alt="{{ page.image_alt | default: page.title | escape }}"
+           width="1600"
+           height="793"
+           loading="eager"
+           decoding="async">
+    </picture>
+  </figure>
+
+  <div class="container">
+    <div class="project-detail__layout">
+      <div class="prose" data-article>
+        {{ content }}
+      </div>
+
+      <aside class="project-detail__aside">
+        <div class="project-aside">
+          <h2>Stack</h2>
+          <ul>
+            {%- for tech in page.stack -%}
+              <li>{{ tech }}</li>
+            {%- endfor -%}
+          </ul>
+        </div>
+
+        <div class="project-aside">
+          <h2>Links</h2>
+          <div class="project-aside__links">
+            <a class="button button--accent button--small" href="{{ page.app_url }}" target="_blank" rel="noopener">
+              Open app
+              {% include icon.html name="arrow-up-right" class="icon" %}
+            </a>
+            <a class="button button--ghost button--small" href="https://apps.privatemajory.top/" target="_blank" rel="noopener">
+              All apps
+              {% include icon.html name="external" class="icon" %}
+            </a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</article>

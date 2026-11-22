@@ -1,0 +1,45 @@
+{%- assign ds = include.dataset -%}
+{%- assign level = include.level | default: 3 -%}
+{%- capture search_blob -%}
+{{ ds.title }} {{ ds.summary }} {{ ds.theme_label }} {{ ds.geometry_label }} {{ ds.author }} {{ ds.source }} {{ ds.license_short }} {{ ds.tags | join: ' ' }} {{ ds.fields | map: 'name' | join: ' ' }} {{ ds.fields | map: 'description' | join: ' ' }}
+{%- endcapture -%}
+<article class="dataset-card"
+         data-dataset
+         data-theme="{{ ds.theme }}"
+         data-format="{{ ds.primary_format }}"
+         data-language="{{ ds.language | slice: 0, 2 | upcase }}"
+         data-title="{{ ds.title | downcase | escape }}"
+         data-records="{{ ds.records | default: 0 }}"
+         data-date="{{ ds.date }}"
+         data-search="{{ search_blob | downcase | strip | escape }}">
+  <div class="dataset-card__top">
+    <span class="chip chip--accent">{{ ds.theme_label }}</span>
+    <span class="dataset-card__size">{{ ds.primary_format }}</span>
+  </div>
+
+  <h{{ level }} class="dataset-card__title">
+    <a href="{{ ds.slug | prepend: '/datasets/' | append: '/' | relative_url }}">{{ ds.title | escape }}</a>
+  </h{{ level }}>
+
+  <p class="dataset-card__desc">{{ ds.summary }}</p>
+
+  <ul class="dataset-card__meta">
+    <li><strong>{{ ds.records | default: "n/a" }}</strong> records</li>
+    <li>{{ ds.geometry_label }}</li>
+    {%- if ds.crs_epsg -%}<li>EPSG:{{ ds.crs_epsg }}</li>{%- endif -%}
+    <li>{{ ds.license_short }}</li>
+  </ul>
+
+  <div class="dataset-card__foot">
+    <span class="dataset-card__size">{{ ds.zip_size }}</span>
+    <div class="dataset-card__buttons">
+      <a class="button button--accent button--small" href="{{ ds.primary_path | relative_url }}" download aria-label="Download {{ ds.title | escape }} as {{ ds.primary_format }}">
+        {{ ds.primary_format }}
+        {% include icon.html name="download" class="icon" %}
+      </a>
+      <a class="button button--ghost button--small" href="{{ ds.slug | prepend: '/datasets/' | append: '/' | relative_url }}">
+        Details
+      </a>
+    </div>
+  </div>
+</article>

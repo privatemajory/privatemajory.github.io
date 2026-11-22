@@ -1,0 +1,25 @@
+<dialog id="lightbox" class="lightbox" aria-labelledby="lightbox-title">
+  <div class="lightbox__inner">
+    <button class="lightbox__close" type="button" data-lightbox-close aria-label="Close map viewer">
+      {% include icon.html name="close" class="icon" %}
+    </button>
+    <button class="lightbox__prev" type="button" data-lightbox-prev aria-label="Previous map">
+      {% include icon.html name="chevron-left" class="icon" %}
+    </button>
+    <button class="lightbox__next" type="button" data-lightbox-next aria-label="Next map">
+      {% include icon.html name="chevron-right" class="icon" %}
+    </button>
+
+    <figure class="lightbox__figure">
+      <img class="lightbox__image" data-lightbox-image alt="">
+    </figure>
+
+    <div class="lightbox__caption">
+      <div>
+        <strong id="lightbox-title" data-lightbox-title></strong>
+        <span data-lightbox-caption></span>
+      </div>
+      <span data-lightbox-counter></span>
+    </div>
+  </div>
+</dialog>

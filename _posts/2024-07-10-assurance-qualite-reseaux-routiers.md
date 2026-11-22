@@ -3,6 +3,18 @@ layout: post
 title: "Améliorer la continuité des réseaux routiers dans un SIG : quelques méthodes"
 date: 2024-07-10 19:00:00 +0300
 categories: gis
+lang: fr
+description: "Trois méthodes pour détecter les discontinuités d'un réseau routier dans un SIG : îles flottantes, groupes presque connectés et anomalies d'isolignes de distance."
+tags:
+  - QGIS
+  - Réseaux
+  - Contrôle qualité
+image:
+  path: /assets/images/blog/road-networks-og.jpg
+  width: 1200
+  height: 630
+  alt: Segments d'un réseau routier coloriés par composante connectée
+thumb: /assets/images/blog/road-networks-square-320.webp
 ---
 
 Les données sur les réseaux routiers sont essentielles pour planifier des trajets entre différents lieux. Cependant, la présence de nombreuses discontinuités dans le réseau peut entraîner des résultats d’analyse inattendus. Il existe des méthodes d’analyse permettant d’évaluer la qualité des données routières et de détecter les erreurs potentielles dans la continuité du réseau. Dans cet article, nous détaillerons trois méthodes pour assurer la qualité des réseaux routiers : la recherche des îles flottantes, l'identification des groupes presque connectés, et la détection des anomalies avec les isolignes de distances.
@@ -17,7 +29,7 @@ Les îles flottantes (ou composantes isolées) dans un réseau routier sont des 
 - **Extraire les groupes qui ne sont pas connectés aux réseaux principaux :** Utilisez l’attribut booléen précédemment créé pour différencier le réseau principal du reste. Vérifiez chaque groupe non connecté individuellement afin de déterminer s’il peut être connecté au réseau principal.
 
 <figure>
-<img src="/img/road-network-comps.png" style="zoom:33%;" />
+<img src="/img/road-network-comps.png" alt="Segments de voies coloriés par l'identifiant de leur groupe" />
 <figcaption>Segments de voies coloriés par l'identifiant du groupe. Les composantes "8" constituent le réseau principal et les autres sont des composantes isolées.</figcaption>
 </figure>
 
@@ -32,7 +44,7 @@ Cette analyse vise à identifier les composantes isolées de voies qui se trouve
 - **Compter les valeurs distinctes d’ID de réseau dans chaque polygone obtenu :** Les polygones (tampons fusionnés) contenant deux valeurs d’ID de réseau différentes ou plus indiquent des groupes de chemins qui sont proches mais non connectés. Utilisez l'outil **[Joindre les attributs par localisation (résumé)](https://docs.qgis.org/testing/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html#qgisjoinbylocationsummary)** pour compter les valeurs distinctes d'ID à partir des nœuds qui intersectent chaque polygone. Les polygones ayant deux valeurs uniques ou plus doivent être vérifiés et, si possible, connectés pour améliorer la continuité du réseau.
 
 <figure>
-<img src="/img/almost-connected-ways.png" style="zoom:33%;" />
+<img src="/img/almost-connected-ways.png" alt="Composantes presque connectées mises en évidence en rouge" />
 <figcaption>Composantes presque connectées : les endroits en rouge, où il y a plusieurs IDs de groupe distincts, sont probablement à connecter.</figcaption>
 </figure>
 
@@ -54,7 +66,7 @@ Cette analyse vise à détecter les anomalies potentielles dans la continuité d
    - Utilisez l’outil **Joindre les attributs par localisation (résumé)** pour joindre aux polygones des tampons les écarts des distances. Les polygones ayant des écarts importants entre "max" et "min" sont à vérifier, car ils peuvent indiquer des tronçons mal connectés rendant la déviation énorme.
 
 <figure>
-<img src="/img/road-network-isodistance-anomaly.png" style="zoom:66%;" />
+<img src="/img/road-network-isodistance-anomaly.png" alt="Anomalie de distance repérée entre deux nœuds encadrés en rouge" />
 <figcaption>Possible endroit à connecter. Il y a un écart de 10 km de parcours entre les nœuds encadrés en rouge (La différence entre 6 et 1 est 5, et les catégories ici sont à intervalle de 2 km à partir de Soavina, donc une distance de 5 x 2 km).</figcaption>
 </figure>
 

@@ -1,0 +1,93 @@
+{
+  "slug": "population-fokontany",
+  "title": "Population by fokontany",
+  "summary": "2009 population, density and area for every fokontany in Madagascar, as polygons.",
+  "theme": "population",
+  "theme_label": "Population",
+  "geometry": "polygon",
+  "geometry_label": "Polygons",
+  "tags": [
+    "census",
+    "density",
+    "boundaries"
+  ],
+  "license": "CC-BY-SA-4.0",
+  "license_short": "CC BY-SA 4.0",
+  "license_name": "Creative Commons Attribution-ShareAlike 4.0 International",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "license_summary": "Reuse freely, including commercially, as long as you credit the author and share derivatives under the same licence.",
+  "attribution": "© Manda Andriatsiferana",
+  "source": "INSTAT, 2009",
+  "format": "Shapefile",
+  "crs": "WGS 84 Latitude Longitude (EPSG 4326)",
+  "crs_epsg": 4326,
+  "language": "FR (Français)",
+  "language_label": "French",
+  "author": "Manda Andriatsiferana",
+  "date": "2019-10-25",
+  "original_title": "Population par Fokontany à Madagascar",
+  "original_description": "Population par Fokontany à Madagascar selon les données de INSTAT en 2009. Ces données sont basées sur la déclaration de chaque chef Fokontany.",
+  "records": 17459,
+  "bounds": [
+    43.1769,
+    -25.6058,
+    50.4849,
+    -11.9514
+  ],
+  "zip_path": "/datasets/mg_populationfokontany_v1.zip",
+  "zip_url": "https://privatemajory.github.io/datasets/mg_populationfokontany_v1.zip",
+  "zip_bytes": 20702757,
+  "zip_size": "19.7 MB",
+  "files": [
+    {
+      "name": "mg_populationfokontany_v1.zip",
+      "path": "/datasets/mg_populationfokontany_v1.zip",
+      "url": "https://privatemajory.github.io/datasets/mg_populationfokontany_v1.zip",
+      "format": "Shapefile",
+      "bytes": 20702757,
+      "size": "19.7 MB",
+      "records": 17459,
+      "delimiter": null
+    }
+  ],
+  "primary_path": "/datasets/mg_populationfokontany_v1.zip",
+  "primary_format": "Shapefile",
+  "fields": [
+    {
+      "name": "Region",
+      "type": "Text",
+      "description": "région à laquelle le Fokontany appartient"
+    },
+    {
+      "name": "District",
+      "type": "Text",
+      "description": "district auquel le Fokontany appartient"
+    },
+    {
+      "name": "Commune",
+      "type": "Text",
+      "description": "commune à laquelle le Fokontany appartient"
+    },
+    {
+      "name": "Fokontany",
+      "type": "Text",
+      "description": "nom du Fokontany"
+    },
+    {
+      "name": "Population",
+      "type": "Number",
+      "description": "nombre de population du Fokontany"
+    },
+    {
+      "name": "Densite_pa",
+      "type": "Number",
+      "description": "densité de populaiton du Fokontany en habitants par hectare"
+    },
+    {
+      "name": "Surface_km",
+      "type": "Number",
+      "description": "surface du Fokontany en kilomètres carré"
+    }
+  ],
+  "preview": null
+}

@@ -1,0 +1,199 @@
+{
+  "slug": "power-plants",
+  "title": "Power plants in Madagascar",
+  "summary": "Power plants with type, operator, installed capacity and coordinates.",
+  "theme": "energy",
+  "theme_label": "Energy",
+  "geometry": "point",
+  "geometry_label": "Points",
+  "tags": [
+    "electricity",
+    "infrastructure"
+  ],
+  "license": "CC-BY-SA-4.0",
+  "license_short": "CC BY-SA 4.0",
+  "license_name": "Creative Commons Attribution-ShareAlike 4.0 International",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "license_summary": "Reuse freely, including commercially, as long as you credit the author and share derivatives under the same licence.",
+  "attribution": "© Manda Andriatsiferana",
+  "source": "",
+  "format": "CSV",
+  "crs": "WGS 84 Latitude Longitude (EPSG 4326)",
+  "crs_epsg": 4326,
+  "language": "FR (Français)",
+  "language_label": "French",
+  "author": "Manda Andriatsiferana",
+  "date": "2024-07-09",
+  "original_title": "Centrales électriques à Madagascar",
+  "original_description": "Liste des centrales électriques à Madagascar avec le type, l'opérateur, la puissance et la localisation géographique.",
+  "records": 181,
+  "bounds": null,
+  "zip_path": "/datasets/mg_centrales_electriques_v1.zip",
+  "zip_url": "https://privatemajory.github.io/datasets/mg_centrales_electriques_v1.zip",
+  "zip_bytes": 5220,
+  "zip_size": "5 KB",
+  "files": [
+    {
+      "name": "mg_centrales_electriques.csv",
+      "path": "/datasets/mg_centrales_electriques.csv",
+      "url": "https://privatemajory.github.io/datasets/mg_centrales_electriques.csv",
+      "format": "CSV",
+      "bytes": 20476,
+      "size": "20 KB",
+      "records": 181,
+      "delimiter": "comma"
+    }
+  ],
+  "primary_path": "/datasets/mg_centrales_electriques.csv",
+  "primary_format": "CSV",
+  "fields": [
+    {
+      "name": "Nom",
+      "type": "",
+      "description": "Nom de la centrale"
+    },
+    {
+      "name": "Type",
+      "type": "",
+      "description": "Type de la centrale (hydroélectrique ou thermale)"
+    },
+    {
+      "name": "Pays",
+      "type": "",
+      "description": "Nom du pays"
+    },
+    {
+      "name": "Région",
+      "type": "",
+      "description": "Nom de la région"
+    },
+    {
+      "name": "Localité",
+      "type": "",
+      "description": "Nom de la localité"
+    },
+    {
+      "name": "Opérateur",
+      "type": "",
+      "description": "Nom de l'opérateur"
+    },
+    {
+      "name": "Puissance (kW)",
+      "type": "",
+      "description": "Puissance en kilowatts"
+    },
+    {
+      "name": "Longitude",
+      "type": "",
+      "description": "Longitude (degré décimal)"
+    },
+    {
+      "name": "Latitude",
+      "type": "",
+      "description": "Latitude (degré décimal)"
+    }
+  ],
+  "preview": {
+    "columns": [
+      "Nom",
+      "Type",
+      "Pays",
+      "Région",
+      "Localité",
+      "Opérateur",
+      "Puissance (kW)",
+      "Longitude",
+      "Latitude"
+    ],
+    "rows": [
+      [
+        "Centrale thermique d'Ambatondrazaka",
+        "centrale thermique",
+        "Madagascar",
+        "Alaotra-Mangoro",
+        "Ambatondrazaka",
+        "Jirama",
+        "3440",
+        "48.429",
+        "-17.826"
+      ],
+      [
+        "Centrale thermique d'Ambatosoratra",
+        "centrale thermique",
+        "Madagascar",
+        "Alaotra-Mangoro",
+        "Ambatosoratra",
+        "EDM",
+        "64",
+        "48.514",
+        "-17.612"
+      ],
+      [
+        "Centrale thermique d'Amboasary Gara",
+        "centrale thermique",
+        "Madagascar",
+        "Alaotra-Mangoro",
+        "Amboasary Gara",
+        "BETC Nanala",
+        "64",
+        "48.265",
+        "-18.444"
+      ],
+      [
+        "Centrale thermique d'Amparafaravola",
+        "centrale thermique",
+        "Madagascar",
+        "Alaotra-Mangoro",
+        "Amparafaravola",
+        "Jirama",
+        "376",
+        "48.223",
+        "-17.584"
+      ],
+      [
+        "Centrale thermique d'Ampitatsimo",
+        "centrale thermique",
+        "Madagascar",
+        "Alaotra-Mangoro",
+        "Ampitatsimo",
+        "Mad'Eole",
+        "64",
+        "48.381",
+        "-17.807"
+      ],
+      [
+        "Centrale thermique d'Andaingo",
+        "centrale thermique",
+        "Madagascar",
+        "Alaotra-Mangoro",
+        "Andaingo",
+        "BETC Nanala",
+        "64",
+        "48.269",
+        "-18.217"
+      ],
+      [
+        "Centrale thermique d'Andilamena",
+        "centrale thermique",
+        "Madagascar",
+        "Alaotra-Mangoro",
+        "Andilamena",
+        "Jirama",
+        "476",
+        "48.572",
+        "-17.013"
+      ],
+      [
+        "Centrale thermique d'Anosibe An'ala",
+        "centrale thermique",
+        "Madagascar",
+        "Alaotra-Mangoro",
+        "Anosibe An'Ala",
+        "Jirama",
+        "230",
+        "48.205",
+        "-19.435"
+      ]
+    ]
+  }
+}

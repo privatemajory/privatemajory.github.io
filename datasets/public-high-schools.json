@@ -1,0 +1,115 @@
+{
+  "slug": "public-high-schools",
+  "title": "Public high schools in Madagascar",
+  "summary": "Public lycées across Madagascar, listed by district.",
+  "theme": "education",
+  "theme_label": "Education",
+  "geometry": "none",
+  "geometry_label": "No geometry",
+  "tags": [
+    "schools",
+    "education"
+  ],
+  "license": "CC-BY-SA-4.0",
+  "license_short": "CC BY-SA 4.0",
+  "license_name": "Creative Commons Attribution-ShareAlike 4.0 International",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "license_summary": "Reuse freely, including commercially, as long as you credit the author and share derivatives under the same licence.",
+  "attribution": "© Manda Andriatsiferana",
+  "source": "",
+  "format": "CSV",
+  "crs": "",
+  "crs_epsg": null,
+  "language": "FR (Français)",
+  "language_label": "French",
+  "author": "Manda Andriatsiferana",
+  "date": "2019-10-25",
+  "original_title": "Lycées publics de Madagascar",
+  "original_description": "Une liste des lycées publics à Madagascar par districts.",
+  "records": 396,
+  "bounds": null,
+  "zip_path": "/datasets/mg_lyceespublics_v1.zip",
+  "zip_url": "https://privatemajory.github.io/datasets/mg_lyceespublics_v1.zip",
+  "zip_bytes": 5187,
+  "zip_size": "5 KB",
+  "files": [
+    {
+      "name": "mg_lyceespublics_v1.csv",
+      "path": "/datasets/mg_lyceespublics_v1.csv",
+      "url": "https://privatemajory.github.io/datasets/mg_lyceespublics_v1.csv",
+      "format": "CSV",
+      "bytes": 15538,
+      "size": "15 KB",
+      "records": 396,
+      "delimiter": "comma"
+    }
+  ],
+  "primary_path": "/datasets/mg_lyceespublics_v1.csv",
+  "primary_format": "CSV",
+  "fields": [
+    {
+      "name": "ID",
+      "type": "",
+      "description": "identifiant unique"
+    },
+    {
+      "name": "District",
+      "type": "",
+      "description": "district auquel l'établissement appartient"
+    },
+    {
+      "name": "Etablissement",
+      "type": "",
+      "description": "nom de l'établissement"
+    }
+  ],
+  "preview": {
+    "columns": [
+      "ID",
+      "District",
+      "Etablissement"
+    ],
+    "rows": [
+      [
+        "1",
+        "Ambalavao",
+        "Lycée Joel Sylvain"
+      ],
+      [
+        "2",
+        "Ambalavao",
+        "Lycée Mananjara Ambohimahamasina"
+      ],
+      [
+        "3",
+        "Ambalavao",
+        "Lycée Matavy"
+      ],
+      [
+        "4",
+        "Ambalavao",
+        "Lycée Anjoma"
+      ],
+      [
+        "5",
+        "Ambalavao",
+        "Lycée Mahazony"
+      ],
+      [
+        "6",
+        "Ambalavao",
+        "Lycée Ankaramena"
+      ],
+      [
+        "7",
+        "Ambalavao",
+        "Lycée Andrainjato Kiririoka"
+      ],
+      [
+        "8",
+        "Ambalavao",
+        "Lycée Ambinaniroa"
+      ]
+    ]
+  }
+}
