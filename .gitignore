@@ -3,3 +3,9 @@ _site
 .vscode
 .jekyll-cache
 bourbon
+
+# Bundler artefacts. These are platform-specific: a vendor/ tree installed on
+# Windows (mingw/ucrt gems) cannot be used on Linux, which is what broke the
+# GitHub Actions build. Never commit them.
+vendor/
+.bundle/

@@ -3,6 +3,7 @@ name: Build and deploy site
 on:
   push:
     branches: [master, main]
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -11,7 +12,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -21,6 +22,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Installs the Bundler version recorded in Gemfile.lock, then runs
+      # `bundle install`. Nothing platform-specific is committed: vendor/ and
+      # .bundle/ are gitignored, so each runner resolves its own gems. A
+      # committed Windows vendor tree is what broke this build before.
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -49,12 +54,14 @@ jobs:
           JEKYLL_ENV: production
 
       - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
   deploy:
     needs: build
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
