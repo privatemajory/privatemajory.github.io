@@ -1,0 +1,7 @@
+slug,title,theme,format,geometry,records,crs,language,author,date,license,download,zip
+boa-offices,BOA offices in Madagascar,Services,CSV,No geometry,93,,English,Manda Andriatsiferana,2019-10-25,CC BY-SA 4.0,/datasets/mg_agencesboa_v1.csv,/datasets/mg_agencesboa_v1.zip
+power-plants,Power plants in Madagascar,Energy,CSV,Points,181,WGS 84 Latitude Longitude (EPSG 4326),French,Manda Andriatsiferana,2024-07-09,CC BY-SA 4.0,/datasets/mg_centrales_electriques.csv,/datasets/mg_centrales_electriques_v1.zip
+lakes,Lakes in Madagascar,Hydrography,CSV,Polygons,303,WGS 84 Latitude Longitude (EPSG 4326),French,Manda Andriatsiferana,2024-07-09,ODbL 1.0,/datasets/mg_lacs.csv,/datasets/mg_lacs_v1.zip
+public-high-schools,Public high schools in Madagascar,Education,CSV,No geometry,396,,French,Manda Andriatsiferana,2019-10-25,CC BY-SA 4.0,/datasets/mg_lyceespublics_v1.csv,/datasets/mg_lyceespublics_v1.zip
+population-fokontany,Population by fokontany,Population,Shapefile,Polygons,17459,WGS 84 Latitude Longitude (EPSG 4326),French,Manda Andriatsiferana,2019-10-25,CC BY-SA 4.0,/datasets/mg_populationfokontany_v1.zip,/datasets/mg_populationfokontany_v1.zip
+road-profiles,Profiles of the major national roads,Transport,CSV,No geometry,13592,,English,Manda Andriatsiferana,2019-11-13,CC BY-SA 4.0,/datasets/profil_rn2.csv,/datasets/mg_profilsrnmajeures_v1.zip

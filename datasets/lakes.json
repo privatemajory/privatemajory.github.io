@@ -1,0 +1,200 @@
+{
+  "slug": "lakes",
+  "title": "Lakes in Madagascar",
+  "summary": "A non-exhaustive list of Madagascar's lakes with location, area and polygon geometry.",
+  "theme": "hydrography",
+  "theme_label": "Hydrography",
+  "geometry": "polygon",
+  "geometry_label": "Polygons",
+  "tags": [
+    "water",
+    "inland",
+    "openstreetmap"
+  ],
+  "license": "ODbL-1.0",
+  "license_short": "ODbL 1.0",
+  "license_name": "Open Database License 1.0",
+  "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "license_summary": "Derived from OpenStreetMap. Attribute OpenStreetMap contributors and share derivative databases under the same licence.",
+  "attribution": "© OpenStreetMap contributors",
+  "source": "GEOnet Names Server (NGA) and OpenStreetMap",
+  "format": "CSV",
+  "crs": "WGS 84 Latitude Longitude (EPSG 4326)",
+  "crs_epsg": 4326,
+  "language": "FR (Français)",
+  "language_label": "French",
+  "author": "Manda Andriatsiferana",
+  "date": "2024-07-09",
+  "original_title": "Lacs à Madagascar",
+  "original_description": "Une liste non exhaustive des lacs à Madagascar avec leurs localisations et leurs superficies. Les données proviennent de GNS (https://geonames.nga.mil/geonames/GNSData/) et d'OpenStreetMap (https://www.openstreetmap.org/).",
+  "records": 303,
+  "bounds": null,
+  "zip_path": "/datasets/mg_lacs_v1.zip",
+  "zip_url": "https://privatemajory.github.io/datasets/mg_lacs_v1.zip",
+  "zip_bytes": 129024,
+  "zip_size": "126 KB",
+  "files": [
+    {
+      "name": "mg_lacs.csv",
+      "path": "/datasets/mg_lacs.csv",
+      "url": "https://privatemajory.github.io/datasets/mg_lacs.csv",
+      "format": "CSV",
+      "bytes": 537529,
+      "size": "525 KB",
+      "records": 303,
+      "delimiter": "comma"
+    }
+  ],
+  "primary_path": "/datasets/mg_lacs.csv",
+  "primary_format": "CSV",
+  "fields": [
+    {
+      "name": "nom_complet",
+      "type": "",
+      "description": "Nom complet du lac"
+    },
+    {
+      "name": "nom_propre",
+      "type": "",
+      "description": "Nom propre du lac"
+    },
+    {
+      "name": "surface_en_ha",
+      "type": "",
+      "description": "Superficie du lac en hectares"
+    },
+    {
+      "name": "pays",
+      "type": "",
+      "description": "Nom du pays où le lac se trouve"
+    },
+    {
+      "name": "province",
+      "type": "",
+      "description": "Nom de la province où le lac se trouve"
+    },
+    {
+      "name": "region",
+      "type": "",
+      "description": "Nom de la région où le lac se trouve"
+    },
+    {
+      "name": "point_x",
+      "type": "",
+      "description": "Coordonnées X d'un point représentant le lac"
+    },
+    {
+      "name": "point_y",
+      "type": "",
+      "description": "Coordonnées Y d'un point représentant le lac"
+    },
+    {
+      "name": "poly_wkt",
+      "type": "",
+      "description": "Polygône représentant le lac sous format WKT"
+    }
+  ],
+  "preview": {
+    "columns": [
+      "nom_complet",
+      "nom_propre",
+      "surface_en_ha",
+      "pays",
+      "province",
+      "region",
+      "point_x",
+      "point_y",
+      "poly_wkt"
+    ],
+    "rows": [
+      [
+        "lac Amparihinandriambavy",
+        "Amparihinandriambavy",
+        "270",
+        "Madagascar",
+        "Antananarivo",
+        "Analamanga",
+        "47.7851",
+        "-18.0207",
+        "MultiPolygon (((47.7826 -18.0144, 47.7925 -18.0121, 47.7936 -18.0132, 47.794 -18.0151, 47.7934 -18.0172, 47.7947 -18.019, 47.7946 -18.0198, 47.7976 -18.0225, 47.7963 -18.0259, 47.7933 -18.0271, 47.7916 -18.0263, 47.7897 -18.024, 47.786 -18.0285, 47.7849 -18.029, 47.7811 -18.0269, 47.779 -18.0243, 47.7749 -18.0225, 47.7745 -18.0214, 47.775 -18.0199, 47.7762 -18.019, 47.7783 -18.0182, 47.7794 -18.0165, 47.7826 -18.0144)))"
+      ],
+      [
+        "lac Andranofotsy",
+        "Andranofotsy",
+        "149",
+        "Madagascar",
+        "Antananarivo",
+        "Analamanga",
+        "47.6032",
+        "-18.3634",
+        "MultiPolygon (((47.5977 -18.3627, 47.5966 -18.3632, 47.5967 -18.3624, 47.5978 -18.3616, 47.5995 -18.3622, 47.6011 -18.3617, 47.6009 -18.3602, 47.5995 -18.3586, 47.6003 -18.3577, 47.6027 -18.3578, 47.6028 -18.3586, 47.6041 -18.3605, 47.6065 -18.3614, 47.6072 -18.3612, 47.6095 -18.3583, 47.6105 -18.3544, 47.6126 -18.3536, 47.6142 -18.3544, 47.6146 -18.3542, 47.6154 -18.3572, 47.6135 -18.3595, 47.6121 -18.3601, 47.6116 -18.3616, 47.6098 -18.3628, 47.6076 -18.3666, 47.6061 -18.3673, 47.6066 -18.3685, 47.6055 -18.3697, 47.6047 -18.3731, 47.6028 -18.3734, 47.6031 -18.3724, 47.6014 -18.3688, 47.6014 -18.3672, 47.6001 -18.3657, 47.5992 -18.3659, 47.5992 -18.3645, 47.5978 -18.365, 47.5985 -18.3641, 47.598 -18.3636, 47.5963 -18.3643, 47.5965 -18.3636, 47.5982 -18.3629, 47.5977 -18.3627)))"
+      ],
+      [
+        "lac Amaroelatra",
+        "Amaroelatra",
+        "91",
+        "Madagascar",
+        "Antananarivo",
+        "Analamanga",
+        "47.5442",
+        "-18.4313",
+        "MultiPolygon (((47.5446 -18.4349, 47.5469 -18.435, 47.5483 -18.4375, 47.5466 -18.4383, 47.5462 -18.4377, 47.5425 -18.4367, 47.5404 -18.4376, 47.54 -18.4354, 47.539 -18.4349, 47.5388 -18.4343, 47.5392 -18.4342, 47.5399 -18.4325, 47.5411 -18.4314, 47.5411 -18.4308, 47.5396 -18.4294, 47.5387 -18.4291, 47.5385 -18.4284, 47.5416 -18.4251, 47.5434 -18.4244, 47.5451 -18.4268, 47.5472 -18.4279, 47.5469 -18.4302, 47.5474 -18.4312, 47.547 -18.4323, 47.5475 -18.4331, 47.547 -18.4336, 47.5464 -18.4336, 47.5457 -18.4325, 47.5446 -18.432, 47.5436 -18.4332, 47.5439 -18.4345, 47.5446 -18.4349)))"
+      ],
+      [
+        "lac Amparihibe",
+        "Amparihibe",
+        "45",
+        "Madagascar",
+        "Antananarivo",
+        "Analamanga",
+        "47.6903",
+        "-18.1007",
+        "MultiPolygon (((47.6858 -18.1004, 47.6875 -18.1005, 47.688 -18.0996, 47.6906 -18.0998, 47.6909 -18.0988, 47.6913 -18.0988, 47.6915 -18.0997, 47.6948 -18.0983, 47.6962 -18.0968, 47.6981 -18.0968, 47.6987 -18.0978, 47.6977 -18.0981, 47.6969 -18.0995, 47.6955 -18.1, 47.6951 -18.1011, 47.6939 -18.1009, 47.6922 -18.1014, 47.6906 -18.1028, 47.6885 -18.1029, 47.6888 -18.1039, 47.6884 -18.1045, 47.687 -18.1036, 47.685 -18.1033, 47.6838 -18.1021, 47.6838 -18.1016, 47.6849 -18.1019, 47.685 -18.1009, 47.6858 -18.1004)))"
+      ],
+      [
+        "lac Mandroseza",
+        "Mandroseza",
+        "42",
+        "Madagascar",
+        "Antananarivo",
+        "Analamanga",
+        "47.5535",
+        "-18.9324",
+        "MultiPolygon (((47.5511 -18.928, 47.5532 -18.9285, 47.5533 -18.9301, 47.5545 -18.9302, 47.5558 -18.9314, 47.557 -18.9341, 47.5573 -18.9342, 47.5567 -18.9343, 47.5571 -18.9347, 47.5551 -18.9371, 47.5542 -18.9372, 47.5536 -18.9366, 47.5536 -18.9359, 47.5531 -18.9362, 47.5523 -18.936, 47.5525 -18.9342, 47.5505 -18.9333, 47.5512 -18.9313, 47.5497 -18.9302, 47.5505 -18.9297, 47.5511 -18.928)))"
+      ],
+      [
+        "lac Lohazozoro",
+        "Lohazozoro",
+        "31",
+        "Madagascar",
+        "Antananarivo",
+        "Analamanga",
+        "47.4295",
+        "-18.9914",
+        "MultiPolygon (((47.4263 -18.989, 47.4285 -18.99, 47.43 -18.9902, 47.4335 -18.9902, 47.4345 -18.9895, 47.4349 -18.9895, 47.4349 -18.9903, 47.434 -18.9902, 47.4343 -18.9917, 47.4337 -18.9921, 47.4326 -18.9919, 47.4316 -18.9929, 47.431 -18.9924, 47.4291 -18.9941, 47.4282 -18.9931, 47.4256 -18.9924, 47.4258 -18.992, 47.4242 -18.991, 47.4241 -18.9903, 47.426 -18.9898, 47.4263 -18.989)))"
+      ],
+      [
+        "lac Amparibe",
+        "Amparibe",
+        "29",
+        "Madagascar",
+        "Antananarivo",
+        "Analamanga",
+        "47.1757",
+        "-18.76",
+        "MultiPolygon (((47.1744 -18.7593, 47.174 -18.7576, 47.1748 -18.7584, 47.1763 -18.7582, 47.1785 -18.7588, 47.1807 -18.7623, 47.1787 -18.7629, 47.1725 -18.7612, 47.1719 -18.7603, 47.1722 -18.7597, 47.1744 -18.7593)))"
+      ],
+      [
+        "lac Malay",
+        "Malay",
+        "20",
+        "Madagascar",
+        "Antananarivo",
+        "Analamanga",
+        "47.6199",
+        "-18.2695",
+        "MultiPolygon (((47.6165 -18.2669, 47.6212 -18.2692, 47.6237 -18.2697, 47.623 -18.2709, 47.6215 -18.2709, 47.6204 -18.2721, 47.6193 -18.2723, 47.6178 -18.2708, 47.6165 -18.2669)))"
+      ]
+    ]
+  }
+}

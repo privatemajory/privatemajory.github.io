@@ -1,0 +1,221 @@
+itasy:
+  width: 1920
+  height: 1080
+  widths:
+  - 640
+  - 1200
+  - 1920
+mayotte:
+  width: 1450
+  height: 1600
+  widths:
+  - 640
+  - 1200
+  - 1450
+st-louis:
+  width: 835
+  height: 2649
+  widths:
+  - 640
+  - 835
+drainage-divide:
+  width: 1920
+  height: 3414
+  widths:
+  - 640
+  - 1200
+  - 1920
+five-lakes:
+  width: 1920
+  height: 1920
+  widths:
+  - 640
+  - 1200
+  - 1920
+antananarivo-slope:
+  width: 1920
+  height: 1597
+  widths:
+  - 640
+  - 1200
+  - 1920
+haute-matsiatra:
+  width: 1920
+  height: 1920
+  widths:
+  - 640
+  - 1200
+  - 1920
+croplands:
+  width: 1920
+  height: 2715
+  widths:
+  - 640
+  - 1200
+  - 1920
+anivorano:
+  width: 1358
+  height: 1448
+  widths:
+  - 640
+  - 1200
+  - 1358
+toamasina:
+  width: 1920
+  height: 2755
+  widths:
+  - 640
+  - 1200
+  - 1920
+tampere-landscape:
+  width: 1920
+  height: 800
+  widths:
+  - 640
+  - 1200
+  - 1920
+galapagos:
+  width: 1920
+  height: 1080
+  widths:
+  - 640
+  - 1200
+  - 1920
+river-basins:
+  width: 1920
+  height: 2715
+  widths:
+  - 640
+  - 1200
+  - 1920
+cape-verde:
+  width: 1920
+  height: 1813
+  widths:
+  - 640
+  - 1200
+  - 1920
+mahamasina:
+  width: 1920
+  height: 2468
+  widths:
+  - 640
+  - 1200
+  - 1920
+fianarantsoa:
+  width: 1920
+  height: 1920
+  widths:
+  - 640
+  - 1200
+  - 1920
+lalangina:
+  width: 1897
+  height: 2107
+  widths:
+  - 640
+  - 1200
+  - 1897
+cyclone:
+  width: 1920
+  height: 2715
+  widths:
+  - 640
+  - 1200
+  - 1920
+fianar-bus:
+  width: 1920
+  height: 1920
+  widths:
+  - 640
+  - 1200
+  - 1920
+ikongo:
+  width: 1920
+  height: 2880
+  widths:
+  - 640
+  - 1200
+  - 1920
+united-kingdoms:
+  width: 1920
+  height: 2743
+  widths:
+  - 640
+  - 1200
+  - 1920
+manhattan:
+  width: 900
+  height: 900
+  widths:
+  - 640
+  - 900
+urban-slope:
+  width: 1920
+  height: 2835
+  widths:
+  - 640
+  - 1200
+  - 1920
+nosy-be:
+  width: 1105
+  height: 1500
+  widths:
+  - 640
+  - 1105
+nyc:
+  width: 1350
+  height: 900
+  widths:
+  - 640
+  - 1200
+  - 1350
+hrsl:
+  width: 1920
+  height: 2715
+  widths:
+  - 640
+  - 1200
+  - 1920
+ihorombe:
+  width: 1805
+  height: 1813
+  widths:
+  - 640
+  - 1200
+  - 1805
+hex-world:
+  width: 1920
+  height: 1920
+  widths:
+  - 640
+  - 1200
+  - 1920
+tampere:
+  width: 1920
+  height: 1864
+  widths:
+  - 640
+  - 1200
+  - 1920
+waterway-distance:
+  width: 1920
+  height: 2057
+  widths:
+  - 640
+  - 1200
+  - 1920
+highest-point:
+  width: 1920
+  height: 2304
+  widths:
+  - 640
+  - 1200
+  - 1920
+ljubljana:
+  width: 1920
+  height: 1920
+  widths:
+  - 640
+  - 1200
+  - 1920

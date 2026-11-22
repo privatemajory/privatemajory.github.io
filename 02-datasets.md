@@ -2,66 +2,87 @@
 layout: page
 title: Datasets
 permalink: /datasets/
-files:
-  - path: /datasets/mg_agencesboa_v1.zip
-    title: BOA offices in Madagascar
-    description: A list of all BOA (Bank of Africa) offices in Madagascar.
-    size: 5
-    size_unit: KB
-    format: CSV
-  - path: /datasets/mg_lyceespublics_v1.zip
-    title: Public high schools in Madagascar
-    description: Details of public high schools (lycées) across Madagascar.
-    size: 5
-    size_unit: KB
-    format: CSV
-  - path: /datasets/mg_populationfokontany_v1.zip
-    title: 2009 Population by fokontany in Madagascar
-    description: Population data by fokontany from the year 2009, in a zipped shapefile.
-    size: 20
-    size_unit: MB
-    format: SHP
-  - path: /datasets/mg_profilsrnmajeures_v1.zip
-    title: Slope along major roads in Madagascar
-    description: Slope data along major roads in Madagascar.
-    size: 688
-    size_unit: KB
-    format: CSV
-  - path: /datasets/mg_centrales_electriques_v1.zip
-    title: Power plants in Madagascar
-    description: Power plants in Madagascar, with details such as geographic location, operator and power.
-    size: 6
-    size_unit: KB
-    format: CSV
-  - path: /datasets/mg_lacs_v1.zip
-    title: Lakes in Madagascar
-    description: Lakes in Madagascar, with details such as geographic location, geographic shape and area.
-    size: 124
-    size_unit: KB
-    format: CSV
+kicker: Open data
+summary: "Free geospatial datasets for Madagascar, packaged for reuse."
+description: "Free datasets about Madagascar: population, schools, power plants, lakes, roads and Bank of Africa offices. CSV and shapefile, with field schemas and previews."
 ---
 
-Explore my collection of free datasets below. Click the download button to access the files.
+{%- assign datasets = site.data.datasets -%}
+{%- assign formats = datasets | map: "primary_format" | uniq -%}
 
-<table class="datasetsTable">
-  {%- for file in page.files -%}
-  <tr class="flink">
-    <td>
-      <h4>{{ file.title }}</h4>
-      <small>{{ file.description }}</small>
-    </td>
-    <td>
-      <small>
-        <strong>Format:</strong> {{ file.format }}<br/>
-        <strong>Size:</strong> {{ file.size }} {{ file.size_unit }}
-      </small>
-    </td>
-    <td width="10em">
-      <a href="{{ file.path }}" class="pageButton" aria-label="Download {{ file.title }}">
-        <i class="fas fa-download white-icon"></i>
-        <span class="buttonText">Download</span>
-      </a>
-    </td>
-  </tr>
-  {%- endfor -%}
-</table>
+<p class="lede">Everything here is free to download and reuse. Each dataset documents its own fields, coordinate system, source and licence, extracted from the archive rather than typed by hand.</p>
+
+<div class="catalog" data-catalog>
+
+  <div class="catalog__controls">
+    <div class="catalog__search">
+      <label class="visually-hidden" for="dataset-search">Search datasets</label>
+      {% include icon.html name="compass" class="icon catalog__search-icon" %}
+      <input type="search"
+             id="dataset-search"
+             placeholder="Search by name, field or tag…"
+             autocomplete="off"
+             data-dataset-search>
+    </div>
+
+    <div class="catalog__filters">
+      <div class="filter-group" role="group" aria-label="Filter by theme">
+        <button class="filter" type="button" data-dataset-theme="all" aria-pressed="true">
+          All<span>{{ datasets.size }}</span>
+        </button>
+        {%- for theme in site.data.dataset_themes -%}
+          {%- assign count = datasets | where: "theme", theme.slug | size -%}
+          {%- if count > 0 -%}
+            <button class="filter" type="button" data-dataset-theme="{{ theme.slug }}" aria-pressed="false">
+              {{ theme.label }}<span>{{ count }}</span>
+            </button>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+      <div class="filter-group" role="group" aria-label="Filter by format">
+        <button class="filter" type="button" data-dataset-format="all" aria-pressed="true">Any format</button>
+        {%- for format in formats -%}
+          {%- assign count = datasets | where: "primary_format", format | size -%}
+          <button class="filter" type="button" data-dataset-format="{{ format }}" aria-pressed="false">
+            {{ format }}<span>{{ count }}</span>
+          </button>
+        {%- endfor -%}
+      </div>
+    </div>
+
+    <div class="catalog__sort">
+      <label for="dataset-sort">Sort</label>
+      <select id="dataset-sort" data-dataset-sort>
+        <option value="theme">Theme</option>
+        <option value="title">Title</option>
+        <option value="records">Records</option>
+        <option value="newest">Newest</option>
+      </select>
+    </div>
+  </div>
+
+  <p class="catalog__count" role="status" data-dataset-count></p>
+
+  <div class="dataset-grid" data-dataset-grid>
+    {%- for dataset in datasets -%}
+      {% include dataset-card.html dataset=dataset level=2 %}
+    {%- endfor -%}
+  </div>
+
+  <p class="catalog__empty" data-dataset-empty hidden>
+    No dataset matches those filters.
+    <button class="link-arrow" type="button" data-dataset-reset>Reset filters</button>
+  </p>
+</div>
+
+<section class="catalog-links">
+  <h2>For scripts and machines</h2>
+  <p>The whole catalog is published alongside the data, so you can pull it without scraping this page.</p>
+  <ul>
+    <li><a href="{{ '/datasets/catalog.json' | relative_url }}"><code>catalog.json</code></a>: every dataset with its fields, licence and file list</li>
+    <li><a href="{{ '/datasets/catalog.csv' | relative_url }}"><code>catalog.csv</code></a>: one row per dataset</li>
+    <li><code>/datasets/&lt;slug&gt;.json</code>: a single dataset, for example <a href="{{ '/datasets/lakes.json' | relative_url }}"><code>lakes.json</code></a></li>
+  </ul>
+  <p class="muted">Every file is UTF-8 and comma-delimited. Archives keep their original filenames, so existing download links continue to work.</p>
+</section>

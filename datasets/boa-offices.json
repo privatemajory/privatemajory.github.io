@@ -1,0 +1,129 @@
+{
+  "slug": "boa-offices",
+  "title": "BOA offices in Madagascar",
+  "summary": "Every Bank of Africa branch in Madagascar, with address, phone number and e-mail.",
+  "theme": "services",
+  "theme_label": "Services",
+  "geometry": "none",
+  "geometry_label": "No geometry",
+  "tags": [
+    "banking",
+    "points of interest"
+  ],
+  "license": "CC-BY-SA-4.0",
+  "license_short": "CC BY-SA 4.0",
+  "license_name": "Creative Commons Attribution-ShareAlike 4.0 International",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "license_summary": "Reuse freely, including commercially, as long as you credit the author and share derivatives under the same licence.",
+  "attribution": "© Manda Andriatsiferana",
+  "source": "",
+  "format": "CSV",
+  "crs": "",
+  "crs_epsg": null,
+  "language": "EN (English)",
+  "language_label": "English",
+  "author": "Manda Andriatsiferana",
+  "date": "2019-10-25",
+  "original_title": "Agences BOA à Madagascar",
+  "original_description": "Une base de données des agences de la banque Bank of Africa (BOA) à Madagascar.",
+  "records": 93,
+  "bounds": null,
+  "zip_path": "/datasets/mg_agencesboa_v1.zip",
+  "zip_url": "https://privatemajory.github.io/datasets/mg_agencesboa_v1.zip",
+  "zip_bytes": 4339,
+  "zip_size": "4 KB",
+  "files": [
+    {
+      "name": "mg_agencesboa_v1.csv",
+      "path": "/datasets/mg_agencesboa_v1.csv",
+      "url": "https://privatemajory.github.io/datasets/mg_agencesboa_v1.csv",
+      "format": "CSV",
+      "bytes": 9564,
+      "size": "9 KB",
+      "records": 93,
+      "delimiter": "comma"
+    }
+  ],
+  "primary_path": "/datasets/mg_agencesboa_v1.csv",
+  "primary_format": "CSV",
+  "fields": [
+    {
+      "name": "name",
+      "type": "",
+      "description": "nom de l'agence"
+    },
+    {
+      "name": "address",
+      "type": "",
+      "description": "adresse de l'agence"
+    },
+    {
+      "name": "phone",
+      "type": "",
+      "description": "contact téléphonique de l'agence"
+    },
+    {
+      "name": "email",
+      "type": "",
+      "description": "adresse e-mail de l'agence"
+    }
+  ],
+  "preview": {
+    "columns": [
+      "name",
+      "address",
+      "phone",
+      "email"
+    ],
+    "rows": [
+      [
+        "Antsiranana",
+        "28 Bis Rue Richelieu BP 59 ANTSIRANANA, 201",
+        "+261 20 82 21437;+261 20 82 21293",
+        "boa1000@boa.mg"
+      ],
+      [
+        "Antsiranana Tanambao",
+        "Angle rue Ankarana et Avenue Rejoyeuse, Tanambao ANTSIRANANA, 201",
+        "+261 20 82 22845;+261 20 82 22848",
+        "boa1001@boa.mg"
+      ],
+      [
+        "Ambanja",
+        "Ankatafahely BP 39, AMBANJA, 203",
+        "+261 20 86 50074;+261 20 86 50261",
+        "boa1800@boa.mg"
+      ],
+      [
+        "Ambilobe",
+        "Ambilobe Ville, AMBILOBE, 204",
+        "+261 20 82 06051",
+        "boa1600@boa.mg"
+      ],
+      [
+        "Nosy Be",
+        "Rue Galliéni Camp-Vert BP 175, NOSY BE, 207",
+        "+261 20 86 61092;+261 20 86 61230",
+        "boa1300@boa.mg"
+      ],
+      [
+        "Andapa",
+        "Beanana Andapa BP 42 ANDAPA, 205",
+        "+261 20 88 07060;+261 20 88 07008",
+        "boa1900@boa.mg"
+      ],
+      [
+        "Antalaha",
+        "Lot K 58 A Tanambao BP 100 ATALAHA, 206",
+        "+261 20 88 96433",
+        "boa1500@boa.mg"
+      ],
+      [
+        "Sambava",
+        "Rue de Commerce BP 41 SAMBAVA, 208",
+        "+261 20 88 92094;+261 20 88 92207",
+        "boa1100@boa.mg"
+      ]
+    ]
+  }
+}

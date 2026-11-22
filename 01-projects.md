@@ -2,59 +2,21 @@
 layout: page
 title: Projects
 permalink: /projects/
-projects:
-  - title: "Walk between two points"
-    icon: "fas fa-map"
-    status: "Web application"
-    description: "An interactive web application that uses elevation and roughness data to estimate the fastest path between two points in the Ikongo district."
-    thumbnail: "lcpath.jpg"
-    tech_stack:
-      - "Flask"
-      - "Leaflet.js"
-      - "Chart.js"
-    demo_url: "https://privatemajory.pythonanywhere.com/lcpath"
-    details_url: "#"
-  - title: "Walk to a health facility"
-    icon: "fas fa-house-medical"
-    status: "Web application"
-    description: "An interactive web application that uses elevation and roughness data to estimate the fastest path from a chosen point to the nearest health facility in the Ikongo district."
-    thumbnail: "hfpath.jpg"
-    tech_stack:
-      - "Flask"
-      - "Leaflet.js"
-      - "Chart.js"
-    demo_url: "https://privatemajory.pythonanywhere.com/hfpath"
-    details_url: "#"
+kicker: Web applications
+summary: "Small tools built around a single geographic question: how far, how steep, how reachable."
+description: "Interactive web applications built with Python and open geospatial tools, including terrain-aware walking routes in rural Madagascar."
 ---
 
-<p>Discover my collection of interactive web applications developed with Python, showcasing the use of GIS to provide solutions to real-world problems.</p>
-
 <div class="project-grid">
-  {%- for project in page.projects -%}
-    <div class="project-card">
-      <div class="project-thumbnail" style="background-image: url('/img/{{ project.thumbnail }}');"></div>
-      <div class="project-content">
-        <div class="project-header">
-          <h3 class="project-title">
-            <i class="{{ project.icon }}"></i>{{ project.title }}
-          </h3>
-          <span class="project-status">{{ project.status }}</span>
-        </div>
-        <p class="project-description">{{ project.description }}</p>
-        <div class="tech-stack">
-          {%- for tech in project.tech_stack -%}
-            <span class="tech-tag">{{ tech }}</span>
-          {%- endfor -%}
-        </div>
-        <div class="project-links">
-          <a href="{{ project.demo_url }}" class="project-link primary" target="_blank">
-            <i class="fas fa-rocket"></i> Live demo
-          </a>
-          <a href="{{ project.details_url }}" class="project-link secondary">
-            <i class="fas fa-info-circle"></i> Details
-          </a>
-        </div>
-      </div>
-    </div>
+  {%- assign projects = site.projects | sort: "order" -%}
+  {%- for project in projects -%}
+    {% include project-card.html project=project level=2 %}
   {%- endfor -%}
 </div>
+
+<p class="collection-foot">
+  <a class="link-arrow" href="https://apps.privatemajory.top/" target="_blank" rel="noopener">
+    All apps at apps.privatemajory.top
+    {% include icon.html name="arrow-up-right" class="icon" %}
+  </a>
+</p>

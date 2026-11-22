@@ -1,0 +1,216 @@
+{
+  "slug": "road-profiles",
+  "title": "Profiles of the major national roads",
+  "summary": "Longitudinal profiles along the RN 2, RN 4, RN 6 and RN 7, with altitude, 2D/3D distance and slope.",
+  "theme": "transport",
+  "theme_label": "Transport",
+  "geometry": "none",
+  "geometry_label": "No geometry",
+  "tags": [
+    "roads",
+    "elevation",
+    "slope"
+  ],
+  "license": "CC-BY-SA-4.0",
+  "license_short": "CC BY-SA 4.0",
+  "license_name": "Creative Commons Attribution-ShareAlike 4.0 International",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "license_summary": "Reuse freely, including commercially, as long as you credit the author and share derivatives under the same licence.",
+  "attribution": "© Manda Andriatsiferana",
+  "source": "",
+  "format": "CSV",
+  "crs": "",
+  "crs_epsg": null,
+  "language": "EN (English)",
+  "language_label": "English",
+  "author": "Manda Andriatsiferana",
+  "date": "2019-11-13",
+  "original_title": "Profils des routes nationales majeures de Madagascar",
+  "original_description": "Profils longitudinaux des principales routes nationales de Madagascar.",
+  "records": 13592,
+  "bounds": null,
+  "zip_path": "/datasets/mg_profilsrnmajeures_v1.zip",
+  "zip_url": "https://privatemajory.github.io/datasets/mg_profilsrnmajeures_v1.zip",
+  "zip_bytes": 752544,
+  "zip_size": "735 KB",
+  "files": [
+    {
+      "name": "profil_rn2.csv",
+      "path": "/datasets/profil_rn2.csv",
+      "url": "https://privatemajory.github.io/datasets/profil_rn2.csv",
+      "format": "CSV",
+      "bytes": 1328155,
+      "size": "1.3 MB",
+      "records": 11402,
+      "delimiter": "comma"
+    },
+    {
+      "name": "profil_rn4.csv",
+      "path": "/datasets/profil_rn4.csv",
+      "url": "https://privatemajory.github.io/datasets/profil_rn4.csv",
+      "format": "CSV",
+      "bytes": 66666,
+      "size": "65 KB",
+      "records": 569,
+      "delimiter": "comma"
+    },
+    {
+      "name": "profil_rn6.csv",
+      "path": "/datasets/profil_rn6.csv",
+      "url": "https://privatemajory.github.io/datasets/profil_rn6.csv",
+      "format": "CSV",
+      "bytes": 81725,
+      "size": "80 KB",
+      "records": 703,
+      "delimiter": "comma"
+    },
+    {
+      "name": "profil_rn7.csv",
+      "path": "/datasets/profil_rn7.csv",
+      "url": "https://privatemajory.github.io/datasets/profil_rn7.csv",
+      "format": "CSV",
+      "bytes": 105585,
+      "size": "103 KB",
+      "records": 918,
+      "delimiter": "comma"
+    }
+  ],
+  "primary_path": "/datasets/profil_rn2.csv",
+  "primary_format": "CSV",
+  "fields": [
+    {
+      "name": "prof_id",
+      "type": "",
+      "description": "Identifiant du profil"
+    },
+    {
+      "name": "rec_id",
+      "type": "",
+      "description": "Identifiant du point de données"
+    },
+    {
+      "name": "x",
+      "type": "",
+      "description": "Coordonnées X du point de données"
+    },
+    {
+      "name": "y",
+      "type": "",
+      "description": "Coordonnées Y du point de données"
+    },
+    {
+      "name": "cds2d",
+      "type": "",
+      "description": "Distance horizontale suivant le profil"
+    },
+    {
+      "name": "z",
+      "type": "",
+      "description": "Altitude du point de données"
+    },
+    {
+      "name": "cds3d",
+      "type": "",
+      "description": "Distance suivant le profil tenant compte de l'altitude"
+    },
+    {
+      "name": "dirslop",
+      "type": "",
+      "description": "Pente suivant le profil en degrés. Valeur positive pour une montée, négative pour une descente."
+    }
+  ],
+  "preview": {
+    "columns": [
+      "prof_id",
+      "rec_id",
+      "x",
+      "y",
+      "cds2d",
+      "z",
+      "cds3d",
+      "dirslop"
+    ],
+    "rows": [
+      [
+        "1",
+        "1",
+        "516777.4781227206",
+        "800147.6034131703",
+        "0.0",
+        "1294.9024303413883",
+        "0.0",
+        "10.4887690145004"
+      ],
+      [
+        "1",
+        "2",
+        "516780.64101784484",
+        "800161.6810731731",
+        "14.428597184750497",
+        "1297.5736874571512",
+        "14.673787217290027",
+        "10.180903904367167"
+      ],
+      [
+        "1",
+        "3",
+        "516783.3841866737",
+        "800170.9257621028",
+        "24.07169049714055",
+        "1299.3054360067356",
+        "24.471144088939102",
+        "6.682134371773433"
+      ],
+      [
+        "1",
+        "4",
+        "516785.41961418255",
+        "800176.4458102802",
+        "29.95504812896883",
+        "1299.9947119244935",
+        "30.39474082696854",
+        "5.460654484919925"
+      ],
+      [
+        "1",
+        "5",
+        "516792.29907542054",
+        "800190.3122557604",
+        "45.434237293200965",
+        "1301.4744607743864",
+        "45.944498183301825",
+        "-2.3074614292054725"
+      ],
+      [
+        "1",
+        "6",
+        "516830.8066417394",
+        "800234.6442880107",
+        "104.15528758384866",
+        "1299.108320349772",
+        "104.71320046390159",
+        "-8.50341643872222"
+      ],
+      [
+        "1",
+        "7",
+        "516871.70930326555",
+        "800278.5415804109",
+        "164.15528758382248",
+        "1290.1376026401895",
+        "165.38010887550496",
+        "-1.8923634189515488"
+      ],
+      [
+        "1",
+        "8",
+        "516892.272375544",
+        "800300.6101491244",
+        "194.3192009007536",
+        "1289.1409873352675",
+        "195.56048178004906",
+        "-1.1440096894989826"
+      ]
+    ]
+  }
+}

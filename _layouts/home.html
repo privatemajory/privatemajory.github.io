@@ -1,0 +1,192 @@
+---
+layout: default
+body_class: home
+---
+
+{%- assign featured_maps = site.data.maps | where: "featured", true -%}
+{%- assign hero_size = site.data.map_sizes.itasy -%}
+
+<section class="hero">
+  <div class="hero__content">
+    <p class="kicker">Cartography · GIS · Open data</p>
+    <h1 class="hero__title">
+      <span>Dolly</span>
+      <span>Andriatsiferana</span>
+    </h1>
+    <p class="hero__intro">I turn geographic data into maps that explain a place, from relief studies in Madagascar to city-scale web maps.</p>
+    <div class="hero__actions">
+      <a class="button button--accent" href="{{ '/gallery/' | relative_url }}">
+        Explore the maps
+        {% include icon.html name="arrow-right" class="icon" %}
+      </a>
+      <a class="button button--ghost" href="{{ '/about/' | relative_url }}">About me</a>
+    </div>
+    <p class="hero__meta">Madagascar <span></span> Open to collaborations</p>
+  </div>
+
+  <div class="hero__media">
+    <picture>
+      <source type="image/webp"
+              srcset="{{ '/assets/images/hero/itasy-1280.webp' | relative_url }} 1280w, {{ '/assets/images/hero/itasy-1920.webp' | relative_url }} 1920w"
+              sizes="(min-width: 900px) 50vw, 100vw">
+      <img src="{{ '/assets/images/hero/itasy-1280.jpg' | relative_url }}"
+           alt="Lake Itasy shown as a hexagon-binned 3D relief map"
+           width="{{ hero_size.width }}"
+           height="{{ hero_size.height }}"
+           fetchpriority="high"
+           decoding="async">
+    </picture>
+    <a class="hero__caption" href="{{ '/gallery/#itasy' | relative_url }}">
+      Lake Itasy · 3D relief
+      {% include icon.html name="arrow-up-right" class="icon icon--small" %}
+    </a>
+  </div>
+</section>
+
+<section class="stats" aria-label="Site statistics">
+  <div class="container stats__inner">
+    <div class="stat">
+      <strong>{{ site.data.maps | size }}</strong>
+      <span>Maps</span>
+    </div>
+    <div class="stat">
+      <strong>{{ site.data.datasets | size }}</strong>
+      <span>Datasets</span>
+    </div>
+    <div class="stat">
+      <strong>{{ site.projects | size }}</strong>
+      <span>Web apps</span>
+    </div>
+    <div class="stat">
+      <strong>{{ site.posts | size }}</strong>
+      <span>Essays</span>
+    </div>
+  </div>
+</section>
+
+<section class="home-intro">
+  <div class="container home-intro__grid" data-reveal>
+    <h2>Maps first, technology second.</h2>
+    <div>
+      <p>My work starts with a place. Relief and terrain, accessibility, settlement patterns, the quiet data problems behind a map. The tools exist to make those things legible, not the other way around.</p>
+      <p>The maps are made with QGIS, Blender, Python and open data. The web applications are small, focused tools built around a single geographic question.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <div>
+        <p class="kicker">Selected work</p>
+        <h2>Maps that carry their own weight.</h2>
+      </div>
+      <div class="section-head__aside">
+        <a class="link-arrow" href="{{ '/gallery/' | relative_url }}">
+          All {{ site.data.maps | size }} maps
+          {% include icon.html name="arrow-right" class="icon" %}
+        </a>
+      </div>
+    </div>
+
+    <div class="home-maps" data-reveal>
+      {%- for map in featured_maps limit: 6 -%}
+        {% include map-card.html map=map sizes="(min-width: 1024px) 48vw, 92vw" %}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+<section class="home-projects">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <div>
+        <p class="kicker">Web applications</p>
+        <h2>Small tools, real geographic questions.</h2>
+      </div>
+      <div class="section-head__aside">
+        <a class="link-arrow" href="https://apps.privatemajory.top/" target="_blank" rel="noopener">
+          All apps
+          {% include icon.html name="arrow-up-right" class="icon" %}
+        </a>
+      </div>
+    </div>
+
+    <div class="project-grid" data-reveal>
+      {%- assign projects = site.projects | sort: "order" -%}
+      {%- for project in projects -%}
+        {% include project-card.html project=project %}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+<section class="home-writing">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <div>
+        <p class="kicker">Writing</p>
+        <h2>Notes from the process.</h2>
+      </div>
+      <div class="section-head__aside">
+        <a class="link-arrow" href="{{ '/blog/' | relative_url }}">
+          All posts
+          {% include icon.html name="arrow-right" class="icon" %}
+        </a>
+      </div>
+    </div>
+
+    <ul class="post-rows" data-reveal>
+      {%- for post in site.posts limit: 3 -%}
+        <li>
+          <a class="post-row" href="{{ post.url | relative_url }}">
+            <span class="post-row__date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <span class="post-row__title">{{ post.title | escape }}</span>
+            {% include icon.html name="arrow-up-right" class="icon" %}
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</section>
+
+<section class="section section--ink home-datasets">
+  <div class="container home-datasets__grid" data-reveal>
+    <div class="home-datasets__intro">
+      <p class="kicker">Open data</p>
+      <h2>Datasets, out in the open.</h2>
+      <p>Lakes, schools, power plants, roads and population, all free to download and reuse.</p>
+      <p>
+        <a class="link-arrow" href="{{ '/datasets/' | relative_url }}">
+          Browse all datasets
+          {% include icon.html name="arrow-right" class="icon" %}
+        </a>
+      </p>
+    </div>
+    <div class="dataset-grid">
+      {%- for dataset in site.data.datasets limit: 4 -%}
+        {% include dataset-card.html dataset=dataset %}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="container contact__grid" data-reveal>
+    <div>
+      <p class="kicker">Contact</p>
+      <h2>Let’s make something map-shaped.</h2>
+    </div>
+    <div class="contact__aside">
+      <p>Maps, data work, or a small web tool. Tell me what you are trying to see.</p>
+      <a class="button button--accent" href="mailto:{{ site.email }}">
+        Write to me
+        {% include icon.html name="mail" class="icon" %}
+      </a>
+      <a class="link-arrow" href="https://apps.privatemajory.top/" target="_blank" rel="noopener">
+        apps.privatemajory.top
+        {% include icon.html name="arrow-up-right" class="icon" %}
+      </a>
+    </div>
+  </div>
+</section>

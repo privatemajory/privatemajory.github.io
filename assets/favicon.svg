@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Dolly Andriatsiferana">
+  <rect width="64" height="64" fill="#f7f3ea"/>
+  <rect x="6" y="6" width="52" height="52" fill="none" stroke="#14181c" stroke-width="2"/>
+  <path d="M14 46h36M14 38h36M14 30h36M14 22h36M22 14v36M30 14v36M38 14v36M46 14v36" stroke="#d9d2c3" stroke-width="1"/>
+  <circle cx="34" cy="30" r="9" fill="none" stroke="#b4451f" stroke-width="2.5"/>
+  <path d="M34 12v6M34 42v6M16 30h6M46 30h6" stroke="#b4451f" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="34" cy="30" r="2.5" fill="#b4451f"/>
+</svg>

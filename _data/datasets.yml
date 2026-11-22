@@ -1,0 +1,756 @@
+- slug: boa-offices
+  title: BOA offices in Madagascar
+  summary: Every Bank of Africa branch in Madagascar, with address, phone number and e-mail.
+  theme: services
+  theme_label: Services
+  geometry: none
+  geometry_label: No geometry
+  tags:
+  - banking
+  - points of interest
+  license: CC-BY-SA-4.0
+  license_short: CC BY-SA 4.0
+  license_name: Creative Commons Attribution-ShareAlike 4.0 International
+  license_url: https://creativecommons.org/licenses/by-sa/4.0/
+  license_summary: Reuse freely, including commercially, as long as you credit the author and share derivatives under the same licence.
+  attribution: © Manda Andriatsiferana
+  source: ''
+  format: CSV
+  crs: ''
+  crs_epsg: null
+  language: EN (English)
+  language_label: English
+  author: Manda Andriatsiferana
+  date: '2019-10-25'
+  original_title: Agences BOA à Madagascar
+  original_description: Une base de données des agences de la banque Bank of Africa (BOA) à Madagascar.
+  records: 93
+  bounds: null
+  zip_path: /datasets/mg_agencesboa_v1.zip
+  zip_url: https://privatemajory.github.io/datasets/mg_agencesboa_v1.zip
+  zip_bytes: 4339
+  zip_size: 4 KB
+  files:
+  - name: mg_agencesboa_v1.csv
+    path: /datasets/mg_agencesboa_v1.csv
+    url: https://privatemajory.github.io/datasets/mg_agencesboa_v1.csv
+    format: CSV
+    bytes: 9564
+    size: 9 KB
+    records: 93
+    delimiter: comma
+  primary_path: /datasets/mg_agencesboa_v1.csv
+  primary_format: CSV
+  fields:
+  - name: name
+    type: ''
+    description: nom de l'agence
+  - name: address
+    type: ''
+    description: adresse de l'agence
+  - name: phone
+    type: ''
+    description: contact téléphonique de l'agence
+  - name: email
+    type: ''
+    description: adresse e-mail de l'agence
+  preview:
+    columns:
+    - name
+    - address
+    - phone
+    - email
+    rows:
+    - - Antsiranana
+      - 28 Bis Rue Richelieu BP 59 ANTSIRANANA, 201
+      - +261 20 82 21437;+261 20 82 21293
+      - boa1000@boa.mg
+    - - Antsiranana Tanambao
+      - Angle rue Ankarana et Avenue Rejoyeuse, Tanambao ANTSIRANANA, 201
+      - +261 20 82 22845;+261 20 82 22848
+      - boa1001@boa.mg
+    - - Ambanja
+      - Ankatafahely BP 39, AMBANJA, 203
+      - +261 20 86 50074;+261 20 86 50261
+      - boa1800@boa.mg
+    - - Ambilobe
+      - Ambilobe Ville, AMBILOBE, 204
+      - +261 20 82 06051
+      - boa1600@boa.mg
+    - - Nosy Be
+      - Rue Galliéni Camp-Vert BP 175, NOSY BE, 207
+      - +261 20 86 61092;+261 20 86 61230
+      - boa1300@boa.mg
+    - - Andapa
+      - Beanana Andapa BP 42 ANDAPA, 205
+      - +261 20 88 07060;+261 20 88 07008
+      - boa1900@boa.mg
+    - - Antalaha
+      - Lot K 58 A Tanambao BP 100 ATALAHA, 206
+      - +261 20 88 96433
+      - boa1500@boa.mg
+    - - Sambava
+      - Rue de Commerce BP 41 SAMBAVA, 208
+      - +261 20 88 92094;+261 20 88 92207
+      - boa1100@boa.mg
+  map_svg: null
+- slug: power-plants
+  title: Power plants in Madagascar
+  summary: Power plants with type, operator, installed capacity and coordinates.
+  theme: energy
+  theme_label: Energy
+  geometry: point
+  geometry_label: Points
+  tags:
+  - electricity
+  - infrastructure
+  license: CC-BY-SA-4.0
+  license_short: CC BY-SA 4.0
+  license_name: Creative Commons Attribution-ShareAlike 4.0 International
+  license_url: https://creativecommons.org/licenses/by-sa/4.0/
+  license_summary: Reuse freely, including commercially, as long as you credit the author and share derivatives under the same licence.
+  attribution: © Manda Andriatsiferana
+  source: ''
+  format: CSV
+  crs: WGS 84 Latitude Longitude (EPSG 4326)
+  crs_epsg: 4326
+  language: FR (Français)
+  language_label: French
+  author: Manda Andriatsiferana
+  date: '2024-07-09'
+  original_title: Centrales électriques à Madagascar
+  original_description: Liste des centrales électriques à Madagascar avec le type, l'opérateur, la puissance et la localisation géographique.
+  records: 181
+  bounds: null
+  zip_path: /datasets/mg_centrales_electriques_v1.zip
+  zip_url: https://privatemajory.github.io/datasets/mg_centrales_electriques_v1.zip
+  zip_bytes: 5220
+  zip_size: 5 KB
+  files:
+  - name: mg_centrales_electriques.csv
+    path: /datasets/mg_centrales_electriques.csv
+    url: https://privatemajory.github.io/datasets/mg_centrales_electriques.csv
+    format: CSV
+    bytes: 20476
+    size: 20 KB
+    records: 181
+    delimiter: comma
+  primary_path: /datasets/mg_centrales_electriques.csv
+  primary_format: CSV
+  fields:
+  - name: Nom
+    type: ''
+    description: Nom de la centrale
+  - name: Type
+    type: ''
+    description: Type de la centrale (hydroélectrique ou thermale)
+  - name: Pays
+    type: ''
+    description: Nom du pays
+  - name: Région
+    type: ''
+    description: Nom de la région
+  - name: Localité
+    type: ''
+    description: Nom de la localité
+  - name: Opérateur
+    type: ''
+    description: Nom de l'opérateur
+  - name: Puissance (kW)
+    type: ''
+    description: Puissance en kilowatts
+  - name: Longitude
+    type: ''
+    description: Longitude (degré décimal)
+  - name: Latitude
+    type: ''
+    description: Latitude (degré décimal)
+  preview:
+    columns:
+    - Nom
+    - Type
+    - Pays
+    - Région
+    - Localité
+    - Opérateur
+    - Puissance (kW)
+    - Longitude
+    - Latitude
+    rows:
+    - - Centrale thermique d'Ambatondrazaka
+      - centrale thermique
+      - Madagascar
+      - Alaotra-Mangoro
+      - Ambatondrazaka
+      - Jirama
+      - '3440'
+      - '48.429'
+      - '-17.826'
+    - - Centrale thermique d'Ambatosoratra
+      - centrale thermique
+      - Madagascar
+      - Alaotra-Mangoro
+      - Ambatosoratra
+      - EDM
+      - '64'
+      - '48.514'
+      - '-17.612'
+    - - Centrale thermique d'Amboasary Gara
+      - centrale thermique
+      - Madagascar
+      - Alaotra-Mangoro
+      - Amboasary Gara
+      - BETC Nanala
+      - '64'
+      - '48.265'
+      - '-18.444'
+    - - Centrale thermique d'Amparafaravola
+      - centrale thermique
+      - Madagascar
+      - Alaotra-Mangoro
+      - Amparafaravola
+      - Jirama
+      - '376'
+      - '48.223'
+      - '-17.584'
+    - - Centrale thermique d'Ampitatsimo
+      - centrale thermique
+      - Madagascar
+      - Alaotra-Mangoro
+      - Ampitatsimo
+      - Mad'Eole
+      - '64'
+      - '48.381'
+      - '-17.807'
+    - - Centrale thermique d'Andaingo
+      - centrale thermique
+      - Madagascar
+      - Alaotra-Mangoro
+      - Andaingo
+      - BETC Nanala
+      - '64'
+      - '48.269'
+      - '-18.217'
+    - - Centrale thermique d'Andilamena
+      - centrale thermique
+      - Madagascar
+      - Alaotra-Mangoro
+      - Andilamena
+      - Jirama
+      - '476'
+      - '48.572'
+      - '-17.013'
+    - - Centrale thermique d'Anosibe An'ala
+      - centrale thermique
+      - Madagascar
+      - Alaotra-Mangoro
+      - Anosibe An'Ala
+      - Jirama
+      - '230'
+      - '48.205'
+      - '-19.435'
+  map_svg: <svg class="dataset-map" viewBox="0 0 535 1000" role="img" aria-label="Locations of the 181 records in Power plants in Madagascar" preserveAspectRatio="xMidYMid meet"><path class="dataset-map__land" d="M55.6 938.2L54.1 926.5L35.8 905.4L33.5 858.3L42.6 850.8L43.1 842.9L32.0 832.2L30.3 814.0L12.2 798.4L3.2 754.3L9.8 751.9L4.2 741.4L12.5 717.6L21.8 707.7L21.3 687.8L45.8 679.4L53.1 651.5L95.7 586.5L94.6 579.7L90.3 578.3L88.0 572.9L93.8 547.9L77.0 521.1L77.4 511.6L78.1 515.2L80.6 514.4L75.8 493.6L79.4 497.1L79.7 496.2L63.1 471.9L63.1 428.9L55.1 410.0L55.4 406.7L57.1 410.0L58.2 411.2L58.7 410.8L55.2 405.9L67.5 381.3L92.0 347.9L92.2 310.8L122.5 312.5L151.5 291.7L154.7 306.0L163.4 298.9L159.3 295.2L174.5 292.6L176.4 300.9L182.3 279.7L190.7 286.2L198.1 279.1L226.1 274.9L230.8 291.7L235.7 286.6L228.5 283.1L232.4 269.1L275.5 238.0L285.1 247.9L277.5 258.9L290.1 256.8L290.8 244.6L286.3 246.0L283.5 236.2L306.9 217.1L308.3 213.4L300.5 213.2L313.8 199.2L317.6 210.0L309.0 231.0L316.5 229.0L334.3
+    196.7L330.6 182.4L335.8 168.3L348.3 167.9L345.5 156.8L353.0 159.8L349.8 172.2L351.8 174.7L351.1 177.0L352.6 180.0L353.9 178.7L357.6 162.9L347.4 150.8L355.1 148.1L345.1 142.5L345.5 120.1L351.1 122.1L348.7 118.8L351.2 113.6L352.7 120.1L357.9 115.3L358.5 123.2L363.6 120.7L365.5 132.4L372.3 136.9L378.4 131.6L377.0 117.1L378.9 115.8L379.8 120.5L381.7 120.3L383.0 115.5L385.4 119.1L384.8 114.9L390.1 114.4L388.7 117.3L388.8 118.2L389.2 118.6L393.4 114.8L387.7 103.7L402.4 113.4L401.7 108.9L412.4 104.6L411.1 98.6L417.1 96.0L412.4 95.4L411.9 86.5L424.0 69.2L415.6 52.4L418.0 43.0L413.5 45.3L405.8 36.1L408.9 32.4L418.3 41.3L422.1 39.4L424.1 28.8L436.5 23.8L440.4 16.0L432.5 11.4L437.1 7.9L442.2 12.0L438.2 6.6L446.2 0.2L453.3 19.7L444.4 14.5L442.2 20.6L447.0 22.5L441.9 22.0L441.0 23.1L441.4 23.9L440.4 24.9L440.6 25.1L440.3 26.0L440.3 26.3L451.1 26.3L452.4 20.3L458.5 31.6L463.9 29.8L465.6 34.5L463.2 32.9L461.1 34.7L467.6 35.8L466.0 51.4L472.6 54.5L473.3 63.6L479.2 58.0L494.3 80.0L493.5 91.0L509.6 135.2L512.9
+    193.0L533.9 238.8L533.3 256.5L524.3 283.1L511.2 296.3L500.7 287.1L492.2 255.2L478.5 256.0L471.5 263.7L479.9 289.4L475.7 299.9L489.4 311.3L487.5 338.2L479.0 349.0L487.9 357.8L469.6 363.1L457.1 392.5L464.4 420.7L457.7 454.7L345.5 770.7L323.1 867.5L294.5 939.8L287.1 955.2L259.4 968.8L227.5 970.2L174.7 996.6L146.9 1000.0L119.1 980.5L86.0 975.2L77.4 963.5L61.9 956.7L55.6 938.2ZM372.8 106.4L366.9 105.4L365.5 95.5L371.8 97.0L373.6 91.3L379.4 106.8L372.8 106.4Z"/><g class="dataset-map__features" data-kind="point"><circle cx="384.5" cy="430.2" r="6"/><circle cx="390.7" cy="414.6" r="6"/><circle cx="372.5" cy="475.5" r="6"/><circle cx="369.4" cy="412.5" r="6"/><circle cx="381.0" cy="428.9" r="6"/><circle cx="372.8" cy="458.9" r="6"/><circle cx="395.0" cy="370.7" r="6"/><circle cx="368.1" cy="548.1" r="6"/><circle cx="395.3" cy="514.3" r="6"/><circle cx="369.0" cy="431.1" r="6"/><circle cx="396.3" cy="401.2" r="6"/><circle cx="385.4" cy="444.5" r="6"/><circle cx="386.2" cy="397.9" r="6"/><circle
+    cx="265.2" cy="629.7" r="6"/><circle cx="298.2" cy="627.3" r="6"/><circle cx="304.3" cy="626.9" r="6"/><circle cx="307.5" cy="606.7" r="6"/><circle cx="303.7" cy="628.2" r="6"/><circle cx="294.4" cy="635.1" r="6"/><circle cx="264.9" cy="635.9" r="6"/><circle cx="308.9" cy="610.8" r="6"/><circle cx="301.5" cy="614.7" r="6"/><circle cx="273.6" cy="617.5" r="6"/><circle cx="323.4" cy="510.8" r="6"/><circle cx="323.3" cy="510.6" r="6"/><circle cx="344.6" cy="472.2" r="6"/><circle cx="288.4" cy="466.0" r="6"/><circle cx="331.2" cy="517.2" r="6"/><circle cx="289.0" cy="466.3" r="6"/><circle cx="347.5" cy="510.1" r="6"/><circle cx="320.1" cy="511.2" r="6"/><circle cx="342.9" cy="484.7" r="6"/><circle cx="341.1" cy="534.3" r="6"/><circle cx="341.8" cy="535.5" r="6"/><circle cx="466.3" cy="263.1" r="6"/><circle cx="456.5" cy="397.7" r="6"/><circle cx="482.4" cy="308.8" r="6"/><circle cx="493.5" cy="359.1" r="6"/><circle cx="469.2" cy="364.0" r="6"/><circle cx="440.4" cy="403.7" r="6"/><circle
+    cx="213.0" cy="968.1" r="6"/><circle cx="181.7" cy="942.1" r="6"/><circle cx="156.7" cy="898.4" r="6"/><circle cx="155.6" cy="923.1" r="6"/><circle cx="137.9" cy="967.9" r="6"/><circle cx="182.8" cy="895.5" r="6"/><circle cx="172.2" cy="997.3" r="6"/><circle cx="138.2" cy="934.3" r="6"/><circle cx="168.8" cy="978.5" r="6"/><circle cx="234.7" cy="958.5" r="6"/><circle cx="213.3" cy="828.0" r="6"/><circle cx="185.8" cy="870.5" r="6"/><circle cx="266.2" cy="957.7" r="6"/><circle cx="277.2" cy="923.8" r="6"/><circle cx="256.4" cy="959.3" r="6"/><circle cx="279.6" cy="957.8" r="6"/><circle cx="212.2" cy="887.5" r="6"/><circle cx="36.4" cy="706.8" r="6"/><circle cx="114.9" cy="933.1" r="6"/><circle cx="70.9" cy="819.6" r="6"/><circle cx="32.4" cy="793.8" r="6"/><circle cx="98.0" cy="757.0" r="6"/><circle cx="32.3" cy="792.0" r="6"/><circle cx="43.5" cy="754.2" r="6"/><circle cx="139.3" cy="842.1" r="6"/><circle cx="145.8" cy="712.6" r="6"/><circle cx="88.0" cy="861.9" r="6"/><circle cx="96.9"
+    cy="845.8" r="6"/><circle cx="98.0" cy="907.8" r="6"/><circle cx="134.8" cy="886.3" r="6"/><circle cx="13.4" cy="717.2" r="6"/><circle cx="94.3" cy="802.4" r="6"/><circle cx="36.2" cy="834.6" r="6"/><circle cx="278.8" cy="869.5" r="6"/><circle cx="340.6" cy="796.3" r="6"/><circle cx="281.4" cy="851.5" r="6"/><circle cx="324.1" cy="834.7" r="6"/><circle cx="303.0" cy="796.1" r="6"/><circle cx="475.6" cy="292.9" r="6"/><circle cx="398.4" cy="500.7" r="6"/><circle cx="395.2" cy="551.6" r="6"/><circle cx="421.5" cy="514.8" r="6"/><circle cx="455.7" cy="454.1" r="6"/><circle cx="408.2" cy="586.6" r="6"/><circle cx="431.3" cy="503.0" r="6"/><circle cx="463.8" cy="419.3" r="6"/><circle cx="402.9" cy="536.4" r="6"/><circle cx="412.2" cy="581.8" r="6"/><circle cx="362.7" cy="593.0" r="6"/><circle cx="415.0" cy="513.4" r="6"/><circle cx="382.1" cy="561.9" r="6"/><circle cx="424.7" cy="540.2" r="6"/><circle cx="439.3" cy="451.9" r="6"/><circle cx="274.7" cy="413.0" r="6"/><circle cx="284.2" cy="373.2"
+    r="6"/><circle cx="213.5" cy="405.2" r="6"/><circle cx="267.3" cy="366.1" r="6"/><circle cx="281.3" cy="424.7" r="6"/><circle cx="248.2" cy="382.1" r="6"/><circle cx="327.6" cy="354.8" r="6"/><circle cx="258.9" cy="331.0" r="6"/><circle cx="291.0" cy="328.3" r="6"/><circle cx="268.5" cy="321.1" r="6"/><circle cx="289.2" cy="335.6" r="6"/><circle cx="276.4" cy="330.4" r="6"/><circle cx="262.1" cy="305.0" r="6"/><circle cx="224.2" cy="279.3" r="6"/><circle cx="246.7" cy="328.9" r="6"/><circle cx="229.7" cy="275.6" r="6"/><circle cx="261.8" cy="309.4" r="6"/><circle cx="253.7" cy="304.6" r="6"/><circle cx="197.2" cy="297.2" r="6"/><circle cx="157.5" cy="303.9" r="6"/><circle cx="283.4" cy="323.2" r="6"/><circle cx="248.0" cy="475.9" r="6"/><circle cx="210.5" cy="499.7" r="6"/><circle cx="386.4" cy="126.5" r="6"/><circle cx="429.7" cy="90.6" r="6"/><circle cx="461.3" cy="43.8" r="6"/><circle cx="463.9" cy="36.9" r="6"/><circle cx="443.3" cy="57.7" r="6"/><circle cx="448.0" cy="24.1" r="6"/><circle
+    cx="372.6" cy="103.9" r="6"/><circle cx="448.1" cy="38.2" r="6"/><circle cx="334.0" cy="753.9" r="6"/><circle cx="312.0" cy="727.1" r="6"/><circle cx="354.0" cy="746.6" r="6"/><circle cx="341.3" cy="761.9" r="6"/><circle cx="293.4" cy="731.2" r="6"/><circle cx="276.2" cy="697.3" r="6"/><circle cx="284.9" cy="696.7" r="6"/><circle cx="290.0" cy="657.3" r="6"/><circle cx="249.9" cy="674.6" r="6"/><circle cx="275.0" cy="686.3" r="6"/><circle cx="281.9" cy="699.5" r="6"/><circle cx="273.9" cy="691.3" r="6"/><circle cx="291.8" cy="662.0" r="6"/><circle cx="149.8" cy="787.0" r="6"/><circle cx="254.8" cy="816.6" r="6"/><circle cx="216.0" cy="765.4" r="6"/><circle cx="271.7" cy="771.2" r="6"/><circle cx="141.0" cy="793.6" r="6"/><circle cx="163.8" cy="776.9" r="6"/><circle cx="182.1" cy="420.7" r="6"/><circle cx="105.9" cy="492.6" r="6"/><circle cx="96.2" cy="351.2" r="6"/><circle cx="62.0" cy="447.5" r="6"/><circle cx="128.0" cy="429.6" r="6"/><circle cx="172.8" cy="590.1" r="6"/><circle cx="100.3"
+    cy="567.6" r="6"/><circle cx="109.1" cy="617.5" r="6"/><circle cx="177.0" cy="614.4" r="6"/><circle cx="84.4" cy="694.4" r="6"/><circle cx="166.9" cy="554.8" r="6"/><circle cx="81.0" cy="611.2" r="6"/><circle cx="495.7" cy="140.0" r="6"/><circle cx="473.9" cy="198.8" r="6"/><circle cx="519.8" cy="216.1" r="6"/><circle cx="497.5" cy="148.5" r="6"/><circle cx="498.5" cy="117.4" r="6"/><circle cx="511.0" cy="181.5" r="6"/><circle cx="510.5" cy="168.9" r="6"/><circle cx="499.7" cy="102.6" r="6"/><circle cx="344.9" cy="225.7" r="6"/><circle cx="335.1" cy="196.0" r="6"/><circle cx="352.1" cy="214.4" r="6"/><circle cx="408.1" cy="189.8" r="6"/><circle cx="392.3" cy="242.4" r="6"/><circle cx="327.1" cy="303.3" r="6"/><circle cx="413.2" cy="285.5" r="6"/><circle cx="326.0" cy="265.0" r="6"/><circle cx="245.9" cy="564.6" r="6"/><circle cx="282.4" cy="580.1" r="6"/><circle cx="275.7" cy="566.2" r="6"/><circle cx="285.2" cy="584.9" r="6"/><circle cx="227.9" cy="558.7" r="6"/><circle cx="287.4" cy="597.7"
+    r="6"/><circle cx="378.2" cy="680.1" r="6"/><circle cx="311.5" cy="681.3" r="6"/><circle cx="392.1" cy="632.1" r="6"/><circle cx="353.6" cy="668.5" r="6"/></g></svg>
+- slug: lakes
+  title: Lakes in Madagascar
+  summary: A non-exhaustive list of Madagascar's lakes with location, area and polygon geometry.
+  theme: hydrography
+  theme_label: Hydrography
+  geometry: polygon
+  geometry_label: Polygons
+  tags:
+  - water
+  - inland
+  - openstreetmap
+  license: ODbL-1.0
+  license_short: ODbL 1.0
+  license_name: Open Database License 1.0
+  license_url: https://opendatacommons.org/licenses/odbl/1-0/
+  license_summary: Derived from OpenStreetMap. Attribute OpenStreetMap contributors and share derivative databases under the same licence.
+  attribution: © OpenStreetMap contributors
+  source: GEOnet Names Server (NGA) and OpenStreetMap
+  format: CSV
+  crs: WGS 84 Latitude Longitude (EPSG 4326)
+  crs_epsg: 4326
+  language: FR (Français)
+  language_label: French
+  author: Manda Andriatsiferana
+  date: '2024-07-09'
+  original_title: Lacs à Madagascar
+  original_description: Une liste non exhaustive des lacs à Madagascar avec leurs localisations et leurs superficies. Les données proviennent de GNS (https://geonames.nga.mil/geonames/GNSData/) et d'OpenStreetMap (https://www.openstreetmap.org/).
+  records: 303
+  bounds: null
+  zip_path: /datasets/mg_lacs_v1.zip
+  zip_url: https://privatemajory.github.io/datasets/mg_lacs_v1.zip
+  zip_bytes: 129024
+  zip_size: 126 KB
+  files:
+  - name: mg_lacs.csv
+    path: /datasets/mg_lacs.csv
+    url: https://privatemajory.github.io/datasets/mg_lacs.csv
+    format: CSV
+    bytes: 537529
+    size: 525 KB
+    records: 303
+    delimiter: comma
+  primary_path: /datasets/mg_lacs.csv
+  primary_format: CSV
+  fields:
+  - name: nom_complet
+    type: ''
+    description: Nom complet du lac
+  - name: nom_propre
+    type: ''
+    description: Nom propre du lac
+  - name: surface_en_ha
+    type: ''
+    description: Superficie du lac en hectares
+  - name: pays
+    type: ''
+    description: Nom du pays où le lac se trouve
+  - name: province
+    type: ''
+    description: Nom de la province où le lac se trouve
+  - name: region
+    type: ''
+    description: Nom de la région où le lac se trouve
+  - name: point_x
+    type: ''
+    description: Coordonnées X d'un point représentant le lac
+  - name: point_y
+    type: ''
+    description: Coordonnées Y d'un point représentant le lac
+  - name: poly_wkt
+    type: ''
+    description: Polygône représentant le lac sous format WKT
+  preview:
+    columns:
+    - nom_complet
+    - nom_propre
+    - surface_en_ha
+    - pays
+    - province
+    - region
+    - point_x
+    - point_y
+    - poly_wkt
+    rows:
+    - - lac Amparihinandriambavy
+      - Amparihinandriambavy
+      - '270'
+      - Madagascar
+      - Antananarivo
+      - Analamanga
+      - '47.7851'
+      - '-18.0207'
+      - MultiPolygon (((47.7826 -18.0144, 47.7925 -18.0121, 47.7936 -18.0132, 47.794 -18.0151, 47.7934 -18.0172, 47.7947 -18.019, 47.7946 -18.0198, 47.7976 -18.0225, 47.7963 -18.0259, 47.7933 -18.0271, 47.7916 -18.0263, 47.7897 -18.024, 47.786 -18.0285, 47.7849 -18.029, 47.7811 -18.0269, 47.779 -18.0243, 47.7749 -18.0225, 47.7745 -18.0214, 47.775 -18.0199, 47.7762 -18.019, 47.7783 -18.0182, 47.7794 -18.0165, 47.7826 -18.0144)))
+    - - lac Andranofotsy
+      - Andranofotsy
+      - '149'
+      - Madagascar
+      - Antananarivo
+      - Analamanga
+      - '47.6032'
+      - '-18.3634'
+      - MultiPolygon (((47.5977 -18.3627, 47.5966 -18.3632, 47.5967 -18.3624, 47.5978 -18.3616, 47.5995 -18.3622, 47.6011 -18.3617, 47.6009 -18.3602, 47.5995 -18.3586, 47.6003 -18.3577, 47.6027 -18.3578, 47.6028 -18.3586, 47.6041 -18.3605, 47.6065 -18.3614, 47.6072 -18.3612, 47.6095 -18.3583, 47.6105 -18.3544, 47.6126 -18.3536, 47.6142 -18.3544, 47.6146 -18.3542, 47.6154 -18.3572, 47.6135 -18.3595, 47.6121 -18.3601, 47.6116 -18.3616, 47.6098 -18.3628, 47.6076 -18.3666, 47.6061 -18.3673, 47.6066 -18.3685, 47.6055 -18.3697, 47.6047 -18.3731, 47.6028 -18.3734, 47.6031 -18.3724, 47.6014 -18.3688, 47.6014 -18.3672, 47.6001 -18.3657, 47.5992 -18.3659, 47.5992 -18.3645, 47.5978 -18.365, 47.5985 -18.3641, 47.598 -18.3636, 47.5963 -18.3643, 47.5965 -18.3636, 47.5982 -18.3629, 47.5977 -18.3627)))
+    - - lac Amaroelatra
+      - Amaroelatra
+      - '91'
+      - Madagascar
+      - Antananarivo
+      - Analamanga
+      - '47.5442'
+      - '-18.4313'
+      - MultiPolygon (((47.5446 -18.4349, 47.5469 -18.435, 47.5483 -18.4375, 47.5466 -18.4383, 47.5462 -18.4377, 47.5425 -18.4367, 47.5404 -18.4376, 47.54 -18.4354, 47.539 -18.4349, 47.5388 -18.4343, 47.5392 -18.4342, 47.5399 -18.4325, 47.5411 -18.4314, 47.5411 -18.4308, 47.5396 -18.4294, 47.5387 -18.4291, 47.5385 -18.4284, 47.5416 -18.4251, 47.5434 -18.4244, 47.5451 -18.4268, 47.5472 -18.4279, 47.5469 -18.4302, 47.5474 -18.4312, 47.547 -18.4323, 47.5475 -18.4331, 47.547 -18.4336, 47.5464 -18.4336, 47.5457 -18.4325, 47.5446 -18.432, 47.5436 -18.4332, 47.5439 -18.4345, 47.5446 -18.4349)))
+    - - lac Amparihibe
+      - Amparihibe
+      - '45'
+      - Madagascar
+      - Antananarivo
+      - Analamanga
+      - '47.6903'
+      - '-18.1007'
+      - MultiPolygon (((47.6858 -18.1004, 47.6875 -18.1005, 47.688 -18.0996, 47.6906 -18.0998, 47.6909 -18.0988, 47.6913 -18.0988, 47.6915 -18.0997, 47.6948 -18.0983, 47.6962 -18.0968, 47.6981 -18.0968, 47.6987 -18.0978, 47.6977 -18.0981, 47.6969 -18.0995, 47.6955 -18.1, 47.6951 -18.1011, 47.6939 -18.1009, 47.6922 -18.1014, 47.6906 -18.1028, 47.6885 -18.1029, 47.6888 -18.1039, 47.6884 -18.1045, 47.687 -18.1036, 47.685 -18.1033, 47.6838 -18.1021, 47.6838 -18.1016, 47.6849 -18.1019, 47.685 -18.1009, 47.6858 -18.1004)))
+    - - lac Mandroseza
+      - Mandroseza
+      - '42'
+      - Madagascar
+      - Antananarivo
+      - Analamanga
+      - '47.5535'
+      - '-18.9324'
+      - MultiPolygon (((47.5511 -18.928, 47.5532 -18.9285, 47.5533 -18.9301, 47.5545 -18.9302, 47.5558 -18.9314, 47.557 -18.9341, 47.5573 -18.9342, 47.5567 -18.9343, 47.5571 -18.9347, 47.5551 -18.9371, 47.5542 -18.9372, 47.5536 -18.9366, 47.5536 -18.9359, 47.5531 -18.9362, 47.5523 -18.936, 47.5525 -18.9342, 47.5505 -18.9333, 47.5512 -18.9313, 47.5497 -18.9302, 47.5505 -18.9297, 47.5511 -18.928)))
+    - - lac Lohazozoro
+      - Lohazozoro
+      - '31'
+      - Madagascar
+      - Antananarivo
+      - Analamanga
+      - '47.4295'
+      - '-18.9914'
+      - MultiPolygon (((47.4263 -18.989, 47.4285 -18.99, 47.43 -18.9902, 47.4335 -18.9902, 47.4345 -18.9895, 47.4349 -18.9895, 47.4349 -18.9903, 47.434 -18.9902, 47.4343 -18.9917, 47.4337 -18.9921, 47.4326 -18.9919, 47.4316 -18.9929, 47.431 -18.9924, 47.4291 -18.9941, 47.4282 -18.9931, 47.4256 -18.9924, 47.4258 -18.992, 47.4242 -18.991, 47.4241 -18.9903, 47.426 -18.9898, 47.4263 -18.989)))
+    - - lac Amparibe
+      - Amparibe
+      - '29'
+      - Madagascar
+      - Antananarivo
+      - Analamanga
+      - '47.1757'
+      - '-18.76'
+      - MultiPolygon (((47.1744 -18.7593, 47.174 -18.7576, 47.1748 -18.7584, 47.1763 -18.7582, 47.1785 -18.7588, 47.1807 -18.7623, 47.1787 -18.7629, 47.1725 -18.7612, 47.1719 -18.7603, 47.1722 -18.7597, 47.1744 -18.7593)))
+    - - lac Malay
+      - Malay
+      - '20'
+      - Madagascar
+      - Antananarivo
+      - Analamanga
+      - '47.6199'
+      - '-18.2695'
+      - MultiPolygon (((47.6165 -18.2669, 47.6212 -18.2692, 47.6237 -18.2697, 47.623 -18.2709, 47.6215 -18.2709, 47.6204 -18.2721, 47.6193 -18.2723, 47.6178 -18.2708, 47.6165 -18.2669)))
+  map_svg: <svg class="dataset-map" viewBox="0 0 535 1000" role="img" aria-label="Distribution of 303 features in Lakes in Madagascar" preserveAspectRatio="xMidYMid meet"><path class="dataset-map__land" d="M55.6 938.2L54.1 926.5L35.8 905.4L33.5 858.3L42.6 850.8L43.1 842.9L32.0 832.2L30.3 814.0L12.2 798.4L3.2 754.3L9.8 751.9L4.2 741.4L12.5 717.6L21.8 707.7L21.3 687.8L45.8 679.4L53.1 651.5L95.7 586.5L94.6 579.7L90.3 578.3L88.0 572.9L93.8 547.9L77.0 521.1L77.4 511.6L78.1 515.2L80.6 514.4L75.8 493.6L79.4 497.1L79.7 496.2L63.1 471.9L63.1 428.9L55.1 410.0L55.4 406.7L57.1 410.0L58.2 411.2L58.7 410.8L55.2 405.9L67.5 381.3L92.0 347.9L92.2 310.8L122.5 312.5L151.5 291.7L154.7 306.0L163.4 298.9L159.3 295.2L174.5 292.6L176.4 300.9L182.3 279.7L190.7 286.2L198.1 279.1L226.1 274.9L230.8 291.7L235.7 286.6L228.5 283.1L232.4 269.1L275.5 238.0L285.1 247.9L277.5 258.9L290.1 256.8L290.8 244.6L286.3 246.0L283.5 236.2L306.9 217.1L308.3 213.4L300.5 213.2L313.8 199.2L317.6 210.0L309.0 231.0L316.5 229.0L334.3 196.7L330.6
+    182.4L335.8 168.3L348.3 167.9L345.5 156.8L353.0 159.8L349.8 172.2L351.8 174.7L351.1 177.0L352.6 180.0L353.9 178.7L357.6 162.9L347.4 150.8L355.1 148.1L345.1 142.5L345.5 120.1L351.1 122.1L348.7 118.8L351.2 113.6L352.7 120.1L357.9 115.3L358.5 123.2L363.6 120.7L365.5 132.4L372.3 136.9L378.4 131.6L377.0 117.1L378.9 115.8L379.8 120.5L381.7 120.3L383.0 115.5L385.4 119.1L384.8 114.9L390.1 114.4L388.7 117.3L388.8 118.2L389.2 118.6L393.4 114.8L387.7 103.7L402.4 113.4L401.7 108.9L412.4 104.6L411.1 98.6L417.1 96.0L412.4 95.4L411.9 86.5L424.0 69.2L415.6 52.4L418.0 43.0L413.5 45.3L405.8 36.1L408.9 32.4L418.3 41.3L422.1 39.4L424.1 28.8L436.5 23.8L440.4 16.0L432.5 11.4L437.1 7.9L442.2 12.0L438.2 6.6L446.2 0.2L453.3 19.7L444.4 14.5L442.2 20.6L447.0 22.5L441.9 22.0L441.0 23.1L441.4 23.9L440.4 24.9L440.6 25.1L440.3 26.0L440.3 26.3L451.1 26.3L452.4 20.3L458.5 31.6L463.9 29.8L465.6 34.5L463.2 32.9L461.1 34.7L467.6 35.8L466.0 51.4L472.6 54.5L473.3 63.6L479.2 58.0L494.3 80.0L493.5 91.0L509.6 135.2L512.9 193.0L533.9
+    238.8L533.3 256.5L524.3 283.1L511.2 296.3L500.7 287.1L492.2 255.2L478.5 256.0L471.5 263.7L479.9 289.4L475.7 299.9L489.4 311.3L487.5 338.2L479.0 349.0L487.9 357.8L469.6 363.1L457.1 392.5L464.4 420.7L457.7 454.7L345.5 770.7L323.1 867.5L294.5 939.8L287.1 955.2L259.4 968.8L227.5 970.2L174.7 996.6L146.9 1000.0L119.1 980.5L86.0 975.2L77.4 963.5L61.9 956.7L55.6 938.2ZM372.8 106.4L366.9 105.4L365.5 95.5L371.8 97.0L373.6 91.3L379.4 106.8L372.8 106.4Z"/><g class="dataset-map__features" data-kind="polygon"><path d="M263.1 518.5L267.4 520.5L262.2 523.4L261.0 521.7L263.6 519.2L260.4 518.5L263.1 518.5ZM320.8 852.9L323.3 853.2L322.5 850.7L324.7 849.4L325.1 853.3L320.8 852.9ZM310.1 887.6L312.0 887.1L311.3 884.0L314.6 885.7L310.1 887.6ZM443.7 488.1L440.2 490.9L441.7 485.1L443.7 488.1ZM446.0 478.9L445.3 474.5L447.8 476.3L446.0 478.9ZM447.6 476.3L445.9 474.6L449.1 470.5L447.1 473.3L445.9 472.1L449.6 466.1L447.6 476.3ZM437.1 502.4L439.7 495.5L437.1 502.4ZM412.5 571.5L409.3 576.3L411.4 573.2L409.2 570.9L412.5
+    571.5ZM384.5 382.9L390.2 385.8L385.1 385.3L384.5 382.9ZM399.4 399.2L396.4 399.7L389.3 408.9L391.1 413.3L388.1 417.2L386.3 415.5L386.4 406.1L392.4 402.0L393.3 393.4L396.5 393.4L399.4 399.2ZM198.1 300.7L193.4 301.9L193.0 300.3L197.2 297.5L195.5 300.0L198.1 300.7ZM209.6 313.0L207.9 316.8L208.9 314.4L206.7 315.5L206.6 313.9L209.6 313.0ZM198.8 303.6L202.8 310.5L201.0 310.8L201.3 314.9L198.1 307.1L196.4 306.7L197.9 310.2L195.3 313.3L195.1 309.1L191.7 312.7L192.4 308.4L190.9 310.3L187.8 309.7L188.0 307.5L183.7 308.0L198.8 303.6ZM263.4 336.0L261.0 336.9L261.3 332.6L263.4 336.0ZM331.4 280.4L329.0 280.0L332.6 276.4L331.4 280.4ZM252.2 371.0L255.0 370.8L253.5 370.0L255.0 368.9L256.7 371.0L252.2 371.0ZM261.6 351.5L259.4 350.2L263.5 348.8L261.6 351.5ZM278.7 350.9L277.9 348.9L280.9 347.4L278.7 350.9ZM272.7 347.6L275.1 344.3L278.3 346.6L272.7 347.6ZM63.6 408.5L64.2 409.9L69.1 408.1L68.4 411.1L64.0 410.5L63.6 408.5ZM112.1 334.0L113.5 336.4L108.7 336.6L111.0 335.7L110.3 333.1L113.9 331.8L112.1 334.0ZM121.4
+    348.3L120.1 350.7L118.2 347.1L121.4 348.3ZM41.1 733.8L33.8 739.0L33.8 733.4L31.5 732.7L30.6 728.9L33.5 732.3L35.5 726.5L40.9 727.8L44.7 730.2L41.1 733.8ZM41.6 887.5L43.4 896.2L41.6 887.5ZM15.9 745.2L17.0 739.2L17.8 745.9L16.1 747.7L15.9 745.2ZM240.7 964.4L241.1 961.6L242.0 964.3L247.8 966.7L243.7 965.9L242.7 967.7L240.7 964.4ZM102.7 558.6L104.1 563.0L101.6 566.0L102.7 558.6ZM120.6 563.3L119.4 566.5L117.3 564.8L118.7 562.4L120.6 563.3ZM113.8 569.1L115.9 574.6L112.1 570.0L113.1 566.9L113.8 569.1ZM133.6 560.6L135.2 562.6L131.7 565.3L131.6 560.7L133.6 560.6ZM341.7 518.4L343.7 520.6L343.1 517.7L344.7 518.5L344.3 520.9L345.3 518.7L343.3 517.0L346.8 518.3L344.1 516.9L345.2 512.9L341.7 518.4ZM338.7 540.0L341.0 538.8L343.1 543.6L341.0 538.6L342.6 535.5L342.5 537.7L344.5 537.7L343.6 534.0L346.1 534.9L343.4 533.5L344.2 530.3L343.3 533.2L343.0 531.4L341.5 532.7L343.6 534.4L338.7 540.0Z"/><circle cx="337" cy="444" r="2"/><circle cx="324" cy="470" r="2"/><circle cx="320" cy="475" r="2"/><circle cx="330"
+    cy="450" r="2"/><circle cx="320" cy="511" r="2"/><circle cx="311" cy="516" r="2"/><circle cx="293" cy="499" r="2"/><circle cx="325" cy="463" r="2"/><circle cx="320" cy="475" r="2"/><circle cx="318" cy="510" r="2"/><circle cx="320" cy="512" r="2"/><circle cx="318" cy="511" r="2"/><circle cx="296" cy="482" r="2"/><circle cx="322" cy="470" r="2"/><circle cx="278" cy="580" r="2"/><circle cx="280" cy="576" r="2"/><circle cx="274" cy="584" r="2"/><circle cx="255" cy="509" r="2"/><circle cx="261" cy="506" r="2"/><circle cx="268" cy="522" r="2"/><circle cx="258" cy="508" r="2"/><circle cx="254" cy="495" r="2"/><circle cx="247" cy="506" r="2"/><circle cx="261" cy="512" r="2"/><circle cx="260" cy="511" r="2"/><circle cx="255" cy="504" r="2"/><circle cx="254" cy="538" r="2"/><circle cx="311" cy="516" r="2"/><circle cx="245" cy="509" r="2"/><circle cx="206" cy="454" r="2"/><circle cx="247" cy="506" r="2"/><circle cx="216" cy="483" r="2"/><circle cx="244" cy="490" r="2"/><circle cx="244" cy="492"
+    r="2"/><circle cx="245" cy="493" r="2"/><circle cx="246" cy="508" r="2"/><circle cx="299" cy="696" r="2"/><circle cx="440" cy="495" r="2"/><circle cx="444" cy="482" r="2"/><circle cx="425" cy="532" r="2"/><circle cx="449" cy="465" r="2"/><circle cx="437" cy="503" r="2"/><circle cx="427" cy="529" r="2"/><circle cx="453" cy="463" r="2"/><circle cx="422" cy="544" r="2"/><circle cx="431" cy="519" r="2"/><circle cx="430" cy="521" r="2"/><circle cx="445" cy="481" r="2"/><circle cx="432" cy="517" r="2"/><circle cx="425" cy="535" r="2"/><circle cx="413" cy="555" r="2"/><circle cx="406" cy="596" r="2"/><circle cx="405" cy="599" r="2"/><circle cx="458" cy="389" r="2"/><circle cx="469" cy="226" r="2"/><circle cx="466" cy="220" r="2"/><circle cx="378" cy="394" r="2"/><circle cx="380" cy="386" r="2"/><circle cx="219" cy="315" r="2"/><circle cx="206" cy="290" r="2"/><circle cx="148" cy="295" r="2"/><circle cx="128" cy="315" r="2"/><circle cx="129" cy="320" r="2"/><circle cx="168" cy="296" r="2"/><circle
+    cx="131" cy="324" r="2"/><circle cx="190" cy="295" r="2"/><circle cx="153" cy="331" r="2"/><circle cx="131" cy="328" r="2"/><circle cx="130" cy="322" r="2"/><circle cx="206" cy="310" r="2"/><circle cx="132" cy="324" r="2"/><circle cx="310" cy="325" r="2"/><circle cx="263" cy="306" r="2"/><circle cx="260" cy="329" r="2"/><circle cx="244" cy="276" r="2"/><circle cx="282" cy="282" r="2"/><circle cx="248" cy="306" r="2"/><circle cx="281" cy="336" r="2"/><circle cx="286" cy="328" r="2"/><circle cx="266" cy="319" r="2"/><circle cx="265" cy="330" r="2"/><circle cx="290" cy="313" r="2"/><circle cx="243" cy="338" r="2"/><circle cx="250" cy="269" r="2"/><circle cx="283" cy="283" r="2"/><circle cx="285" cy="328" r="2"/><circle cx="255" cy="266" r="2"/><circle cx="237" cy="271" r="2"/><circle cx="247" cy="347" r="2"/><circle cx="276" cy="337" r="2"/><circle cx="260" cy="327" r="2"/><circle cx="291" cy="333" r="2"/><circle cx="285" cy="283" r="2"/><circle cx="316" cy="314" r="2"/><circle cx="323"
+    cy="281" r="2"/><circle cx="333" cy="258" r="2"/><circle cx="332" cy="281" r="2"/><circle cx="338" cy="259" r="2"/><circle cx="349" cy="249" r="2"/><circle cx="329" cy="300" r="2"/><circle cx="345" cy="262" r="2"/><circle cx="338" cy="255" r="2"/><circle cx="332" cy="292" r="2"/><circle cx="340" cy="279" r="2"/><circle cx="328" cy="300" r="2"/><circle cx="335" cy="280" r="2"/><circle cx="304" cy="211" r="2"/><circle cx="307" cy="211" r="2"/><circle cx="344" cy="250" r="2"/><circle cx="313" cy="205" r="2"/><circle cx="308" cy="210" r="2"/><circle cx="339" cy="253" r="2"/><circle cx="302" cy="213" r="2"/><circle cx="337" cy="265" r="2"/><circle cx="304" cy="248" r="2"/><circle cx="315" cy="204" r="2"/><circle cx="342" cy="272" r="2"/><circle cx="333" cy="288" r="2"/><circle cx="322" cy="301" r="2"/><circle cx="310" cy="210" r="2"/><circle cx="323" cy="298" r="2"/><circle cx="311" cy="208" r="2"/><circle cx="292" cy="277" r="2"/><circle cx="397" cy="176" r="2"/><circle cx="405" cy="186"
+    r="2"/><circle cx="396" cy="175" r="2"/><circle cx="407" cy="192" r="2"/><circle cx="396" cy="174" r="2"/><circle cx="410" cy="188" r="2"/><circle cx="363" cy="201" r="2"/><circle cx="266" cy="362" r="2"/><circle cx="309" cy="328" r="2"/><circle cx="278" cy="356" r="2"/><circle cx="268" cy="349" r="2"/><circle cx="259" cy="344" r="2"/><circle cx="261" cy="347" r="2"/><circle cx="264" cy="345" r="2"/><circle cx="266" cy="358" r="2"/><circle cx="267" cy="357" r="2"/><circle cx="272" cy="349" r="2"/><circle cx="266" cy="356" r="2"/><circle cx="266" cy="347" r="2"/><circle cx="95" cy="506" r="2"/><circle cx="174" cy="421" r="2"/><circle cx="151" cy="433" r="2"/><circle cx="78" cy="422" r="2"/><circle cx="86" cy="506" r="2"/><circle cx="115" cy="526" r="2"/><circle cx="176" cy="416" r="2"/><circle cx="94" cy="491" r="2"/><circle cx="111" cy="367" r="2"/><circle cx="111" cy="364" r="2"/><circle cx="74" cy="434" r="2"/><circle cx="99" cy="500" r="2"/><circle cx="74" cy="484" r="2"/><circle
+    cx="82" cy="425" r="2"/><circle cx="92" cy="517" r="2"/><circle cx="90" cy="518" r="2"/><circle cx="105" cy="365" r="2"/><circle cx="103" cy="524" r="2"/><circle cx="94" cy="518" r="2"/><circle cx="102" cy="363" r="2"/><circle cx="90" cy="496" r="2"/><circle cx="121" cy="345" r="2"/><circle cx="123" cy="319" r="2"/><circle cx="117" cy="344" r="2"/><circle cx="114" cy="340" r="2"/><circle cx="114" cy="340" r="2"/><circle cx="110" cy="314" r="2"/><circle cx="105" cy="335" r="2"/><circle cx="116" cy="342" r="2"/><circle cx="95" cy="321" r="2"/><circle cx="109" cy="340" r="2"/><circle cx="109" cy="343" r="2"/><circle cx="93" cy="355" r="2"/><circle cx="126" cy="320" r="2"/><circle cx="123" cy="346" r="2"/><circle cx="125" cy="323" r="2"/><circle cx="96" cy="324" r="2"/><circle cx="110" cy="355" r="2"/><circle cx="28" cy="722" r="2"/><circle cx="84" cy="851" r="2"/><circle cx="38" cy="721" r="2"/><circle cx="25" cy="729" r="2"/><circle cx="20" cy="722" r="2"/><circle cx="163" cy="707" r="2"/><circle
+    cx="182" cy="981" r="2"/><circle cx="183" cy="981" r="2"/><circle cx="271" cy="961" r="2"/><circle cx="259" cy="965" r="2"/><circle cx="268" cy="962" r="2"/><circle cx="283" cy="953" r="2"/><circle cx="251" cy="967" r="2"/><circle cx="279" cy="956" r="2"/><circle cx="308" cy="894" r="2"/><circle cx="298" cy="926" r="2"/><circle cx="250" cy="967" r="2"/><circle cx="297" cy="928" r="2"/><circle cx="308" cy="896" r="2"/><circle cx="274" cy="960" r="2"/><circle cx="288" cy="950" r="2"/><circle cx="100" cy="531" r="2"/><circle cx="143" cy="488" r="2"/><circle cx="146" cy="494" r="2"/><circle cx="155" cy="502" r="2"/><circle cx="166" cy="578" r="2"/><circle cx="172" cy="577" r="2"/><circle cx="156" cy="569" r="2"/><circle cx="109" cy="614" r="2"/><circle cx="138" cy="567" r="2"/><circle cx="164" cy="573" r="2"/><circle cx="161" cy="560" r="2"/><circle cx="110" cy="572" r="2"/><circle cx="134" cy="569" r="2"/><circle cx="161" cy="562" r="2"/><circle cx="102" cy="571" r="2"/><circle cx="107"
+    cy="569" r="2"/><circle cx="162" cy="557" r="2"/><circle cx="69" cy="687" r="2"/><circle cx="138" cy="573" r="2"/><circle cx="165" cy="562" r="2"/><circle cx="111" cy="565" r="2"/><circle cx="113" cy="563" r="2"/><circle cx="132" cy="569" r="2"/><circle cx="139" cy="568" r="2"/><circle cx="369" cy="100" r="2"/><circle cx="445" cy="59" r="2"/><circle cx="412" cy="117" r="2"/><circle cx="371" cy="101" r="2"/><circle cx="435" cy="96" r="2"/><circle cx="369" cy="98" r="2"/><circle cx="456" cy="76" r="2"/><circle cx="444" cy="36" r="2"/><circle cx="370" cy="100" r="2"/><circle cx="371" cy="106" r="2"/><circle cx="435" cy="99" r="2"/><circle cx="416" cy="113" r="2"/><circle cx="416" cy="112" r="2"/><circle cx="410" cy="109" r="2"/><circle cx="452" cy="64" r="2"/><circle cx="492" cy="84" r="2"/><circle cx="512" cy="174" r="2"/><circle cx="514" cy="206" r="2"/><circle cx="510" cy="156" r="2"/><circle cx="513" cy="173" r="2"/><circle cx="500" cy="107" r="2"/><circle cx="509" cy="140" r="2"/><circle
+    cx="359" cy="730" r="2"/><circle cx="371" cy="701" r="2"/><circle cx="371" cy="703" r="2"/><circle cx="372" cy="692" r="2"/><circle cx="376" cy="690" r="2"/><circle cx="375" cy="694" r="2"/><circle cx="374" cy="690" r="2"/><circle cx="384" cy="662" r="2"/><circle cx="392" cy="625" r="2"/><circle cx="382" cy="666" r="2"/><circle cx="351" cy="250" r="2"/><circle cx="351" cy="250" r="2"/><circle cx="427" cy="194" r="2"/><circle cx="99" cy="522" r="2"/><circle cx="313" cy="494" r="2"/><circle cx="312" cy="503" r="2"/><circle cx="315" cy="504" r="2"/><circle cx="319" cy="507" r="2"/><circle cx="319" cy="507" r="2"/><circle cx="292" cy="517" r="2"/><circle cx="17" cy="738" r="2"/><circle cx="432" cy="504" r="2"/><circle cx="370" cy="513" r="2"/><circle cx="85" cy="848" r="2"/></g></svg>
+- slug: public-high-schools
+  title: Public high schools in Madagascar
+  summary: Public lycées across Madagascar, listed by district.
+  theme: education
+  theme_label: Education
+  geometry: none
+  geometry_label: No geometry
+  tags:
+  - schools
+  - education
+  license: CC-BY-SA-4.0
+  license_short: CC BY-SA 4.0
+  license_name: Creative Commons Attribution-ShareAlike 4.0 International
+  license_url: https://creativecommons.org/licenses/by-sa/4.0/
+  license_summary: Reuse freely, including commercially, as long as you credit the author and share derivatives under the same licence.
+  attribution: © Manda Andriatsiferana
+  source: ''
+  format: CSV
+  crs: ''
+  crs_epsg: null
+  language: FR (Français)
+  language_label: French
+  author: Manda Andriatsiferana
+  date: '2019-10-25'
+  original_title: Lycées publics de Madagascar
+  original_description: Une liste des lycées publics à Madagascar par districts.
+  records: 396
+  bounds: null
+  zip_path: /datasets/mg_lyceespublics_v1.zip
+  zip_url: https://privatemajory.github.io/datasets/mg_lyceespublics_v1.zip
+  zip_bytes: 5187
+  zip_size: 5 KB
+  files:
+  - name: mg_lyceespublics_v1.csv
+    path: /datasets/mg_lyceespublics_v1.csv
+    url: https://privatemajory.github.io/datasets/mg_lyceespublics_v1.csv
+    format: CSV
+    bytes: 15538
+    size: 15 KB
+    records: 396
+    delimiter: comma
+  primary_path: /datasets/mg_lyceespublics_v1.csv
+  primary_format: CSV
+  fields:
+  - name: ID
+    type: ''
+    description: identifiant unique
+  - name: District
+    type: ''
+    description: district auquel l'établissement appartient
+  - name: Etablissement
+    type: ''
+    description: nom de l'établissement
+  preview:
+    columns:
+    - ID
+    - District
+    - Etablissement
+    rows:
+    - - '1'
+      - Ambalavao
+      - Lycée Joel Sylvain
+    - - '2'
+      - Ambalavao
+      - Lycée Mananjara Ambohimahamasina
+    - - '3'
+      - Ambalavao
+      - Lycée Matavy
+    - - '4'
+      - Ambalavao
+      - Lycée Anjoma
+    - - '5'
+      - Ambalavao
+      - Lycée Mahazony
+    - - '6'
+      - Ambalavao
+      - Lycée Ankaramena
+    - - '7'
+      - Ambalavao
+      - Lycée Andrainjato Kiririoka
+    - - '8'
+      - Ambalavao
+      - Lycée Ambinaniroa
+  map_svg: null
+- slug: population-fokontany
+  title: Population by fokontany
+  summary: 2009 population, density and area for every fokontany in Madagascar, as polygons.
+  theme: population
+  theme_label: Population
+  geometry: polygon
+  geometry_label: Polygons
+  tags:
+  - census
+  - density
+  - boundaries
+  license: CC-BY-SA-4.0
+  license_short: CC BY-SA 4.0
+  license_name: Creative Commons Attribution-ShareAlike 4.0 International
+  license_url: https://creativecommons.org/licenses/by-sa/4.0/
+  license_summary: Reuse freely, including commercially, as long as you credit the author and share derivatives under the same licence.
+  attribution: © Manda Andriatsiferana
+  source: INSTAT, 2009
+  format: Shapefile
+  crs: WGS 84 Latitude Longitude (EPSG 4326)
+  crs_epsg: 4326
+  language: FR (Français)
+  language_label: French
+  author: Manda Andriatsiferana
+  date: '2019-10-25'
+  original_title: Population par Fokontany à Madagascar
+  original_description: Population par Fokontany à Madagascar selon les données de INSTAT en 2009. Ces données sont basées sur la déclaration de chaque chef Fokontany.
+  records: 17459
+  bounds:
+  - 43.1769
+  - -25.6058
+  - 50.4849
+  - -11.9514
+  zip_path: /datasets/mg_populationfokontany_v1.zip
+  zip_url: https://privatemajory.github.io/datasets/mg_populationfokontany_v1.zip
+  zip_bytes: 20702757
+  zip_size: 19.7 MB
+  files:
+  - name: mg_populationfokontany_v1.zip
+    path: /datasets/mg_populationfokontany_v1.zip
+    url: https://privatemajory.github.io/datasets/mg_populationfokontany_v1.zip
+    format: Shapefile
+    bytes: 20702757
+    size: 19.7 MB
+    records: 17459
+    delimiter: null
+  primary_path: /datasets/mg_populationfokontany_v1.zip
+  primary_format: Shapefile
+  fields:
+  - name: Region
+    type: Text
+    description: région à laquelle le Fokontany appartient
+  - name: District
+    type: Text
+    description: district auquel le Fokontany appartient
+  - name: Commune
+    type: Text
+    description: commune à laquelle le Fokontany appartient
+  - name: Fokontany
+    type: Text
+    description: nom du Fokontany
+  - name: Population
+    type: Number
+    description: nombre de population du Fokontany
+  - name: Densite_pa
+    type: Number
+    description: densité de populaiton du Fokontany en habitants par hectare
+  - name: Surface_km
+    type: Number
+    description: surface du Fokontany en kilomètres carré
+  preview: null
+  map_svg: null
+- slug: road-profiles
+  title: Profiles of the major national roads
+  summary: Longitudinal profiles along the RN 2, RN 4, RN 6 and RN 7, with altitude, 2D/3D distance and slope.
+  theme: transport
+  theme_label: Transport
+  geometry: none
+  geometry_label: No geometry
+  tags:
+  - roads
+  - elevation
+  - slope
+  license: CC-BY-SA-4.0
+  license_short: CC BY-SA 4.0
+  license_name: Creative Commons Attribution-ShareAlike 4.0 International
+  license_url: https://creativecommons.org/licenses/by-sa/4.0/
+  license_summary: Reuse freely, including commercially, as long as you credit the author and share derivatives under the same licence.
+  attribution: © Manda Andriatsiferana
+  source: ''
+  format: CSV
+  crs: ''
+  crs_epsg: null
+  language: EN (English)
+  language_label: English
+  author: Manda Andriatsiferana
+  date: '2019-11-13'
+  original_title: Profils des routes nationales majeures de Madagascar
+  original_description: Profils longitudinaux des principales routes nationales de Madagascar.
+  records: 13592
+  bounds: null
+  zip_path: /datasets/mg_profilsrnmajeures_v1.zip
+  zip_url: https://privatemajory.github.io/datasets/mg_profilsrnmajeures_v1.zip
+  zip_bytes: 752544
+  zip_size: 735 KB
+  files:
+  - name: profil_rn2.csv
+    path: /datasets/profil_rn2.csv
+    url: https://privatemajory.github.io/datasets/profil_rn2.csv
+    format: CSV
+    bytes: 1328155
+    size: 1.3 MB
+    records: 11402
+    delimiter: comma
+  - name: profil_rn4.csv
+    path: /datasets/profil_rn4.csv
+    url: https://privatemajory.github.io/datasets/profil_rn4.csv
+    format: CSV
+    bytes: 66666
+    size: 65 KB
+    records: 569
+    delimiter: comma
+  - name: profil_rn6.csv
+    path: /datasets/profil_rn6.csv
+    url: https://privatemajory.github.io/datasets/profil_rn6.csv
+    format: CSV
+    bytes: 81725
+    size: 80 KB
+    records: 703
+    delimiter: comma
+  - name: profil_rn7.csv
+    path: /datasets/profil_rn7.csv
+    url: https://privatemajory.github.io/datasets/profil_rn7.csv
+    format: CSV
+    bytes: 105585
+    size: 103 KB
+    records: 918
+    delimiter: comma
+  primary_path: /datasets/profil_rn2.csv
+  primary_format: CSV
+  fields:
+  - name: prof_id
+    type: ''
+    description: Identifiant du profil
+  - name: rec_id
+    type: ''
+    description: Identifiant du point de données
+  - name: x
+    type: ''
+    description: Coordonnées X du point de données
+  - name: y
+    type: ''
+    description: Coordonnées Y du point de données
+  - name: cds2d
+    type: ''
+    description: Distance horizontale suivant le profil
+  - name: z
+    type: ''
+    description: Altitude du point de données
+  - name: cds3d
+    type: ''
+    description: Distance suivant le profil tenant compte de l'altitude
+  - name: dirslop
+    type: ''
+    description: Pente suivant le profil en degrés. Valeur positive pour une montée, négative pour une descente.
+  preview:
+    columns:
+    - prof_id
+    - rec_id
+    - x
+    - y
+    - cds2d
+    - z
+    - cds3d
+    - dirslop
+    rows:
+    - - '1'
+      - '1'
+      - '516777.4781227206'
+      - '800147.6034131703'
+      - '0.0'
+      - '1294.9024303413883'
+      - '0.0'
+      - '10.4887690145004'
+    - - '1'
+      - '2'
+      - '516780.64101784484'
+      - '800161.6810731731'
+      - '14.428597184750497'
+      - '1297.5736874571512'
+      - '14.673787217290027'
+      - '10.180903904367167'
+    - - '1'
+      - '3'
+      - '516783.3841866737'
+      - '800170.9257621028'
+      - '24.07169049714055'
+      - '1299.3054360067356'
+      - '24.471144088939102'
+      - '6.682134371773433'
+    - - '1'
+      - '4'
+      - '516785.41961418255'
+      - '800176.4458102802'
+      - '29.95504812896883'
+      - '1299.9947119244935'
+      - '30.39474082696854'
+      - '5.460654484919925'
+    - - '1'
+      - '5'
+      - '516792.29907542054'
+      - '800190.3122557604'
+      - '45.434237293200965'
+      - '1301.4744607743864'
+      - '45.944498183301825'
+      - '-2.3074614292054725'
+    - - '1'
+      - '6'
+      - '516830.8066417394'
+      - '800234.6442880107'
+      - '104.15528758384866'
+      - '1299.108320349772'
+      - '104.71320046390159'
+      - '-8.50341643872222'
+    - - '1'
+      - '7'
+      - '516871.70930326555'
+      - '800278.5415804109'
+      - '164.15528758382248'
+      - '1290.1376026401895'
+      - '165.38010887550496'
+      - '-1.8923634189515488'
+    - - '1'
+      - '8'
+      - '516892.272375544'
+      - '800300.6101491244'
+      - '194.3192009007536'
+      - '1289.1409873352675'
+      - '195.56048178004906'
+      - '-1.1440096894989826'
+  map_svg: null

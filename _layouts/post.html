@@ -1,0 +1,54 @@
+---
+layout: default
+---
+{%- assign word_count = content | strip_html | number_of_words -%}
+{%- assign reading_time = word_count | divided_by: 200 | at_least: 1 -%}
+<article class="post"{% if page.lang %} lang="{{ page.lang }}"{% endif %}>
+  <header class="post-header">
+    <div class="container">
+      <div class="post-meta">
+        <span>{{ page.categories | join: " · " }}</span>
+        <span class="sep"></span>
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>
+        <span class="sep"></span>
+        <span>{{ reading_time }} {% if page.lang == "fr" %}min de lecture{% else %}min read{% endif %}</span>
+      </div>
+      <h1>{{ page.title | escape }}</h1>
+      {%- if page.description -%}
+        <p class="lede">{{ page.description }}</p>
+      {%- endif -%}
+      {%- if page.tags.size > 0 -%}
+        <ul class="tag-list" aria-label="Tags">
+          {%- for tag in page.tags -%}
+            <li><span class="tag">{{ tag }}</span></li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+    </div>
+  </header>
+
+  <div class="post-body">
+    <div class="container">
+      <div class="post-layout">
+        <div class="prose" data-article>
+          {{ content }}
+        </div>
+        <aside class="toc" data-toc hidden>
+          <p class="toc__label">{% if page.lang == "fr" %}Dans cet article{% else %}On this page{% endif %}</p>
+          <ol></ol>
+        </aside>
+      </div>
+
+      <nav class="post-footer" aria-label="Post navigation">
+        <a class="link-arrow" href="{{ '/blog/' | relative_url }}">
+          {% include icon.html name="arrow-left" class="icon" %}
+          {% if page.lang == "fr" %}Tous les articles{% else %}All posts{% endif %}
+        </a>
+        <a class="link-arrow" href="{{ '/feed.xml' | relative_url }}">
+          {% include icon.html name="rss" class="icon" %}
+          RSS
+        </a>
+      </nav>
+    </div>
+  </div>
+</article>

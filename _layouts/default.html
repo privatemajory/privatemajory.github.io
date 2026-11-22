@@ -1,101 +1,16 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
-{%- include head.html -%}
-
-<head>
-  <link href="/css/justifiedGallery.min.css" rel="stylesheet">
-  <link href="/slider/ideal-image-slider.css" rel="stylesheet">
-  <link href="/slider/themes/default/default.css" rel="stylesheet">
-  
-  <script src="/js/jquery-3.7.0.min.js"></script>
-  <script src="/js/jquery.justifiedGallery.min.js"></script>
-</head>
-
-<body>
-
-  {%- include header.html -%}
-
-  <main class="page-content" aria-label="Content">
-    <div class="wrapper">
-      {%- if page.layout == 'post' -%}
-        <a href="/blog/" class="back-button">
-          <i class="fas fa-arrow-left"></i>
-          Back to list
-        </a>
-      {%- endif -%}
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  {%- include head.html -%}
+  <body class="{% if page.body_class %}{{ page.body_class }}{% endif %}">
+    <a class="skip-link" href="#main">Skip to content</a>
+    {%- include header.html -%}
+    {%- include nav-dialog.html -%}
+    <main id="main" class="site-main">
       {{ content }}
-    </div>
-  </main>
-
-  {%- include footer.html -%}
-
-  <script src="/slider/ideal-image-slider.min.js"></script>
-
-</body>
-
-<script>
-  // Enhanced scroll effects with debouncing
-  let scrollTimeout;
-  window.addEventListener('scroll', function() {
-    const header = document.querySelector('.site-header');
-    if (window.scrollY > 50) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
-    
-    // Add parallax effect to hero section
-    const heroSection = document.querySelector('.hero-section');
-    if (heroSection) {
-      const scrolled = window.pageYOffset;
-      const parallax = scrolled * 0.5;
-      heroSection.style.transform = `translateY(${parallax}px)`;
-    }
-  });
-
-  // Initialize gallery with enhanced settings
-  $("#imggallery").justifiedGallery({
-    rowHeight: 200,
-    margins: 12,
-    border: 0,
-    waitThumbnailsLoad: true,
-    animate: true,
-    randomize: false
-  });
-
-  // Add smooth reveal animation for elements
-  const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-  };
-
-  const observer = new IntersectionObserver(function(entries) {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
-      }
-    });
-  }, observerOptions);
-
-  // Observe all major content elements
-  document.addEventListener('DOMContentLoaded', function() {
-    const elements = document.querySelectorAll('h1, h2, h3, p, .pageButton, figure');
-    elements.forEach(el => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(20px)';
-      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-      observer.observe(el);
-    });
-  });
-
-  // Add keyboard navigation
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && document.querySelector('.site-nav input:checked')) {
-      document.querySelector('.site-nav input').checked = false;
-    }
-  });
-</script>
-
+    </main>
+    {%- include footer.html -%}
+    <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
+    <script src="{{ '/assets/js/gallery.js' | relative_url }}" defer></script>
+    <script src="{{ '/assets/js/datasets.js' | relative_url }}" defer></script>
+  </body>
 </html>

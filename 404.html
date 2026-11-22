@@ -1,24 +1,24 @@
 ---
 layout: default
+permalink: /404.html
+description: "This page is off the map."
+sitemap: false
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+<section class="not-found">
+  <div>
+    <p class="not-found__code" aria-hidden="true">404</p>
+    <h1>This page is off the map</h1>
+    <p>The coordinates you followed do not point anywhere. The map is still here, though.</p>
+    <div class="not-found__actions">
+      <a class="button button--accent" href="{{ '/' | relative_url }}">
+        Back to the start
+        {% include icon.html name="arrow-right" class="icon" %}
+      </a>
+      <a class="button button--ghost" href="{{ '/gallery/' | relative_url }}">
+        Browse the maps
+        {% include icon.html name="map" class="icon" %}
+      </a>
+    </div>
+  </div>
+</section>

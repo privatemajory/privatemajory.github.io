@@ -3,6 +3,17 @@ layout: post
 title: "Deriving road steepness from a digital elevation model using QGIS"
 date: 2019-05-20 10:02:00 +0300
 categories: gis
+description: "A QGIS workflow for extracting road slope from a digital elevation model, using the qProf plugin and the RN 2 in Madagascar as an example."
+tags:
+  - QGIS
+  - DEM
+  - Terrain
+image:
+  path: /assets/images/blog/road-steepness-og.jpg
+  width: 1200
+  height: 630
+  alt: Carte de la pente moyenne des routes dans les principales zones urbaines de Madagascar
+thumb: /assets/images/blog/road-steepness-square-320.webp
 ---
 
 Road slopes are an important factor to consider when estimating trip costs and durations. GPS applications sometimes show altitude graphs along itinerary, and consider elevation in trip calculations. Android application [OSMAnd](https://osmand.net/) is one example. In this post I will share one method I have used to fetch road slope data from a digital elevation model (DEM). From the data I could make a slope-along-road graph such as on OSMAnd.
@@ -46,7 +57,7 @@ To resample the profile line, I generated points at equal distance of 1 km, then
 To convert the points to a line, I used the **Points to path** processing tool, and used the distance column (created by the previous tool) for the "order field" parameter.
 
 <figure>
-<img src="/img/points_to_path.png" alt="Points to path processing tool" style="width: 90%; max-width: 480px" />
+<img src="/img/points_to_path.png" alt="Points to path processing tool" />
 <figcaption>The <em>Points to path</em> processing tool in QGIS.</figcaption>
 </figure>
 
@@ -65,7 +76,7 @@ Under "Topography" tab, within "DEM input" this is what I did:
 Under "Export" tab and within "Topographic profile data", I exported the data as a CSV text for further editing and visualization in D3.js.
 
 <figure>
-<img src="/img/qprof_interface.png" alt="Generating and exporting the profile data using qProf" style="width: 90%; max-width: 400px" />
+<img src="/img/qprof_interface.png" alt="Generating and exporting the profile data using qProf" />
 <figcaption>Generating and exporting the road profile data using qProf.</figcaption>
 </figure>
 
@@ -88,6 +99,6 @@ To get the graph at the beginning of this post, I simply plotted the Z coordinat
 Using the same base but with a slightly different workflow, I could estimate the average street steepness in the major urban areas of Madagascar:
 
 <figure>
-<img src="/img/mdg_urban_road_slope_2.png" alt="Madagascar average road slope in major urban areas" style="width: 90%; max-width: 480px" />
+<img src="/img/mdg_urban_road_slope_2.png" alt="Madagascar average road slope in major urban areas" />
 <figcaption>Average road slope in major urban areas of Madagascar.</figcaption>
 </figure>

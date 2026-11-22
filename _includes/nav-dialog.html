@@ -1,0 +1,36 @@
+<dialog id="mobile-nav" class="nav-dialog" aria-label="Menu">
+  <div class="nav-dialog__head">
+    <p class="nav-dialog__label">Menu</p>
+    <button class="icon-button" type="button" data-nav-close aria-label="Close menu">
+      {% include icon.html name="close" class="icon" %}
+    </button>
+  </div>
+
+  <nav aria-label="Primary mobile">
+    <ul>
+      {%- for item in site.data.navigation -%}
+        {%- assign is_active = false -%}
+        {%- if page.url contains item.url -%}
+          {%- assign is_active = true -%}
+        {%- endif -%}
+        {%- if item.url == '/blog/' and page.layout == 'post' -%}
+          {%- assign is_active = true -%}
+        {%- endif -%}
+        <li>
+          <a href="{{ item.url | relative_url }}"{% if is_active %} aria-current="page"{% endif %}>
+            <span>{{ item.title }}</span>
+            {% include icon.html name="arrow-right" class="icon icon--small" %}
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </nav>
+
+  <div class="nav-dialog__foot">
+    <button class="theme-switch" type="button" data-theme-toggle>
+      {% include icon.html name="sun" class="icon theme-icon theme-icon--light" %}
+      {% include icon.html name="moon" class="icon theme-icon theme-icon--dark" %}
+      <span class="theme-switch__label">Switch theme</span>
+    </button>
+  </div>
+</dialog>

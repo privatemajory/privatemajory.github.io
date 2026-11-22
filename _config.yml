@@ -1,41 +1,87 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Home
+title: Dolly Andriatsiferana
+tagline: Geography, maps and open data
+description: >-
+  Geographer specializing in GIS, web mapping and data visualization with
+  open-source geospatial technologies.
+url: "https://privatemajory.github.io"
+baseurl: ""
+lang: en
 author: Dolly Andriatsiferana
 email: andriatsiferana@protonmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  I'd make beautiful maps for nothing!
-baseurl: # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Social / SEO
+twitter:
+  username: privatemajory
+  card: summary_large_image
+logo: /assets/images/og-default.jpg
+social:
+  name: Dolly Andriatsiferana
+  links:
+    - https://x.com/privatemajory
+    - https://www.reddit.com/user/privatemajory/
+    - https://www.linkedin.com/in/dolly-andriatsiferana/
+    - https://www.openstreetmap.org/user/Privatemajory
 
 # Build settings
 markdown: kramdown
-theme: minima
+highlighter: rouge
+timezone: Indian/Antananarivo
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+feed:
+  path: feed.xml
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:slug/
+  datasets:
+    output: true
+    permalink: /datasets/:slug/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/og-default.jpg
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+  - scope:
+      path: ""
+      type: datasets
+    values:
+      layout: dataset
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+
+show_excerpts: true
+
+# Keep source assets out of the published site.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - docs
+  - .bundle
+  - .editorconfig
+  - .gitignore
+  - .jekyll-cache
+  - .vscode
+  - vendor
+  - scripts
+  - gallery_content
