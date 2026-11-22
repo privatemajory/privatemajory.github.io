@@ -22,15 +22,28 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Installs the Bundler version recorded in Gemfile.lock, then runs
-      # `bundle install`. Nothing platform-specific is committed: vendor/ and
-      # .bundle/ are gitignored, so each runner resolves its own gems. A
-      # committed Windows vendor tree is what broke this build before.
+      # No bundler-cache here: the gems are installed explicitly in the next
+      # step, so the install output is visible and nothing depends on the
+      # action's own gem-path handling. vendor/ and .bundle/ are gitignored,
+      # so each runner resolves its own platform's gems.
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.2"
-          bundler-cache: true
+
+      - name: Install Ruby dependencies
+        run: bundle install --jobs 4 --retry 3
+
+      - name: Report Ruby environment
+        run: |
+          echo "ruby:    $(ruby -v)"
+          echo "bundler: $(bundle -v)"
+          echo "--- bundle config ---"
+          bundle config
+          echo "--- bundle check ---"
+          bundle check || echo "::warning::bundle check reports an incomplete bundle"
+          echo "--- jekyll loadable? ---"
+          bundle exec ruby -e "require 'jekyll'; puts 'jekyll ' + Jekyll::VERSION"
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -49,7 +62,7 @@ jobs:
         run: python scripts/build_datasets.py
 
       - name: Build with Jekyll
-        run: bundle exec jekyll build
+        run: bundle exec jekyll build --trace
         env:
           JEKYLL_ENV: production
 
