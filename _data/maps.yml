@@ -2,165 +2,165 @@
   image: 2023-07-12_b3d_itasy_hexagons.jpg
   title: Lake Itasy
   note: Hexagon-binned relief
-  category: 3d
+  categories: [madagascar, 3d]
   featured: true
 - slug: mayotte
   image: 2023-07-12_b3d_mayotte.jpg
   title: Mayotte
   note: Island relief
-  category: 3d
+  categories: [3d, world]
   featured: true
 - slug: st-louis
   image: 2023-07-12_b3d_st_louis.jpg
   title: Saint-Louis Island
   note: Senegal
-  category: 3d
+  categories: [3d, world, cities]
 - slug: drainage-divide
   image: 2023-07-12_drainage_divide_map.jpg
   title: West-east drainage divide
   note: Madagascar
-  category: madagascar
+  categories: [madagascar]
 - slug: five-lakes
   image: 2023-07-12_qgis_5_largest_lakes.jpg
   title: Five largest lakes
   note: Madagascar
-  category: madagascar
+  categories: [madagascar]
 - slug: antananarivo-slope
   image: 2023-07-12_qgis_buildings_in_antananarivo.jpg
   title: Antananarivo buildings
   note: Coloured by terrain slope
-  category: cities
+  categories: [madagascar, cities, data]
 - slug: haute-matsiatra
   image: 2024-10-26_qgis_haute_matsiatra.jpg
   title: Haute Matsiatra
   note: Regional relief
-  category: madagascar
+  categories: [madagascar]
   featured: true
 - slug: croplands
   image: 2023-07-27_qgis_mdg_croplands&population.jpg
   title: Croplands and population
   note: Madagascar
-  category: data
+  categories: [madagascar, data]
 - slug: anivorano
   image: 2023-11-11_anivorano.jpg
   title: Anivorano
   note: Vintage-style map
-  category: madagascar
+  categories: [madagascar]
 - slug: toamasina
   image: 2023-07-12_qgis_toamasina_land_cover.jpg
   title: Toamasina land cover
   note: Madagascar
-  category: madagascar
+  categories: [madagascar, cities]
 - slug: tampere-landscape
   image: 2019-08-08_b3d_tampere_landscape.jpg
   title: Downtown Tampere
   note: Landscape view
-  category: cities
+  categories: [3d, cities, world]
 - slug: galapagos
   image: 2019-05-21_b3d_galapagos.jpg
   title: Galápagos
   note: Island relief
-  category: world
+  categories: [3d, world]
 - slug: river-basins
   image: 2019-10-01_mdg_river_basins.jpg
   title: River basins
   note: Madagascar
-  category: madagascar
+  categories: [madagascar, data]
 - slug: cape-verde
   image: 2019-05-21_qgis_cape_verde.jpg
   title: Cape Verde
   note: Island group
-  category: world
+  categories: [3d, world]
 - slug: mahamasina
   image: 2023-07-18_qgis_antananarivo_shortest_route_2.jpg
   title: Shortest route to Mahamasina
   note: Antananarivo
-  category: cities
+  categories: [madagascar, cities, data]
 - slug: fianarantsoa
   image: 2019-10-26_b3d_fianarantsoa_part_1.jpg
   title: Fianarantsoa
   note: 3D city model
-  category: 3d
+  categories: [madagascar, 3d, cities]
   featured: true
 - slug: lalangina
   image: 2020-04-14_b3d_lalangina_relief.jpg
   title: Lalangina
   note: Relief map
-  category: madagascar
+  categories: [madagascar, 3d]
 - slug: cyclone
   image: 2024-12-23_qgis_cyclone_landfall.jpg
   title: Cyclone landfall
   note: Madagascar
-  category: data
+  categories: [madagascar, data]
   featured: true
 - slug: fianar-bus
   image: 2024-05-20_qgis_fianar_bus.jpg
   title: Fianarantsoa bus map
   note: Urban transit
-  category: cities
+  categories: [madagascar, cities, data]
 - slug: ikongo
   image: 2023-09-12_qgis_district_ikongo.jpg
   title: Ikongo district
   note: Madagascar
-  category: madagascar
+  categories: [madagascar]
 - slug: united-kingdoms
   image: 2019-07-05_qgis_united_kingdoms_of_madagascar.jpg
   title: United Kingdoms of Madagascar
   note: Historical map
-  category: madagascar
+  categories: [madagascar]
 - slug: manhattan
   image: 2019-07-13_b3d_manhattan.jpg
   title: Financial District
   note: Manhattan
-  category: cities
+  categories: [3d, cities, world]
 - slug: urban-slope
   image: 2019-05-21_qgis_mdg_urban_road_slope.jpg
   title: Urban road slope
   note: Madagascar
-  category: data
+  categories: [madagascar, data]
 - slug: nosy-be
   image: 2019-05-21_qgis_nosy-be.jpg
   title: Nosy Be
   note: Madagascar
-  category: madagascar
+  categories: [madagascar]
 - slug: nyc
   image: 2019-06-29_b3d_nyc.jpg
   title: Financial District 3D
   note: Manhattan
-  category: cities
+  categories: [3d, cities, world]
 - slug: hrsl
   image: 2019-10-01_qgis_mdg_hrsl.jpg
   title: Settlement map
   note: Madagascar
-  category: data
+  categories: [madagascar, data]
 - slug: ihorombe
   image: 2019-05-21_inkscape_ihorombe_relief_map.jpg
   title: Ihorombe
   note: Relief map
-  category: madagascar
+  categories: [madagascar]
 - slug: hex-world
   image: 2023-11-09_a_hex_world.jpg
   title: Hexagon globe
   note: World
-  category: world
+  categories: [3d, world]
 - slug: tampere
   image: 2019-08-07_qgis_tampere.jpg
   title: Downtown Tampere
   note: Finland
-  category: cities
+  categories: [cities, world, 3d]
 - slug: waterway-distance
   image: 2023-11-13_madagascar_wwdist.jpg
   title: Distance to waterway
   note: Madagascar
-  category: data
+  categories: [madagascar, data]
 - slug: highest-point
   image: 2022-10-27_qgis_highest_point_per_region.jpg
   title: Highest point per region
   note: Madagascar
-  category: data
+  categories: [madagascar, data]
 - slug: ljubljana
   image: 2023-11-14_ljubljana.jpg
   title: Ljubljana
   note: Slovenia
-  category: cities
+  categories: [cities, world, 3d]
   featured: true

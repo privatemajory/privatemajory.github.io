@@ -1,8 +1,9 @@
 {%- assign map = include.map -%}
 {%- assign size = site.data.map_sizes[map.slug] -%}
-{%- assign cat = site.data.map_categories | where: "slug", map.category | first -%}
+{%- assign first_category_slug = map.categories | first -%}
+{%- assign cat = site.data.map_categories | where: "slug", first_category_slug | first -%}
 {%- assign img_sizes = include.sizes | default: "(min-width: 1050px) 31vw, (min-width: 620px) 46vw, 92vw" -%}
-<figure class="map-card" id="{{ map.slug }}" data-map-item data-category="{{ map.category }}">
+<figure class="map-card" id="{{ map.slug }}" data-map-item data-categories="{{ map.categories | join: ' ' }}">
   <a class="map-card__link"
      href="{{ '/assets/images/maps/' | append: map.slug | append: '-' | append: size.width | append: '.webp' | relative_url }}"
      data-lightbox
@@ -28,7 +29,12 @@
     </div>
     <figcaption class="map-card__caption">
       <span class="map-card__title">{{ map.title }}{% if map.note %} <span class="muted">· {{ map.note }}</span>{% endif %}</span>
-      <span class="map-card__meta">{{ cat.label }}</span>
+      <span class="map-card__meta">
+        {%- for category_slug in map.categories -%}
+          {%- assign category = site.data.map_categories | where: "slug", category_slug | first -%}
+          {{ category.label }}{% unless forloop.last %} · {% endunless %}
+        {%- endfor -%}
+      </span>
     </figcaption>
   </a>
 </figure>

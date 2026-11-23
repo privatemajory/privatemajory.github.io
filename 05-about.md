@@ -3,9 +3,18 @@ layout: page
 title: About
 permalink: /about/
 kicker: About
-summary: "Geographer and geomatics specialist, currently a field GIS specialist at Médecins Sans Frontières in Madagascar."
-description: "About Dolly Andriatsiferana, a geographer and geomatics specialist working across the geospatial chain of collection, analysis and delivery for NGOs and institutions in Madagascar."
+summary: "Geographer and GIS specialist based in Madagascar."
+description: "Dolly Andriatsiferana is a geographer and GIS specialist working in Madagascar."
+experience_start_date: "2018-04-01"
 ---
+
+{%- assign experience_start_year = page.experience_start_date | date: "%Y" | plus: 0 -%}
+{%- assign experience_years = site.time | date: "%Y" | plus: 0 | minus: experience_start_year -%}
+{%- assign experience_start_month_day = page.experience_start_date | date: "%m%d" | plus: 0 -%}
+{%- assign current_month_day = site.time | date: "%m%d" | plus: 0 -%}
+{%- if current_month_day < experience_start_month_day -%}
+  {%- assign experience_years = experience_years | minus: 1 -%}
+{%- endif -%}
 
 <section class="about-intro">
   <figure class="about-portrait">
@@ -15,17 +24,14 @@ description: "About Dolly Andriatsiferana, a geographer and geomatics specialist
               sizes="(min-width: 860px) 34vw, 90vw">
       <img src="{{ '/assets/images/profile/portrait-480.jpg' | relative_url }}"
            alt="Portrait of Dolly Andriatsiferana"
-           width="480"
-           height="480"
            loading="eager"
            decoding="async">
     </picture>
   </figure>
 
   <div class="about-intro__text">
-    <p>I am a geographer and geomatics specialist, currently a field GIS specialist at Médecins Sans Frontières in Madagascar. For eight years I have worked across the whole geospatial chain, collecting, analysing and delivering data for NGOs and institutions including MSF, Operation Fistula and GRET, mostly in community health, humanitarian response and development.</p>
-    <p>Most of my work is about Madagascar: its relief, its cities, the way people move across both. I care about maps that explain something rather than decorate it, which usually means starting from the data, whether a digital elevation model, a road network or a census table, and working out what question it can actually answer before opening a design tool.</p>
-    <p>I build GIS solutions rather than one-off maps: spatial databases held to OpenStreetMap standards, automation in FME and Python, dashboards and small web applications. I have contributed to OpenStreetMap since 2015, and I share the results here: the maps, the datasets and the notes on how they were made.</p>
+    <p>I am a geographer, GIS and open data specialist. I have spent {{ experience_years }} {% if experience_years == 1 %}year{% else %}years{% endif %} collecting, analysing and preparing geospatial data for organisations working in community health, humanitarian response and local development.</p>
+    <p>Most of my work is about Madagascar: its physical environment, its human settlements, and how both interact. I care about maps that explain something out of the data, working out what question it can actually answer.</p>
   </div>
 </section>
 

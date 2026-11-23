@@ -32,7 +32,8 @@
           other.setAttribute("aria-pressed", other === button ? "true" : "false");
         });
         document.querySelectorAll("[data-map-item]").forEach(function (item) {
-          var matches = filter === "everything" || item.getAttribute("data-category") === filter;
+          var categories = (item.getAttribute("data-categories") || "").split(/\s+/);
+          var matches = filter === "everything" || categories.indexOf(filter) !== -1;
           item.hidden = !matches;
         });
         updateCount();

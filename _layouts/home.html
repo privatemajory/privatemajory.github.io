@@ -13,15 +13,14 @@ body_class: home
       <span>Dolly</span>
       <span>Andriatsiferana</span>
     </h1>
-    <p class="hero__intro">I turn geographic data into maps that explain a place, from relief studies in Madagascar to city-scale web maps.</p>
+    <p class="hero__intro">I use geographic data to make maps and small web apps, mostly about Madagascar.</p>
     <div class="hero__actions">
       <a class="button button--accent" href="{{ '/gallery/' | relative_url }}">
-        Explore the maps
+        View maps
         {% include icon.html name="arrow-right" class="icon" %}
       </a>
       <a class="button button--ghost" href="{{ '/about/' | relative_url }}">About me</a>
     </div>
-    <p class="hero__meta">Madagascar <span></span> Open to collaborations</p>
   </div>
 
   <div class="hero__media">
@@ -59,17 +58,16 @@ body_class: home
     </div>
     <div class="stat">
       <strong>{{ site.posts | size }}</strong>
-      <span>Essays</span>
+      <span>Posts</span>
     </div>
   </div>
 </section>
 
 <section class="home-intro">
   <div class="container home-intro__grid" data-reveal>
-    <h2>Maps first, technology second.</h2>
+    <h2>I start with the place.</h2>
     <div>
-      <p>My work starts with a place. Relief and terrain, accessibility, settlement patterns, the quiet data problems behind a map. The tools exist to make those things legible, not the other way around.</p>
-      <p>The maps are made with QGIS, Blender, Python and open data. The web applications are small, focused tools built around a single geographic question.</p>
+      <p>I have expertise in working with terrain, accessibility and location intelligence. I turn data into meaningful maps, visualizations or web applications to help answer specific geography-related questions.</p>
     </div>
   </div>
 </section>
@@ -78,8 +76,8 @@ body_class: home
   <div class="container">
     <div class="section-head" data-reveal>
       <div>
-        <p class="kicker">Selected work</p>
-        <h2>Maps that carry their own weight.</h2>
+        <p class="kicker">Maps</p>
+        <h2>Curated maps</h2>
       </div>
       <div class="section-head__aside">
         <a class="link-arrow" href="{{ '/gallery/' | relative_url }}">
@@ -89,9 +87,9 @@ body_class: home
       </div>
     </div>
 
-    <div class="home-maps" data-reveal>
+    <div class="map-columns" data-reveal>
       {%- for map in featured_maps limit: 6 -%}
-        {% include map-card.html map=map sizes="(min-width: 1024px) 48vw, 92vw" %}
+        {% include map-card.html map=map %}
       {%- endfor -%}
     </div>
   </div>
@@ -102,7 +100,7 @@ body_class: home
     <div class="section-head" data-reveal>
       <div>
         <p class="kicker">Web applications</p>
-        <h2>Small tools, real geographic questions.</h2>
+        <h2>Tools that solve problems</h2>
       </div>
       <div class="section-head__aside">
         <a class="link-arrow" href="https://apps.privatemajory.top/" target="_blank" rel="noopener">
@@ -126,7 +124,7 @@ body_class: home
     <div class="section-head" data-reveal>
       <div>
         <p class="kicker">Writing</p>
-        <h2>Notes from the process.</h2>
+        <h2>Recent posts</h2>
       </div>
       <div class="section-head__aside">
         <a class="link-arrow" href="{{ '/blog/' | relative_url }}">
@@ -150,20 +148,22 @@ body_class: home
   </div>
 </section>
 
-<section class="section section--ink home-datasets">
-  <div class="container home-datasets__grid" data-reveal>
-    <div class="home-datasets__intro">
-      <p class="kicker">Open data</p>
-      <h2>Datasets, out in the open.</h2>
-      <p>Lakes, schools, power plants, roads and population, all free to download and reuse.</p>
-      <p>
+<section class="section section--tint home-datasets">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <div>
+        <p class="kicker">Open data</p>
+        <h2>Free to use datasets</h2>
+        <p class="home-datasets__summary">Population, schools, power plants, roads, lakes and more. Each dataset is free to download; its licence explains how you can reuse it.</p>
+      </div>
+      <div class="section-head__aside">
         <a class="link-arrow" href="{{ '/datasets/' | relative_url }}">
           Browse all datasets
           {% include icon.html name="arrow-right" class="icon" %}
         </a>
-      </p>
+      </div>
     </div>
-    <div class="dataset-grid">
+    <div class="dataset-grid" data-reveal>
       {%- for dataset in site.data.datasets limit: 4 -%}
         {% include dataset-card.html dataset=dataset %}
       {%- endfor -%}
@@ -175,17 +175,13 @@ body_class: home
   <div class="container contact__grid" data-reveal>
     <div>
       <p class="kicker">Contact</p>
-      <h2>Let’s make something map-shaped.</h2>
+      <h2>Get in touch.</h2>
     </div>
     <div class="contact__aside">
-      <p>Maps, data work, or a small web tool. Tell me what you are trying to see.</p>
+      <p>For a map, GIS help or a small web tool, send me a message.</p>
       <a class="button button--accent" href="mailto:{{ site.email }}">
-        Write to me
+        Email me
         {% include icon.html name="mail" class="icon" %}
-      </a>
-      <a class="link-arrow" href="https://apps.privatemajory.top/" target="_blank" rel="noopener">
-        apps.privatemajory.top
-        {% include icon.html name="arrow-up-right" class="icon" %}
       </a>
     </div>
   </div>

@@ -24,7 +24,7 @@ layout: default
       {%- if category.slug == "everything" -%}
         {%- assign count = site.data.maps | size -%}
       {%- else -%}
-        {%- assign count = site.data.maps | where: "category", category.slug | size -%}
+        {%- assign count = site.data.maps | where_exp: "map", "map.categories contains category.slug" | size -%}
       {%- endif -%}
       <button class="filter" type="button" data-filter="{{ category.slug }}" aria-pressed="{% if category.slug == 'everything' %}true{% else %}false{% endif %}">
         {{ category.label }}<span>{{ count }}</span>
@@ -40,7 +40,7 @@ layout: default
         {% include map-card.html map=map %}
       {%- endfor -%}
     </div>
-    <p class="gallery-empty" data-gallery-empty hidden>No maps in this category yet.</p>
+    <p class="gallery-empty" data-gallery-empty hidden>There are no maps in this category yet.</p>
   </div>
 </section>
 

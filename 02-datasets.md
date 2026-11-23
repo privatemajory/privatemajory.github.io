@@ -10,7 +10,7 @@ description: "Free datasets about Madagascar: population, schools, power plants,
 {%- assign datasets = site.data.datasets -%}
 {%- assign formats = datasets | map: "primary_format" | uniq -%}
 
-<p class="lede">Everything here is free to download and reuse. Each dataset documents its own fields, coordinate system, source and licence, extracted from the archive rather than typed by hand.</p>
+<p class="lede">Download the datasets and check their fields, coordinate systems, sources and licences before using them.</p>
 
 <div class="catalog" data-catalog>
 
@@ -71,14 +71,14 @@ description: "Free datasets about Madagascar: population, schools, power plants,
   </div>
 
   <p class="catalog__empty" data-dataset-empty hidden>
-    No dataset matches those filters.
+    No datasets match these filters.
     <button class="link-arrow" type="button" data-dataset-reset>Reset filters</button>
   </p>
 </div>
 
 <section class="catalog-links">
-  <h2>For scripts and machines</h2>
-  <p>The whole catalog is published alongside the data, so you can pull it without scraping this page.</p>
+  <h2>Download the catalog</h2>
+  <p>Download the full catalog as JSON or CSV, or get the JSON for a single dataset.</p>
   <ul>
     <li><a href="{{ '/datasets/catalog.json' | relative_url }}"><code>catalog.json</code></a>: every dataset with its fields, licence and file list</li>
     <li><a href="{{ '/datasets/catalog.csv' | relative_url }}"><code>catalog.csv</code></a>: one row per dataset</li>

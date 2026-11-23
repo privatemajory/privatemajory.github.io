@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Media
+title: Sound
 permalink: /media/
-kicker: Sound
+kicker: Media
 summary: "Maps are not the only thing I make. Some ideas come out as sound instead."
 description: "Music by Dolly Andriatsiferana (Privatemajory), including the 2023 collection on SoundCloud."
 ---

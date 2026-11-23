@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Blog
+title: Posts
 permalink: /blog/
-kicker: Writing
+kicker: Blog
 summary: "Notes on GIS workflows, OpenStreetMap practice and the small decisions behind a map."
 description: "Notes on GIS workflows, OpenStreetMap mapping and terrain analysis, mostly from working with data in Madagascar."
 ---

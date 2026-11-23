@@ -2,9 +2,9 @@
 layout: page
 title: Projects
 permalink: /projects/
-kicker: Web applications
-summary: "Small tools built around a single geographic question: how far, how steep, how reachable."
-description: "Interactive web applications built with Python and open geospatial tools, including terrain-aware walking routes in rural Madagascar."
+kicker: Tools
+summary: "Small GIS tools, including an app for estimating walking routes in rural Madagascar."
+description: "Web mapping tools by Dolly Andriatsiferana, including an app for estimating walking routes in rural Madagascar."
 ---
 
 <div class="project-grid">
@@ -16,7 +16,7 @@ description: "Interactive web applications built with Python and open geospatial
 
 <p class="collection-foot">
   <a class="link-arrow" href="https://apps.privatemajory.top/" target="_blank" rel="noopener">
-    All apps at apps.privatemajory.top
+    Browse all apps
     {% include icon.html name="arrow-up-right" class="icon" %}
   </a>
 </p>

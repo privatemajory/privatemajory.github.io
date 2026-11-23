@@ -2,7 +2,7 @@
 layout: gallery
 title: Maps
 permalink: /gallery/
-kicker: Archive
-summary: "A working archive of maps: relief studies, city-scale experiments and data stories, mostly made with open tools."
+kicker: Gallery
+summary: "Maps and cartographic experiments, from relief studies to city maps and data stories."
 description: "Selected maps and cartographic experiments by Dolly Andriatsiferana: relief, cities, 3D terrain and data stories."
 ---

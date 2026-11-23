@@ -1,6 +1,6 @@
 ---
 title: Least cost itinerary
-summary: An interactive app that estimates the fastest walking route between two points in rural Madagascar, using elevation and surface roughness instead of straight-line distance.
+summary: A web app that estimates walking routes in rural Madagascar using elevation and surface roughness.
 status: Web application
 year: "2024"
 image_slug: lcpath
@@ -14,9 +14,9 @@ order: 1
 permalink: /projects/walk-between-two-points/
 ---
 
-The app answers a simple question with a terrain-aware answer: what is the fastest way to travel across rural Madagascar?
+The app estimates a walking route between two points in rural Madagascar, taking the terrain into account.
 
-Instead of drawing a straight line, it combines elevation and surface-roughness data to estimate a least-cost route. The result is a path that follows the terrain and a profile chart that shows where the walking gets steep.
+Rather than treating every kilometre as the same, it uses elevation and ground roughness to estimate a least-cost route. The map shows the route, and a profile chart shows its distance and elevation.
 
 ## What it does
 
@@ -27,10 +27,10 @@ Instead of drawing a straight line, it combines elevation and surface-roughness 
 
 ## How it works
 
-The route is calculated over a terrain model that accounts for both slope and ground roughness. The map is rendered with Leaflet, the calculation runs in a small Flask application, and Chart.js draws the route profile.
+The route is calculated over a terrain model that accounts for slope and ground roughness. Leaflet displays the map, a Flask app calculates the route, and Chart.js draws the profile.
 
-The application is built for rural Madagascar, where steep terrain and uneven ground make distance alone a poor guide to travel time.
+The app is intended for rural Madagascar, where steep slopes and uneven ground affect travel time.
 
 ## Try it
 
-The app is live at [apps.privatemajory.top/lcpath](https://apps.privatemajory.top/lcpath). It is part of a small collection of geospatial web applications hosted at [apps.privatemajory.top](https://apps.privatemajory.top/).
+Try the app at [apps.privatemajory.top/lcpath](https://apps.privatemajory.top/lcpath).
